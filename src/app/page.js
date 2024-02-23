@@ -15,7 +15,7 @@ export default function Home() {
           <div>
             To Verdener
             <br />
-            <span className='blue'>Samme Mål</span>
+            <span>Samme Mål</span>
           </div>
         </div>
         <nav>
@@ -39,7 +39,7 @@ export default function Home() {
         </nav>
         <nav>
           <ul>
-            <li>Hvem er vi?</li>
+            {/* <li>Hvem er vi?</li> */}
             <li>Projekt</li>
             <li>DHF</li>
           </ul>
