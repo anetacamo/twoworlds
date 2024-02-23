@@ -1,9 +1,9 @@
-:root {
+root {
   --max-width: 1100px;
   --border-radius: 12px;
-  --font-mono: ui-monospace, Menlo, Monaco, "Cascadia Mono", "Segoe UI Mono",
-    "Roboto Mono", "Oxygen Mono", "Ubuntu Monospace", "Source Code Pro",
-    "Fira Mono", "Droid Sans Mono", "Courier New", monospace;
+  --font-mono: ui-monospace, Menlo, Monaco, 'Cascadia Mono', 'Segoe UI Mono',
+    'Roboto Mono', 'Oxygen Mono', 'Ubuntu Monospace', 'Source Code Pro',
+    'Fira Mono', 'Droid Sans Mono', 'Courier New', monospace;
 
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -38,6 +38,80 @@
   --callout-border-rgb: 172, 175, 176;
   --card-rgb: 180, 185, 188;
   --card-border-rgb: 131, 134, 135;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Oswald:wght@400;500;700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+.roboto-thin {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 900;
+  font-style: italic;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -77,6 +151,9 @@
   box-sizing: border-box;
   padding: 0;
   margin: 0;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  /* font-family: 'Roboto', sans-serif; */
 }
 
 html,
@@ -86,6 +163,7 @@ body {
 }
 
 body {
+  /* font-family: 'roboto'; */
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -100,8 +178,198 @@ a {
   text-decoration: none;
 }
 
+p {
+  line-height: 1.4;
+  font-size: 18px;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;
   }
+}
+
+header {
+  margin: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  position: fixed;
+  width: calc(100% - 48px);
+  top: 0;
+  z-index: 3;
+}
+
+.logo {
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+}
+.logoicon {
+  height: 40px;
+  margin-right: 8px;
+}
+nav li {
+  list-style: none;
+  margin-right: 8px;
+  margin-left: 8px;
+  font-weight: 500;
+  letter-spacing: 0.4px;
+  color: gray;
+  cursor: pointer;
+  &:hover {
+    color: #9d9fff;
+    transition-duration: 350ms;
+  }
+}
+.highlighted {
+  color: white;
+  transition-duration: 350ms;
+  cursor: default;
+}
+nav ul {
+  display: flex;
+  justify-content: center;
+}
+
+.full {
+  display: flex;
+  height: 600px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+h1 {
+  font-size: 60px;
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 2px;
+  line-height: 1.05;
+}
+
+section {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+
+.largetext {
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+  p {
+    font-size: 24px;
+  }
+}
+
+.gallery,
+.singlegallery {
+  height: 360px;
+  display: flex;
+  align-items: center;
+  margin-top: 24px;
+  margin-bottom: 24px;
+  justify-content: center;
+  img {
+    margin-left: 12px;
+    margin-right: 12px;
+    height: 100%;
+    object-fit: contain;
+    transition-duration: 350ms;
+    border-radius: 6px;
+  }
+}
+
+.singlegallery {
+  height: 500px;
+  position: relative;
+  cursor: pointer;
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  img {
+    object-fit: cover;
+    width: 100%;
+    margin: 0;
+  }
+  .invisible {
+    max-width: 0;
+    left: 0;
+  }
+  .absolute {
+    position: absolute;
+    left: 0;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .absolute2 {
+    position: absolute;
+    right: 0;
+    height: 100%;
+    object-fit: cover;
+    max-width: 100%;
+  }
+  .invisible2 {
+    max-width: 0;
+    right: 0;
+  }
+  .none {
+    display: none;
+  }
+}
+
+.icon {
+  height: 40px;
+  margin: -12px;
+  margin-right: -16px;
+  filter: brightness(0) invert(1) brightness(0.5);
+}
+
+h2 {
+  font-size: 40px;
+}
+
+.box {
+  text-align: left;
+  padding-left: 24px;
+  border-radius: 4px;
+  border-left: 12px solid #9d9fff;
+  text-align: center;
+  max-width: 1000px;
+  margin-left: auto;
+  text-align: left;
+  margin-right: auto;
+
+  p {
+    font-size: 20px;
+    line-height: 1.6;
+    letter-spacing: 0.8px;
+    font-weight: 300;
+  }
+}
+
+.right {
+  border-right: 12px solid #9d9fff;
+  padding-right: 24px;
+  border-left: none;
+  text-align: right;
+}
+
+.blue {
+  color: #9d9fff;
+}
+
+i {
+  font-weight: 400;
+  color: #c5c5c5;
+}
+
+p,
+h1,
+h2 {
+  margin-top: 12px;
+  margin-bottom: 12px;
 }
