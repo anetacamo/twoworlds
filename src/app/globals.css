@@ -180,7 +180,7 @@ a {
 
 p {
   line-height: 1.4;
-  font-size: 18px;
+  font-size: 16px;
 }
 
 @media (prefers-color-scheme: dark) {
@@ -195,7 +195,6 @@ header {
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   position: fixed;
   width: 100%;
   top: 0;
@@ -236,32 +235,42 @@ nav ul {
 
 .full {
   display: flex;
-  height: 600px;
+  height: 200px;
   justify-content: center;
   text-align: center;
   align-items: center;
 }
 
 h1 {
-  font-size: 60px;
+  font-size: 40px;
   text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 2px;
+  font-weight: 700;
+  letter-spacing: 4px;
   line-height: 1.05;
+}
+
+.center {
+  text-align: center;
+}
+.right {
+  text-align: right;
 }
 
 section {
   margin-top: 36px;
   margin-bottom: 36px;
 }
+.inner {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
 
 .largetext {
-  text-align: center;
-  max-width: 1000px;
+  max-width: 800px;
   margin-left: auto;
   margin-right: auto;
   p {
-    font-size: 24px;
+    font-size: 20px;
   }
 }
 
@@ -330,7 +339,7 @@ section {
 }
 
 h2 {
-  font-size: 40px;
+  font-size: 32px;
 }
 
 .box {
@@ -338,14 +347,12 @@ h2 {
   padding-left: 24px;
   border-radius: 4px;
   border-left: 12px solid #9d9fff;
-  text-align: center;
-  max-width: 1000px;
+  max-width: 800px;
   margin-left: auto;
   text-align: left;
   margin-right: auto;
-
   p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.8px;
     font-weight: 300;
@@ -368,9 +375,68 @@ i {
   color: #c5c5c5;
 }
 
+h5 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 2px;
+}
+
 p,
-h1,
-h2 {
-  margin-top: 12px;
-  margin-bottom: 12px;
+h5,
+button {
+  margin-top: 16px;
+  margin-bottom: 16px;
+}
+
+h2,
+h1 {
+  margin-top: 24px;
+  margin-bottom: 24px;
+}
+
+button {
+  padding: 12px 20px;
+  border: 2px solid #9d9fff;
+  color: #9d9fff;
+  outline: none;
+  background-color: transparent;
+  font-size: 12px;
+  letter-spacing: 1px;
+  font-weight: 800;
+  text-transform: uppercase;
+  border-radius: 8px;
+  &:hover {
+    background-color: #9d9fff;
+    transition-duration: 350ms;
+    color: black;
+    cursor: pointer;
+  }
+}
+
+footer {
+  background-color: #9d9fff;
+  .inner {
+    color: black;
+    padding: 1.5rem;
+    display: flex;
+    .large {
+      width: 50%;
+    }
+    .small {
+      width: 25%;
+      padding-left: 1.5rem;
+    }
+  }
+}
+
+.grid-gallery {
+  flex-wrap: wrap;
+  height: 100%;
+  width: 100%;
+  img {
+    min-width: 180px;
+    flex: 1 1 auto;
+    margin: 12px;
+    max-width: 320px;
+  }
 }
