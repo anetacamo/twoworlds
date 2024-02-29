@@ -3,8 +3,8 @@ export default function GridGallery({ images }) {
     <section>
       <div className='inner'>
         <div className='gallery large-gallery grid-gallery'>
-          {images.map((image) => (
-            <div className='container'>
+          {images.map((image, index) => (
+            <div className='container' key={index}>
               <img src={`/images/mark/${image}.png`} />
             </div>
           ))}

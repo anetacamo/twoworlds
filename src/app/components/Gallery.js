@@ -3,8 +3,8 @@ export default function Gallery({ images }) {
     <section>
       <div className='inner'>
         <div className='gallery large-gallery'>
-          {images.map((image) => (
-            <img src={`/images/claudine/${image}.png`} />
+          {images.map((image, index) => (
+            <img src={`/images/claudine/${image}.png`} key={index} />
           ))}
         </div>
       </div>
