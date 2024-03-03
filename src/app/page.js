@@ -21,17 +21,19 @@ export default function Home() {
   return (
     <div style={{ marginTop: 36 }}>
       <Header player={player} setPlayer={handlePlayerChange} />
+
       <main className={styles.main}>
-        <Video player={player} setPlayer={handlePlayerChange} />
-        {/* <section style={{ textAlign: 'center' }}>
-          <div className='largetext'>
-            <h1>
-              To Verdener
-              <br />
-              Samme Mål
-            </h1>
+        <section>
+          <Video player={player} setPlayer={handlePlayerChange} />
+          <div className='center'>
+            <button style={{ margin: 0, marginRight: 8 }}>
+              read marks story
+            </button>
+            <button style={{ margin: 0, marginLeft: 8 }}>
+              read claudines story
+            </button>
           </div>
-        </section> */}
+        </section>
 
         <section style={{ marginBottom: -24 }}>
           <div className='inner'>

@@ -1,0 +1,15 @@
+footer {
+  background-color: #9d9fff;
+  .inner {
+    color: black;
+    padding: 1.5rem;
+    display: flex;
+    .large {
+      width: 50%;
+    }
+    .small {
+      width: 25%;
+      padding-left: 1.5rem;
+    }
+  }
+}

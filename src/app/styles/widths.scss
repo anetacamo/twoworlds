@@ -1,0 +1,27 @@
+.full {
+  display: flex;
+  height: 200px;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+}
+
+section {
+  margin-top: 36px;
+  margin-bottom: 36px;
+}
+.inner {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+}
+
+.desktop {
+  @media (max-width: 800px) {
+    display: none;
+  }
+}
+.mobile {
+  @media (min-width: 800px) {
+    display: none;
+  }
+}

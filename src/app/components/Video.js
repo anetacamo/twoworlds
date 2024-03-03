@@ -1,24 +1,49 @@
 export default function Video({ player, setPlayer }) {
   return (
-    <section>
-      <div className='singlegallery'>
-        <img src='/images/claudine/01.png' className='absolute' />
-        <img
-          src='/images/mark/01.png'
-          className={`absolute ${player === 0 ? 'none' : ''}`}
-        />
+    <div className='videogallery'>
+      <video
+        src='/video/claudine_sm.mp4'
+        className='absolute'
+        // onClick={() => {
+        //   console.log('videoclicked');
+        //   setPlayer(0);
+        // }}
+        autoPlay
+        muted
+      />
+      <video
+        src='/video/mark_sm.mp4'
+        className={`absolute ${player === 0 ? 'none' : ''}`}
+        // onClick={() => {
+        //   console.log('videoclicked');
+        //   setPlayer(1);
+        // }}
+        autoPlay
+        muted
+      />
 
-        <img
-          src='/images/claudine/01.png'
-          className={player === 1 ? 'absolute2' : 'invisible2'}
-          onClick={() => setPlayer(0)}
-        />
-        <img
-          src='/images/mark/01.png'
-          className={player === 0 ? 'absolute' : 'invisible'}
-          onClick={() => setPlayer(1)}
-        />
-      </div>
-    </section>
+      <video
+        src='/video/claudine_sm.mp4'
+        className={`opacity-toggle ${
+          player === 1 ? 'absolute2' : 'invisible2'
+        }`}
+        autoPlay
+        muted
+        onClick={() => {
+          console.log('videoclicked');
+          setPlayer(0);
+        }}
+      />
+      <video
+        src='/video/mark_sm.mp4'
+        className={`opacity-toggle ${player === 0 ? 'absolute' : 'invisible'}`}
+        autoPlay
+        muted
+        onClick={() => {
+          console.log('videoclicked');
+          setPlayer(1);
+        }}
+      />
+    </div>
   );
 }
