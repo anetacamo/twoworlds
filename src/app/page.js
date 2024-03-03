@@ -27,23 +27,30 @@ export default function Home() {
           <Video player={player} setPlayer={handlePlayerChange} />
           <div className='center'>
             <button style={{ margin: 0, marginRight: 8 }}>
-              read marks story
+              Læs hele Marks historie
             </button>
             <button style={{ margin: 0, marginLeft: 8 }}>
-              read claudines story
+              Læs Claudines historie her
             </button>
           </div>
         </section>
-
         <section style={{ marginBottom: -24 }}>
           <div className='inner'>
             <div className='largetext center'>
-              <h1>om projekt</h1>
+              <h1>
+                Om{' '}
+                <span className='blue'>
+                  To Verdener <br />
+                  Samme Mål
+                </span>
+              </h1>
               <p>
                 De er begge skadet i krig.
                 <br />
                 Den ene som voksen i Afghanistan, den anden som barn under
                 folkemord i Rwanda. En professionel soldat og et uskyldigt barn.
+                Begge har mistet ben, og begge er kommet videre gennem
+                parasporten.
               </p>
             </div>
           </div>
@@ -53,29 +60,29 @@ export default function Home() {
           <div className='inner'>
             <div className='largetext center'>
               <p>
-                Begge har mistet ben, og begge er kommet videre. Gennem
-                parasporten. Om kort tid skal de hver især repræsentere deres
-                land til den største begivenhed indenfor parasporten - de
-                Paralympiske Lege (PL) i Paris 2024.
+                Om kort tid skal de hver især repræsentere deres land til de
+                Paralympiske Lege (PL) i Paris 2024. Nu er det kampen om
+                medaljer, det gælder. Siden 2020 har vi fulgt de to stjerner og
+                deres hold i Rwanda og i Danmark.
               </p>
               <p>
-                Nu er det kampen om medaljer, det gælder. Siden 2020 har vi
-                fulgt de to stjerner. Gennem deres fortællinger har vi oplevet,
-                hvor stærk en forandringskraft holdsport kan have. Potentialet
-                for at løfte det enkelte menneske gennem sport er stort.
+                Gennem dem har vi oplevet, hvordan muligheden for at dyrke
+                holdsport kan få mennesker til at drømme stort. Ikke kun i et
+                udviklingsland, hvor mennesker med handicap ofte er at finde
+                blandt samfundets mest udsatte og fattige, men også i et
+                velfærdssamfund som Danmark. Det sætter vores projekt ’To
+                Verdener – Samme Mål’ spot på.
               </p>
             </div>
           </div>
         </section>
         <MiniGallery claudine='06' mark='07' />
-
         <section>
-          <h1>
+          <h1 className='center'>
             mark og
             <br /> Claudine
           </h1>
         </section>
-
         <section style={{ textAlign: 'right' }}>
           <div className='inner'>
             <div className='largetext'>
@@ -98,14 +105,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <Gallery images={['01', '02', '03']} />
         <section>
           <img className='logoicon' src='images/icons/ball2.png' />{' '}
           <img className='logoicon' src='images/icons/ball2.png' />{' '}
           <img className='logoicon' src='images/icons/ball2.png' />
         </section>
-
         <section>
           <div className='inner'>
             <div className='largetext'>
@@ -131,7 +136,6 @@ export default function Home() {
 
           <GridGallery images={['01', '02', '03']} />
         </section>
-
         {/* <section>
           <div className='largetext'>
             <p>
@@ -185,7 +189,6 @@ export default function Home() {
             </div>
           </div>
         </section>
-
         <section>
           <img className='logoicon' src='images/icons/ball2.png' />{' '}
           <img className='logoicon' src='images/icons/ball2.png' />{' '}
@@ -210,10 +213,17 @@ export default function Home() {
           <img className='logoicon' src='images/icons/ball2.png' />{' '}
           <img className='logoicon' src='images/icons/ball2.png' />
         </section>
+
         <section>
           <div className='inner'>
             <div className='largetext'>
-              <h2>Om Os</h2>
+              <h2>Hvem er vi?</h2>
+              <p>
+                <i>
+                  Fotograf Tine Harden og journalist Hanne Selnæs står bag
+                  projektet ’To Verdener – Samme Mål’.
+                </i>
+              </p>
               <p>
                 <span className='blue'>Tine Harden</span> er en
                 sportsinteresseret og prisvindende fotograf, som blandt andet
@@ -223,14 +233,13 @@ export default function Home() {
               <p>
                 <span className='blue'>Hanne Selnæs</span> er uddannet
                 journalist og kommunikerer primært om udsatte menneskers vilkår,
-                muligheder og rettigheder – hjemme som ude.{' '}
+                muligheder og rettigheder – hjemme som ude.
               </p>
               <p>
                 <i>
-                  I 2021 modtog vi sammen Timbuktu Prisen som en anerkendelse af
-                  vores arbejde med projektet ’To Verdener – Samme Mål’.
-                  Projektet bliver til i samarbejde med: Dansk Handicap
-                  Forbund,DHF{' '}
+                  I 2021 modtog vi Timbuktu Prisen som en anerkendelse af vores
+                  arbejde med projektet ’To Verdener – Samme Mål’. Projektet
+                  bliver til i samarbejde med:
                 </i>
               </p>
             </div>
@@ -239,22 +248,38 @@ export default function Home() {
         <section>
           <div className='inner'>
             <div className='largetext'>
-              <h2>Dansk Handicap Forbund, DHF</h2>
+              <h2>Vores partners</h2>
               <p>
-                Dansk Handicap Forbund, DHF, som arbejder for at forbedre
-                forholdene på handicapområdet og skabe sociale forbindelser for
-                mennesker med bevægelseshandicap.{' '}
+                <span className='blue'>Dansk Handicap Forbund, DHF</span>{' '}
+                arbejder for at mennesker med bevægelseshandicap har samme
+                rettigheder som alle andre. DHF har 8.300 medlemmer i Danmark.
+                Internationalt er DHF engageret i udviklingsprojekter i otte
+                lande i Asien, Afrika og Mellemamerika.
               </p>
-
               <p>
-                DHF har 8.300 medlemmer i godt 40 lokalkredse rundt om i
-                Danmark. DHF arbejder internationalt med udviklingsprojekter i
-                otte lande i Asien, Afrika og Mellemamerika. Vores
-                udviklingsarbejde er i høj grad drevet af frivilligt engagement
-                med professionel støtte fra et internationalt sekretariat. I
-                samarbejde med Parasport Danmark er vi engageret i
-                internationale udviklingsprojekter, der styrker adgangen til
-                parasport i Nepal, Bolivia, Vietnam og Uganda.
+                Sammen med <span className='blue'>Parasport Danmark</span> er vi
+                med til at styrke adgangen til parasport i Nepal, Bolivia,
+                Vietnam og Uganda. Parasport Danmark arbejder for, at alle
+                mennesker med handicap eller særlige behov skal have mulighed
+                for at dyrke idræt. Herhjemme tilbyder Parasport Danmark pt.
+                aktiviteter inden for flere end 30 idrætsgrene. Parasport
+                Danmark har knap 8000 medlemmer.
+              </p>
+              <p>
+                Som Danmarks{' '}
+                <span className='blue'>National Paralympiske Komite</span>{' '}
+                sigter vi også mod at fostre eliteatleter og rollemodeller i
+                verdensklasse. Internationalt er vi engageret i
+                udviklingsprojekter, der styrker adgangen til parasport. I
+                samarbejde med DHF. National Paralympic Commitee, NPC, Rwanda
+                har I Rwanda samme rolle som Parasport Danmark har i Danmark.{' '}
+              </p>
+              <p>
+                NPC promoverer og koordinerer flere idrætsklubbers tilbud om
+                parasport til mennesker med forskellige typer handicap indenfor
+                13 sportsgrene. NPC arbejder på at Rwanda bliver det førende
+                paralympiske land i Afrika. Indenfor holdsport er komitteens
+                stolthed kvindelandsholdet i siddende volleyball.
               </p>
             </div>
           </div>
@@ -298,7 +323,6 @@ export default function Home() {
             <p>i samarbejde med Dansk Handicap Forbund (DHF).</p>
           </div>
         </section> */}
-
         <footer>
           <div className='inner'>
             <div className='large'>
