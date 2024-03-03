@@ -76,38 +76,6 @@ export default function Home() {
           </h1>
         </section>
 
-        <section>
-          <div className='inner'>
-            <div className='largetext'>
-              <h5>om mark</h5>
-              <h2>Uden rugby var jeg blevet monsterfed</h2>{' '}
-              <p className='blue'>
-                ”Uden rugby i mit liv havde jeg spillet meget computerspil og
-                var blevet monsterfed. Jeg ville have kedet mig, men jeg ville
-                også have haft masser af tid til at være sammen med kæresten,”
-              </p>
-              <p>
-                {' '}
-                siger Mark Peters, som bruger næsten al sin fritid på at træne
-                og spille kørestolsrugby. For sporten har givet den tidligere
-                professionelle soldat mere energi, glæde og selvtillid. I dag er
-                hans blik kun rettet mod de Paralympiske Lege i Paris.
-              </p>
-              <Link href='/mark'>
-                <button>Læs hele Marks historie</button>
-              </Link>
-            </div>
-          </div>
-        </section>
-
-        <GridGallery images={['01', '02', '03', '04', '05', '07']} />
-
-        <section>
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />
-        </section>
-
         <section style={{ textAlign: 'right' }}>
           <div className='inner'>
             <div className='largetext'>
@@ -130,7 +98,39 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Gallery images={['01', '02', '03', '04', '05', '06']} />
+
+        <Gallery images={['01', '02', '03']} />
+        <section>
+          <img className='logoicon' src='images/icons/ball2.png' />{' '}
+          <img className='logoicon' src='images/icons/ball2.png' />{' '}
+          <img className='logoicon' src='images/icons/ball2.png' />
+        </section>
+
+        <section>
+          <div className='inner'>
+            <div className='largetext'>
+              <h5>om mark</h5>
+              <h2>Uden rugby var jeg blevet monsterfed</h2>{' '}
+              <p className='blue'>
+                ”Uden rugby i mit liv havde jeg spillet meget computerspil og
+                var blevet monsterfed. Jeg ville have kedet mig, men jeg ville
+                også have haft masser af tid til at være sammen med kæresten,”
+              </p>
+              <p>
+                {' '}
+                siger Mark Peters, som bruger næsten al sin fritid på at træne
+                og spille kørestolsrugby. For sporten har givet den tidligere
+                professionelle soldat mere energi, glæde og selvtillid. I dag er
+                hans blik kun rettet mod de Paralympiske Lege i Paris.
+              </p>
+              <Link href='/mark'>
+                <button>Læs hele Marks historie</button>
+              </Link>
+            </div>
+          </div>
+
+          <GridGallery images={['01', '02', '03']} />
+        </section>
 
         {/* <section>
           <div className='largetext'>
