@@ -48,10 +48,14 @@ button {
   font-weight: 800;
   text-transform: uppercase;
   border-radius: 8px;
+
   &:hover {
     background-color: #9d9fff;
     transition-duration: 350ms;
     color: black;
     cursor: pointer;
+  }
+  svg {
+    height: 2rem !important;
   }
 }

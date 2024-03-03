@@ -2,6 +2,8 @@
 
 import Link from 'next/link';
 
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 import styles from './page.module.css';
 import React, { useState } from 'react';
 import GridGallery from './components/GridGallery';
@@ -25,12 +27,39 @@ export default function Home() {
       <main className={styles.main}>
         <section>
           <Video player={player} setPlayer={handlePlayerChange} />
-          <div className='center'>
-            <button style={{ margin: 0, marginRight: 8 }}>
+          <div
+            className='center'
+            style={{
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+            }}
+          >
+            <button
+              style={{
+                paddingTop: 8,
+                paddingBottom: 8,
+                margin: 0,
+                marginRight: 8,
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
+              <FontAwesomeIcon icon={faArrowLeft} style={{ marginRight: 12 }} />{' '}
               Læs hele Marks historie
             </button>
-            <button style={{ margin: 0, marginLeft: 8 }}>
-              Læs Claudines historie her
+            <button
+              style={{
+                paddingTop: 8,
+                paddingBottom: 8,
+                margin: 0,
+                marginLeft: 8,
+                display: 'flex',
+                alignItems: 'center',
+              }}
+            >
+              Læs Claudines historie her{' '}
+              <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: 12 }} />
             </button>
           </div>
         </section>
