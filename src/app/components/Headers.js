@@ -1,17 +1,28 @@
+'use client';
+import React, { useState } from 'react';
+import Hamburger from '../components/Hamburger';
+
 export default function Header({ player, setPlayer }) {
+  const [open, setOpen] = useState(false);
   return (
     <header>
-      <div className='logo'>
+      <div className='logo desktop'>
         <div>
           To Verdener
           <br />
           <span>Samme Mål</span>
         </div>
       </div>
+
+      <div className='logo mobile'>
+        <div>
+          <img className='logoicon' src='images/icons/ball2.png' />
+        </div>
+      </div>
       <nav>
         <ul>
           <li
-            className={player === 1 ? 'highlighted' : ''}
+            className={`right ${player === 1 ? 'highlighted' : ''}`}
             onClick={() => setPlayer(1)}
           >
             Om Claudine
@@ -27,13 +38,17 @@ export default function Header({ player, setPlayer }) {
           </li>
         </ul>
       </nav>
-      <nav>
+      <nav className='desktop'>
         <ul>
-          {/* <li>Hvem er vi?</li> */}
           <li>Projekt</li>
           <li>DHF</li>
         </ul>
       </nav>
+      <Hamburger open={open} handleClick={() => setOpen(!open)} />
+      <div
+        className={`overlay ${open ? 'open' : ''}`}
+        onClick={() => setOpen(false)}
+      ></div>
     </header>
   );
 }
