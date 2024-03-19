@@ -1,19 +1,21 @@
 'use client';
 import React, { useState } from 'react';
 import Hamburger from './Hamburger';
+import Link from 'next/link';
 
-export default function Header({ player, setPlayer }) {
+export default function HeaderSidePage() {
   const [open, setOpen] = useState(false);
   return (
     <header>
-      <div className='logo desktop'>
-        <div>
-          To Verdener
-          <br />
-          <span>Samme Mål</span>
+      <Link href='/'>
+        <div className='logo desktop'>
+          <div>
+            To Verdener
+            <br />
+            <span>Samme Mål</span>
+          </div>
         </div>
-      </div>
-
+      </Link>
       <div className='logo mobile'>
         <div>
           <img className='logoicon' src='images/icons/ball2.png' />
@@ -21,21 +23,11 @@ export default function Header({ player, setPlayer }) {
       </div>
       <nav>
         <ul>
-          <li
-            className={`right ${player === 1 ? 'highlighted' : ''}`}
-            onClick={() => setPlayer(1)}
-          >
-            Om Claudine
-          </li>
+          <li className={`right 'highlighted'`}>Om Claudine</li>
           <li>
             <img className='icon' src='images/icons/airplane.png' />
           </li>
-          <li
-            className={player === 0 ? 'highlighted' : ''}
-            onClick={() => setPlayer(0)}
-          >
-            Om Mark
-          </li>
+          <li>Om Mark</li>
         </ul>
       </nav>
       <nav className='desktop'>

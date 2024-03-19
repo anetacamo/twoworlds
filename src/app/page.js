@@ -37,41 +37,47 @@ export default function Home() {
                 justifyContent: 'center',
               }}
             >
-              <button
-                style={{
-                  paddingTop: 8,
-                  paddingBottom: 8,
-                  margin: 0,
-                  marginRight: 8,
-                  display: 'flex',
-                  alignItems: 'center',
-                }}
-              >
-                <FontAwesomeIcon
-                  icon={faArrowLeft}
-                  style={{ marginRight: 12 }}
-                />{' '}
-                Læs Marks historie her
-              </button>
-              <button
-                style={{
-                  paddingTop: 8,
-                  paddingBottom: 8,
-                  margin: 0,
-                  marginLeft: 8,
-                  display: 'flex',
-                  alignItems: 'center',
-                }}
-              >
-                Læs Claudines historie her{' '}
-                <FontAwesomeIcon
-                  icon={faArrowRight}
-                  style={{ marginLeft: 12 }}
-                />
-              </button>
+              <Link href='/mark'>
+                <button
+                  style={{
+                    paddingTop: 8,
+                    paddingBottom: 8,
+                    margin: 0,
+                    marginRight: 8,
+                    display: 'flex',
+                    alignItems: 'center',
+                  }}
+                >
+                  <FontAwesomeIcon
+                    icon={faArrowLeft}
+                    style={{ marginRight: 12 }}
+                  />{' '}
+                  Læs Marks historie her
+                </button>
+              </Link>
+              <Link href='/claudine'>
+                <button
+                  style={{
+                    paddingTop: 8,
+                    paddingBottom: 8,
+                    margin: 0,
+                    marginLeft: 8,
+                    display: 'flex',
+                    alignItems: 'center',
+                  }}
+                >
+                  Læs Claudines historie her{' '}
+                  <FontAwesomeIcon
+                    icon={faArrowRight}
+                    style={{ marginLeft: 12 }}
+                  />
+                </button>
+              </Link>
             </div>
           </div>
         </section>
+
+        <Divider />
         <section style={{ marginBottom: -24 }}>
           <div className='inner'>
             <div className='largetext center'>
