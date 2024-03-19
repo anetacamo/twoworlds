@@ -48,6 +48,9 @@ button {
   font-weight: 800;
   text-transform: uppercase;
   border-radius: 8px;
+  @media (max-width: 550px) {
+    padding: 8px;
+  }
 
   &:hover {
     background-color: #9d9fff;
@@ -57,5 +60,8 @@ button {
   }
   svg {
     height: 2rem !important;
+    @media (max-width: 550px) {
+      height: 1.25rem !important;
+    }
   }
 }

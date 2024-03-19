@@ -11,6 +11,7 @@ import Header from './components/Headers';
 import MiniGallery from './components/MiniGallery';
 import Video from './components/Video';
 import Gallery from './components/Gallery';
+import Divider from './components/Divider';
 
 export default function Home() {
   const initialPlayer = Math.floor(Math.random() * 2);
@@ -21,46 +22,54 @@ export default function Home() {
   };
 
   return (
-    <div style={{ marginTop: 36 }}>
+    <div>
       <Header player={player} setPlayer={handlePlayerChange} />
 
       <main className={styles.main}>
         <section>
-          <Video player={player} setPlayer={handlePlayerChange} />
-          <div
-            className='center'
-            style={{
-              display: 'flex',
-              alignItems: 'center',
-              justifyContent: 'center',
-            }}
-          >
-            <button
+          <div className='inner'>
+            <Video player={player} setPlayer={handlePlayerChange} />
+            <div
+              className='center'
               style={{
-                paddingTop: 8,
-                paddingBottom: 8,
-                margin: 0,
-                marginRight: 8,
                 display: 'flex',
                 alignItems: 'center',
+                justifyContent: 'center',
               }}
             >
-              <FontAwesomeIcon icon={faArrowLeft} style={{ marginRight: 12 }} />{' '}
-              Læs hele Marks historie
-            </button>
-            <button
-              style={{
-                paddingTop: 8,
-                paddingBottom: 8,
-                margin: 0,
-                marginLeft: 8,
-                display: 'flex',
-                alignItems: 'center',
-              }}
-            >
-              Læs Claudines historie her{' '}
-              <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: 12 }} />
-            </button>
+              <button
+                style={{
+                  paddingTop: 8,
+                  paddingBottom: 8,
+                  margin: 0,
+                  marginRight: 8,
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+              >
+                <FontAwesomeIcon
+                  icon={faArrowLeft}
+                  style={{ marginRight: 12 }}
+                />{' '}
+                Læs Marks historie her
+              </button>
+              <button
+                style={{
+                  paddingTop: 8,
+                  paddingBottom: 8,
+                  margin: 0,
+                  marginLeft: 8,
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
+              >
+                Læs Claudines historie her{' '}
+                <FontAwesomeIcon
+                  icon={faArrowRight}
+                  style={{ marginLeft: 12 }}
+                />
+              </button>
+            </div>
           </div>
         </section>
         <section style={{ marginBottom: -24 }}>
@@ -135,11 +144,7 @@ export default function Home() {
           </div>
         </section>
         <Gallery images={['01', '02', '03']} />
-        <section>
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />
-        </section>
+        <Divider />
         <section>
           <div className='inner'>
             <div className='largetext'>
@@ -192,11 +197,7 @@ export default function Home() {
             </p>
           </div>
         </section>
-        <section>
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />
-        </section> */}
+<Divider /> */}
         <section>
           <div className='inner'>
             <div className='largetext box'>
@@ -218,11 +219,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />
-        </section>
+        <Divider />
         <section>
           <div className='inner'>
             <div className='largetext box right'>
@@ -237,11 +234,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <section>
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />{' '}
-          <img className='logoicon' src='images/icons/ball2.png' />
-        </section>
+        <Divider />
 
         <section>
           <div className='inner'>
@@ -359,33 +352,37 @@ export default function Home() {
                 TO VERDENER <br />
                 SAMME MÅL
               </h3>
-              <h5>om projekt</h5>
+
               <p>
-                DHF har 8.300 medlemmer i godt 40 lokalkredse rundt om i
-                Danmark. DHF arbejder internationalt med udviklingsprojekter i
-                otte lande i Asien, Afrika og Mellemamerika
+                <i>To Verdener – Samme Mål</i> er blevet til i samarbejde med
+                Dansk Handicap Forbund.
               </p>
-              <br />
-              <h5>sponsors</h5>
+              <p>
+                Tak til CISU og Timbuktu Fonden for økonomisk støtte og for
+                opbakning fra Danske Handicaporganisationer, Parasport Danmark,
+                DGI, Vejle Kommune og NPC Rwanda.
+              </p>
             </div>
-            <div className='small'>
+            {/* <div className='small'>
               {' '}
               <h5>om mark</h5>
               <h5>om claudine</h5>
-            </div>
+            </div> */}
             <div className='small'>
               {' '}
               <h5>kontakt</h5>
               <p>
-                photographs were taken by photographer Tine Harden and are up
-                for sale
+                Hanne Selnæs:{' '}
+                <a href='mailto:hanne.selnaes@gmail.com' className='underlined'>
+                  hanne.selnaes@gmail.com
+                </a>{' '}
               </p>
               <p>
-                contact{' '}
-                <a href='mailto:tine@tineharden.dk'>tine@tineharden.dk</a>
+                Tine Harden:{' '}
+                <a href='mailto:tine@tineharden.dk' className='underlined'>
+                  tine@harden.dk
+                </a>
               </p>
-              <p>texts are written by journalist Hanne Selnæs</p>
-              <p>contact hanne.selnaes@gmail.com</p>
             </div>
           </div>
         </footer>

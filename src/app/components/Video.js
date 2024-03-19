@@ -1,23 +1,10 @@
 export default function Video({ player, setPlayer }) {
   return (
     <div className='videogallery'>
-      <video
-        src='/video/claudine_sm.mp4'
-        className='absolute'
-        // onClick={() => {
-        //   console.log('videoclicked');
-        //   setPlayer(0);
-        // }}
-        autoPlay
-        muted
-      />
+      <video src='/video/claudine_sm.mp4' className='absolute' autoPlay muted />
       <video
         src='/video/mark_sm.mp4'
         className={`absolute ${player === 0 ? 'none' : ''}`}
-        // onClick={() => {
-        //   console.log('videoclicked');
-        //   setPlayer(1);
-        // }}
         autoPlay
         muted
       />

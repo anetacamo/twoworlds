@@ -1,6 +1,6 @@
 'use client';
 import React, { useState } from 'react';
-import Hamburger from '../components/Hamburger';
+import Hamburger from './Hamburger';
 
 export default function Header({ player, setPlayer }) {
   const [open, setOpen] = useState(false);
@@ -38,12 +38,12 @@ export default function Header({ player, setPlayer }) {
           </li>
         </ul>
       </nav>
-      <nav className='desktop'>
+      {/* <nav className='desktop'>
         <ul>
           <li>Projekt</li>
           <li>DHF</li>
         </ul>
-      </nav>
+      </nav> */}
       <Hamburger open={open} handleClick={() => setOpen(!open)} />
       <div
         className={`overlay ${open ? 'open' : ''}`}
