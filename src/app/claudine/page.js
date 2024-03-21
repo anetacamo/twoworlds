@@ -1,13 +1,55 @@
-import React from 'react';
+'use client';
+
+import React, { useState } from 'react';
 import HeaderSidePage from '../components/HeaderSidePage';
 import Divider from '../components/Divider';
+import Video from '../components/Video';
 
 export default function Claudine() {
+  const initialPlayer = 0;
+  const [player, setPlayer] = useState(initialPlayer);
+  const [open, setOpen] = useState(false);
+
+  const handlePlayerAndScreenChange = (newPlayer) => {
+    setPlayer(newPlayer);
+    setOpen(true);
+    console.log('screen changed');
+  };
+
+  const handlePlayerChange = (newPlayer) => {
+    setPlayer(newPlayer);
+  };
+
   return (
     <div>
-      <HeaderSidePage />
+      <HeaderSidePage
+        player={player}
+        setPlayerAndOpen={handlePlayerAndScreenChange}
+      />
+
+      <div className={`overlay ${open ? 'open' : ''}`}>
+        {open && (
+          <div className='hamburger' onClick={() => setOpen(false)}>
+            <div className='hamburger-menu'>
+              <div className={`bar-01 icon-bar opened`}></div>
+              <div className={`bar-02 icon-bar opened`}></div>
+              <div className={`bar-03 icon-bar opened`}></div>
+            </div>
+          </div>
+        )}
+
+        <div>
+          <Video
+            player={player}
+            setPlayer={handlePlayerChange}
+            large
+            open={open}
+          />
+        </div>
+      </div>
       <main style={{ marginTop: 150 }}>
         <Divider />
+
         <section style={{ textAlign: 'center' }}>
           <div className='largetext'>
             <h1>om claudine</h1>

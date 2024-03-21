@@ -3,7 +3,11 @@
 import Link from 'next/link';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+import {
+  faArrowRight,
+  faArrowLeft,
+  faExpand,
+} from '@fortawesome/free-solid-svg-icons';
 import styles from './page.module.css';
 import React, { useState } from 'react';
 import GridGallery from './components/GridGallery';
@@ -16,6 +20,7 @@ import Divider from './components/Divider';
 export default function Home() {
   const initialPlayer = Math.floor(Math.random() * 2);
   const [player, setPlayer] = useState(initialPlayer);
+  const [open, setOpen] = useState(false);
 
   const handlePlayerChange = (newPlayer) => {
     setPlayer(newPlayer);
@@ -26,8 +31,40 @@ export default function Home() {
       <Header player={player} setPlayer={handlePlayerChange} />
 
       <main className={styles.main}>
+        <div className={`overlay ${open ? 'open' : ''}`}>
+          {open && (
+            <div className='hamburger' onClick={() => setOpen(false)}>
+              <div className='hamburger-menu'>
+                <div className={`bar-01 icon-bar opened`}></div>
+                <div className={`bar-02 icon-bar opened`}></div>
+                <div className={`bar-03 icon-bar opened`}></div>
+              </div>
+            </div>
+          )}
+          <div>
+            <Video
+              player={player}
+              setPlayer={handlePlayerChange}
+              large
+              open={open}
+            />
+          </div>
+        </div>
         <section>
           <div className='inner'>
+            <div className='videotextbox'>
+              <div>
+                Klik på video og skift mellem Claudine og Marks historie
+              </div>
+              <div
+                onClick={() => setOpen(!open)}
+                style={{ cursor: 'pointer' }}
+                className='desktop'
+              >
+                se fullscreen{' '}
+                <FontAwesomeIcon icon={faExpand} style={{ marginLeft: 12 }} />{' '}
+              </div>
+            </div>
             <Video player={player} setPlayer={handlePlayerChange} />
             <div
               className='center'

@@ -10,6 +10,16 @@
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
+
+  &.large {
+    width: 1000px;
+    height: 600px;
+  }
+  &.hidden {
+    display: none;
+  }
+  //   position: fixed;
+  // z-index: 10;
   @media (max-width: 770px) {
     width: 100%;
     height: 0;
@@ -49,4 +59,14 @@
   .none {
     display: none;
   }
+}
+.videotextbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 710px;
+  margin: auto;
+  font-weight: 100;
+  font-size: 14px;
+  letter-spacing: 1px;
 }

@@ -3,31 +3,46 @@ import React, { useState } from 'react';
 import Hamburger from './Hamburger';
 import Link from 'next/link';
 
-export default function HeaderSidePage() {
+export default function HeaderSidePage({ setPlayerAndOpen, player }) {
   const [open, setOpen] = useState(false);
   return (
     <header>
-      <Link href='/'>
-        <div className='logo desktop'>
+      <div className='logo desktop'>
+        <Link href='/'>
           <div>
             To Verdener
             <br />
             <span>Samme Mål</span>
           </div>
-        </div>
-      </Link>
-      <div className='logo mobile'>
-        <div>
-          <img className='logoicon' src='images/icons/ball2.png' />
-        </div>
+        </Link>
       </div>
+
+      <div className='logo mobile'>
+        {' '}
+        <Link href='/'>
+          <div>
+            <img className='logoicon' src='images/icons/ball2.png' />
+          </div>{' '}
+        </Link>
+      </div>
+
       <nav>
         <ul>
-          <li className={`right 'highlighted'`}>Om Claudine</li>
+          <li
+            className={`right ${player === 1 ? 'highlighted' : ''}`}
+            onClick={() => setPlayerAndOpen(1)}
+          >
+            Om Claudine
+          </li>
           <li>
             <img className='icon' src='images/icons/airplane.png' />
           </li>
-          <li>Om Mark</li>
+          <li
+            className={player === 0 ? 'highlighted' : ''}
+            onClick={() => setPlayerAndOpen(0)}
+          >
+            Om Mark
+          </li>
         </ul>
       </nav>
       <nav className='desktop'>

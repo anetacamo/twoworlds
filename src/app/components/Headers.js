@@ -2,6 +2,15 @@
 import React, { useState } from 'react';
 import Hamburger from './Hamburger';
 
+// add the link to homepage
+// + make sure it loads well
+// + image gallery
+// mark is showing claudine
+// add fullscreen
+// add button for pause and play
+// button play again after its over + Afspil igen
+// portrain/landscape mode
+
 export default function Header({ player, setPlayer }) {
   const [open, setOpen] = useState(false);
   return (
