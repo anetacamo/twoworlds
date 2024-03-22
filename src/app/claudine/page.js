@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 'use client';
 
 import React, { useState } from 'react';
@@ -50,6 +51,18 @@ export default function Claudine() {
       <main style={{ marginTop: 150 }}>
         <Divider />
 
+=======
+import React from 'react';
+import HeaderSidePage from '../components/HeaderSidePage';
+import Divider from '../components/Divider';
+
+export default function Claudine() {
+  return (
+    <div>
+      <HeaderSidePage />
+      <main style={{ marginTop: 150 }}>
+        <Divider />
+>>>>>>> 3c1ee4f878ed6f822b0a41a5d4b4c9e67b398b16
         <section style={{ textAlign: 'center' }}>
           <div className='largetext'>
             <h1>om claudine</h1>

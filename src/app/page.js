@@ -3,11 +3,15 @@
 import Link from 'next/link';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+<<<<<<< HEAD
 import {
   faArrowRight,
   faArrowLeft,
   faExpand,
 } from '@fortawesome/free-solid-svg-icons';
+=======
+import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
+>>>>>>> 3c1ee4f878ed6f822b0a41a5d4b4c9e67b398b16
 import styles from './page.module.css';
 import React, { useState } from 'react';
 import GridGallery from './components/GridGallery';
@@ -31,6 +35,7 @@ export default function Home() {
       <Header player={player} setPlayer={handlePlayerChange} />
 
       <main className={styles.main}>
+<<<<<<< HEAD
         <div className={`overlay ${open ? 'open' : ''}`}>
           {open && (
             <div className='hamburger' onClick={() => setOpen(false)}>
@@ -65,6 +70,10 @@ export default function Home() {
                 <FontAwesomeIcon icon={faExpand} style={{ marginLeft: 12 }} />{' '}
               </div>
             </div>
+=======
+        <section>
+          <div className='inner'>
+>>>>>>> 3c1ee4f878ed6f822b0a41a5d4b4c9e67b398b16
             <Video player={player} setPlayer={handlePlayerChange} />
             <div
               className='center'
