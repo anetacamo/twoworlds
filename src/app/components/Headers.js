@@ -2,7 +2,6 @@
 import React, { useState } from 'react';
 import Hamburger from './Hamburger';
 
-<<<<<<< HEAD
 // add the link to homepage
 // + make sure it loads well
 // + image gallery
@@ -12,8 +11,6 @@ import Hamburger from './Hamburger';
 // button play again after its over + Afspil igen
 // portrain/landscape mode
 
-=======
->>>>>>> 3c1ee4f878ed6f822b0a41a5d4b4c9e67b398b16
 export default function Header({ player, setPlayer }) {
   const [open, setOpen] = useState(false);
   return (

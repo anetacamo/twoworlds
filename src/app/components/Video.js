@@ -1,10 +1,6 @@
 export default function Video({ player, setPlayer, large, open }) {
   return (
-<<<<<<< HEAD
     <div className={`videogallery ${large ? (open ? 'large' : 'hidden') : ''}`}>
-=======
-    <div className='videogallery'>
->>>>>>> 3c1ee4f878ed6f822b0a41a5d4b4c9e67b398b16
       <video src='/video/claudine_sm.mp4' className='absolute' autoPlay muted />
       <video
         src='/video/mark_sm.mp4'

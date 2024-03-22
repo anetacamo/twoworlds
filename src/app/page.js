@@ -35,7 +35,6 @@ export default function Home() {
       <Header player={player} setPlayer={handlePlayerChange} />
 
       <main className={styles.main}>
-<<<<<<< HEAD
         <div className={`overlay ${open ? 'open' : ''}`}>
           {open && (
             <div className='hamburger' onClick={() => setOpen(false)}>
@@ -70,10 +69,6 @@ export default function Home() {
                 <FontAwesomeIcon icon={faExpand} style={{ marginLeft: 12 }} />{' '}
               </div>
             </div>
-=======
-        <section>
-          <div className='inner'>
->>>>>>> 3c1ee4f878ed6f822b0a41a5d4b4c9e67b398b16
             <Video player={player} setPlayer={handlePlayerChange} />
             <div
               className='center'
