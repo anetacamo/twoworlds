@@ -18,7 +18,7 @@ import Gallery from './components/Gallery';
 import Divider from './components/Divider';
 
 export default function Home() {
-  const initialPlayer = Math.floor(Math.random() * 2);
+  const initialPlayer = 0;
   const [player, setPlayer] = useState(initialPlayer);
   const [open, setOpen] = useState(false);
 
