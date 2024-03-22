@@ -3,27 +3,17 @@ import React, { useState } from 'react';
 import Hamburger from './Hamburger';
 import Link from 'next/link';
 
-<<<<<<< HEAD
 export default function HeaderSidePage({ setPlayerAndOpen, player }) {
   const [open, setOpen] = useState(false);
   return (
     <header>
       <div className='logo desktop'>
         <Link href='/'>
-=======
-export default function HeaderSidePage() {
-  const [open, setOpen] = useState(false);
-  return (
-    <header>
-      <Link href='/'>
-        <div className='logo desktop'>
->>>>>>> 3c1ee4f878ed6f822b0a41a5d4b4c9e67b398b16
           <div>
             To Verdener
             <br />
             <span>Samme Mål</span>
           </div>
-<<<<<<< HEAD
         </Link>
       </div>
 
@@ -53,22 +43,6 @@ export default function HeaderSidePage() {
           >
             Om Mark
           </li>
-=======
-        </div>
-      </Link>
-      <div className='logo mobile'>
-        <div>
-          <img className='logoicon' src='images/icons/ball2.png' />
-        </div>
-      </div>
-      <nav>
-        <ul>
-          <li className={`right 'highlighted'`}>Om Claudine</li>
-          <li>
-            <img className='icon' src='images/icons/airplane.png' />
-          </li>
-          <li>Om Mark</li>
->>>>>>> 3c1ee4f878ed6f822b0a41a5d4b4c9e67b398b16
         </ul>
       </nav>
       <nav className='desktop'>
