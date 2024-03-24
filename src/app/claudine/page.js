@@ -3,6 +3,7 @@
 import React, { useState } from 'react';
 import HeaderSidePage from '../components/HeaderSidePage';
 import Divider from '../components/Divider';
+import GridGallery from '../components/GridGallery';
 import Video from '../components/Video';
 
 export default function Claudine() {
@@ -59,25 +60,6 @@ export default function Claudine() {
         <section>
           <div className='inner'>
             <div className='largetext'>
-              {/* <h5>om claudine</h5>
-              <h2>Jeg vil være en af verdens bedste</h2>{' '}
-              <p className='blue'>
-                Når Claudine og hendes hold vender hjem efter en sejr i
-                udlandet, går det ikke stille for sig. Når Claudine og hendes
-                hold vender hjem efter en sejr i udlandet, går det ikke stille
-                for sig. I åbne busser kører kvindelandsholdet hujende og
-                syngende gennem hovedstadens gader, fylder godt på Instagram og
-                bliver interviewet til Rwandas TV og radio.
-              </p>
-              <p>
-                Claudine og kvindelandsholdet i siddende volleyball er blevet
-                sportsstjerner. Og Claudine drømmer stadig om mere.
-              </p> */}
-              {/* <p>
-                Billedtekst: Lige efter OL i Paris til sommer rejser Claudine
-                med sit hold til den franske hovedstad, hvor de stiller op til
-                PL - de Paralympiske Lege Paris 2024. Foto Tine Harden
-              </p> */}
               <h2 className='blue'>Jeg vil være en af verdens bedste</h2>
               <h2>
                 Claudine er blevet en sportsstjerne i sit eget land Rwanda. Og
@@ -303,6 +285,29 @@ export default function Claudine() {
                 <i> Kilder: Parasport Danmark og IPC, Rwanda.</i>
               </p>
             </div>
+            <Divider />
+            <h2>Billede Gallery</h2>
+            <p>by Tine Harden</p>
+            <GridGallery
+              name='claudine'
+              images={[
+                '01',
+                '02',
+                '03',
+                '04',
+                '05',
+                '06',
+                '07',
+                '08',
+                '09',
+                '010',
+                '011',
+                '012',
+                '013',
+                '014',
+                '015',
+              ]}
+            />
           </div>
         </section>
         <Divider />
