@@ -22,8 +22,10 @@
 .grid-gallery {
   flex-wrap: wrap;
   margin: 0 -12px;
+
   .container {
     flex: 1;
+    cursor: pointer;
   }
   img {
     min-width: 180px;

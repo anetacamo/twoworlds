@@ -124,8 +124,8 @@ body {
     letter-spacing: 0.8px;
     font-weight: 300;
   }
-  .right {
-    border-right: 12px solid #9d9fff;
+  &.right {
+    border-right: 12px solid #9d9fff !important;
     padding-right: 24px;
     border-left: none;
     text-align: right;
