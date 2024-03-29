@@ -10,6 +10,11 @@
   margin-bottom: 24px;
   margin-left: auto;
   margin-right: auto;
+  border: 3px solid rgba($teal, 0.5);
+  border-radius: 8px;
+  &.border-orange {
+    border-color: rgba($orange, 0.5);
+  }
 
   &.large {
     width: 1000px;

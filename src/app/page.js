@@ -3,19 +3,15 @@
 import Link from 'next/link';
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import {
-  faArrowRight,
-  faArrowLeft,
-  faExpand,
-} from '@fortawesome/free-solid-svg-icons';
+import { faExpand } from '@fortawesome/free-solid-svg-icons';
 import styles from './page.module.css';
 import React, { useState } from 'react';
 import GridGallery from './components/GridGallery';
-import Header from './components/Headers';
-import MiniGallery from './components/MiniGallery';
+import Header from './components/Header';
 import Video from './components/Video';
-import Gallery from './components/Gallery';
 import Divider from './components/Divider';
+import CloseButton from './components/CloseButton';
+import NameSwitch from './components/NameSwitch';
 
 export default function Home() {
   const initialPlayer = 0;
@@ -28,27 +24,22 @@ export default function Home() {
 
   return (
     <div>
-      <Header player={player} setPlayer={handlePlayerChange} />
+      <Header player={player} handlePlayerChange={handlePlayerChange} />
 
       <main className={styles.main}>
         <div className={`overlay ${open ? 'open' : ''}`}>
           {open && (
-            <div className='hamburger' onClick={() => setOpen(false)}>
-              <div className='hamburger-menu'>
-                <div className={`bar-01 icon-bar opened`}></div>
-                <div className={`bar-02 icon-bar opened`}></div>
-                <div className={`bar-03 icon-bar opened`}></div>
-              </div>
-            </div>
+            <>
+              <NameSwitch setPlayer={handlePlayerChange} player={player} />
+              <CloseButton handleClick={() => setOpen(false)} />
+              <Video
+                player={player}
+                setPlayer={handlePlayerChange}
+                large
+                open={open}
+              />
+            </>
           )}
-          <div>
-            <Video
-              player={player}
-              setPlayer={handlePlayerChange}
-              large
-              open={open}
-            />
-          </div>
         </div>
         <section>
           <div className='inner'>
@@ -76,6 +67,7 @@ export default function Home() {
             >
               <Link href='/mark'>
                 <button
+                  className='button-teal'
                   style={{
                     paddingTop: 8,
                     paddingBottom: 8,
@@ -85,15 +77,12 @@ export default function Home() {
                     alignItems: 'center',
                   }}
                 >
-                  <FontAwesomeIcon
-                    icon={faArrowLeft}
-                    style={{ marginRight: 12 }}
-                  />{' '}
                   Læs Marks historie her
                 </button>
               </Link>
               <Link href='/claudine'>
                 <button
+                  className='button-orange'
                   style={{
                     paddingTop: 8,
                     paddingBottom: 8,
@@ -104,10 +93,6 @@ export default function Home() {
                   }}
                 >
                   Læs Claudines historie her{' '}
-                  <FontAwesomeIcon
-                    icon={faArrowRight}
-                    style={{ marginLeft: 12 }}
-                  />
                 </button>
               </Link>
             </div>
@@ -120,7 +105,7 @@ export default function Home() {
             <div className='largetext center'>
               <h1>
                 Om{' '}
-                <span className='blue'>
+                <span className='orange'>
                   To Verdener <br />
                   Samme Mål
                 </span>
@@ -136,7 +121,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <MiniGallery claudine='01' mark='04' />
+
+        <GridGallery images={['claudine/01', 'mark/04']} />
+
         <section style={{ marginBottom: -24, marginTop: -24 }}>
           <div className='inner'>
             <div className='largetext center'>
@@ -157,7 +144,9 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <MiniGallery claudine='06' mark='07' />
+        {/* <MiniGallery claudine='06' mark='07' /> */}
+        <GridGallery images={['claudine/06', 'mark/07']} />
+        <Divider />
         <section>
           <h1 className='center'>
             mark og
@@ -167,9 +156,9 @@ export default function Home() {
         <section style={{ textAlign: 'right' }}>
           <div className='inner'>
             <div className='largetext'>
-              <h5>om claudine</h5>
+              {/* <h5>om claudine</h5> */}
               <h2>Jeg vil være en af verdens bedste</h2>{' '}
-              <p className='blue'>
+              <p className='pink'>
                 Når Claudine og hendes hold vender hjem efter en sejr i
                 udlandet, går det ikke stille for sig.
               </p>
@@ -186,14 +175,15 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Gallery images={['01', '02', '03']} />
+
+        <GridGallery images={['claudine/01', 'claudine/02', 'claudine/03']} />
         <Divider />
         <section>
           <div className='inner'>
             <div className='largetext'>
-              <h5>om mark</h5>
+              {/* <h5>om mark</h5> */}
               <h2>Uden rugby var jeg blevet monsterfed</h2>{' '}
-              <p className='blue'>
+              <p className='teal'>
                 ”Uden rugby i mit liv havde jeg spillet meget computerspil og
                 var blevet monsterfed. Jeg ville have kedet mig, men jeg ville
                 også have haft masser af tid til at være sammen med kæresten,”
@@ -211,36 +201,10 @@ export default function Home() {
             </div>
           </div>
 
-          <GridGallery images={['01', '02', '03']} />
+          <GridGallery images={['mark/01', 'mark/02', 'mark/03']} />
         </section>
-        {/* <section>
-          <div className='largetext'>
-            <p>
-              Ikke kun i et udviklingsland, hvor mennesker med handicap ofte er
-              at finde blandt samfundets mest udsatte og fattige, men også i et
-              velfærdssamfund som Danmark.
-            </p>
 
-            <p>
-              Over hele verden kan muligheden for at dyrke sport, få mennesker
-              til at drømme stort – og deres liv kan tage en helt ny og positiv
-              drejning- uanset køn, handicap og nationalitet.
-            </p>
-          </div>
-        </section>
-        <MiniGallery claudine='05' mark='03' />
-        <section>
-          <div className='largetext'>
-            <p>
-              Det sætter vores projekt ’To Verdener – Samme Mål’ spot på. Gennem
-              holdsport har vores hovedpersoner, Claudine fra Rwanda og Mark fra
-              Danmark, fået venner, livsmod og selvtillid. I dag er de på hver
-              deres måde rollemodeller for os andre. Mød dem. Her på siden og
-              ude i virkeligheden til de Paralympiske Lege i Paris 2024.
-            </p>
-          </div>
-        </section>
-<Divider /> */}
+        <Divider />
         <section>
           <div className='inner'>
             <div className='largetext box'>
@@ -262,7 +226,7 @@ export default function Home() {
             </div>
           </div>
         </section>
-        <Divider />
+
         <section>
           <div className='inner'>
             <div className='largetext box right'>
@@ -290,13 +254,13 @@ export default function Home() {
                 </i>
               </p>
               <p>
-                <span className='blue'>Tine Harden</span> er en
+                <span className='orange'>Tine Harden</span> er en
                 sportsinteresseret og prisvindende fotograf, som blandt andet
                 har lavet fotobogen ’A kick out of Africa’ op til VM i Sydafrika
                 i 2010.
               </p>
               <p>
-                <span className='blue'>Hanne Selnæs</span> er uddannet
+                <span className='teal'>Hanne Selnæs</span> er uddannet
                 journalist og kommunikerer primært om udsatte menneskers vilkår,
                 muligheder og rettigheder – hjemme som ude.
               </p>
@@ -315,14 +279,14 @@ export default function Home() {
             <div className='largetext'>
               <h2>Vores partners</h2>
               <p>
-                <span className='blue'>Dansk Handicap Forbund, DHF</span>{' '}
+                <span className='pink'>Dansk Handicap Forbund, DHF</span>{' '}
                 arbejder for at mennesker med bevægelseshandicap har samme
                 rettigheder som alle andre. DHF har 8.300 medlemmer i Danmark.
                 Internationalt er DHF engageret i udviklingsprojekter i otte
                 lande i Asien, Afrika og Mellemamerika.
               </p>
               <p>
-                Sammen med <span className='blue'>Parasport Danmark</span> er vi
+                Sammen med <span className='pink'>Parasport Danmark</span> er vi
                 med til at styrke adgangen til parasport i Nepal, Bolivia,
                 Vietnam og Uganda. Parasport Danmark arbejder for, at alle
                 mennesker med handicap eller særlige behov skal have mulighed
@@ -332,7 +296,7 @@ export default function Home() {
               </p>
               <p>
                 Som Danmarks{' '}
-                <span className='blue'>National Paralympiske Komite</span>{' '}
+                <span className='pink'>National Paralympiske Komite</span>{' '}
                 sigter vi også mod at fostre eliteatleter og rollemodeller i
                 verdensklasse. Internationalt er vi engageret i
                 udviklingsprojekter, der styrker adgangen til parasport. I
@@ -364,7 +328,7 @@ export default function Home() {
             styrker adgangen til parasport i Nepal, Bolivia, Vietnam og Uganda.
           </p>
           <p>
-            <span className='blue'>
+            <span className='pink'>
               National Paralympic Commitee, NPC, Rwanda
             </span>{' '}
             er Parasport Danmarks pendant i Rwanda. NPC samler, promoverer og
@@ -388,6 +352,7 @@ export default function Home() {
             <p>i samarbejde med Dansk Handicap Forbund (DHF).</p>
           </div>
         </section> */}
+        <Divider />
         <footer>
           <div className='inner'>
             <div className='large'>

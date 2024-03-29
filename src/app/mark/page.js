@@ -1,5 +1,5 @@
 import React from 'react';
-import Header from '../components/Headers';
+import Header from '../components/Header';
 import Video from '../components/Video';
 import Divider from '../components/Divider';
 
@@ -18,9 +18,8 @@ export default function Mark() {
 
         <section>
           <div className='largetext'>
-            <h5>om claudine</h5>
             <h2>Uden rugby havde jeg spillet meget computerspil</h2>{' '}
-            <p className='blue'>
+            <p className='pink'>
               Når Claudine og hendes hold vender hjem efter en sejr i udlandet,
               går det ikke stille for sig.
             </p>

@@ -34,3 +34,39 @@ You can check out [the Next.js GitHub repository](https://github.com/vercel/next
 The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+
+## TODO
+
+// add captions to pictures
+// pause and start buttons - Afspil igen
+// sound not playing
+// time indicator?
+// not playing on phone
+// add accessibility - tabs
+// footer
+// ad claudines video on hp
+
+### DONE
+
+- skip om claudine
+- switch Claudine and Mark in header
+- names in fullscreen too
+- menu should be present even on the desktop
+- add menu items
+- dropdown menu, also on the desktop
+- mark is showing claudine
+- full screen to black
+- change colors
+- style the boxes same on
+- thin line where the video will play
+
+* add fullscreen
+* image gallery
+* add the link to homepage
+
+### needs more info + for later
+
+- remove rounded corners
+- video compression
+- portrait/landscape mode
+- can the video it be exported as iframe

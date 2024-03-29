@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faArrowRight, faArrowLeft } from '@fortawesome/free-solid-svg-icons';
 
-export default function GridGallery({ images, name = 'mark' }) {
+export default function GridGallery({ images }) {
   const [open, setOpen] = useState(null);
   return (
     <>
@@ -21,7 +21,7 @@ export default function GridGallery({ images, name = 'mark' }) {
           <div className='img-holder'>
             <div className='container'>
               <img
-                src={`/images/${name}/0${open + 1}.png`}
+                src={`/images/${images[open]}.png`}
                 className='img-contain'
               />
             </div>
@@ -33,13 +33,13 @@ export default function GridGallery({ images, name = 'mark' }) {
               className='arrow-left'
               onClick={() => setOpen(open === 0 ? images.length - 1 : open - 1)}
             >
-              <FontAwesomeIcon icon={faArrowLeft} style={{ marginLeft: 12 }} />
+              <FontAwesomeIcon icon={faArrowLeft} />
             </div>
             <div
               className='arrow-right'
-              onClick={() => setOpen(open === images.length - 1 ? 0 : open + 1)}
+              onClick={() => setOpen(open + 1 === images.length ? 0 : open + 1)}
             >
-              <FontAwesomeIcon icon={faArrowRight} style={{ marginLeft: 12 }} />
+              <FontAwesomeIcon icon={faArrowRight} />
             </div>
           </div>
         )}
@@ -54,12 +54,8 @@ export default function GridGallery({ images, name = 'mark' }) {
 
       <div className='gallery large-gallery grid-gallery'>
         {images.map((image, index) => (
-          <div
-            className='container'
-            key={index}
-            onClick={() => setOpen(parseInt(image))}
-          >
-            <img src={`/images/${name}/${image}.png`} />
+          <div className='container' key={index} onClick={() => setOpen(index)}>
+            <img src={`/images/${image}.png`} />
           </div>
         ))}
       </div>

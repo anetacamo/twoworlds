@@ -1,10 +1,12 @@
 'use client';
 
 import React, { useState } from 'react';
-import HeaderSidePage from '../components/HeaderSidePage';
+import Header from '../components/Header';
 import Divider from '../components/Divider';
 import GridGallery from '../components/GridGallery';
 import Video from '../components/Video';
+import CloseButton from '../components/CloseButton';
+import NameSwitch from '../components/NameSwitch';
 
 export default function Claudine() {
   const initialPlayer = 0;
@@ -14,7 +16,6 @@ export default function Claudine() {
   const handlePlayerAndScreenChange = (newPlayer) => {
     setPlayer(newPlayer);
     setOpen(true);
-    console.log('screen changed');
   };
 
   const handlePlayerChange = (newPlayer) => {
@@ -23,44 +24,35 @@ export default function Claudine() {
 
   return (
     <div>
-      <HeaderSidePage
+      <Header
         player={player}
-        setPlayerAndOpen={handlePlayerAndScreenChange}
+        handlePlayerChange={handlePlayerAndScreenChange}
       />
-
       <div className={`overlay ${open ? 'open' : ''}`}>
         {open && (
-          <div className='hamburger' onClick={() => setOpen(false)}>
-            <div className='hamburger-menu'>
-              <div className={`bar-01 icon-bar opened`}></div>
-              <div className={`bar-02 icon-bar opened`}></div>
-              <div className={`bar-03 icon-bar opened`}></div>
-            </div>
-          </div>
+          <>
+            <NameSwitch setPlayer={handlePlayerChange} player={player} />
+            <CloseButton handleClick={() => setOpen(false)} />
+            <Video
+              player={player}
+              setPlayer={handlePlayerChange}
+              large
+              open={open}
+            />
+          </>
         )}
-
-        <div>
-          <Video
-            player={player}
-            setPlayer={handlePlayerChange}
-            large
-            open={open}
-          />
-        </div>
       </div>
       <main style={{ marginTop: 150 }}>
         <Divider />
 
         <section style={{ textAlign: 'center' }}>
-          <div className='largetext'>
-            <h1>om claudine</h1>
-          </div>
+          <div className='largetext'>{/* <h1>om claudine</h1> */}</div>
         </section>
 
         <section>
           <div className='inner'>
             <div className='largetext'>
-              <h2 className='blue'>Jeg vil være en af verdens bedste</h2>
+              <h2 className='orange'>Jeg vil være en af verdens bedste</h2>
               <h2>
                 Claudine er blevet en sportsstjerne i sit eget land Rwanda. Og
                 hun drømmer om mere. Hun vil være en af de allerbedste spillere
@@ -70,7 +62,7 @@ export default function Claudine() {
                 <i>Af Hanne Selnæs</i>
               </p>
               <Divider />
-              <p className='blue'>
+              <p className='orange'>
                 Når kvindernes landshold i siddende volleyball vender hjem efter
                 en sejr i udlandet, går det ikke stille for sig. I åbne busser
                 kører kvinderne hujende og syngende gennem hovedstadens gader,
@@ -104,7 +96,7 @@ export default function Claudine() {
                 sammen givet mig både selvværd og et åbent sind,” siger hun i
                 dag. Men sådan har det ikke altid været.
               </p>
-              <h2 className='blue' style={{ marginTop: 60 }}>
+              <h2 className='orange' style={{ marginTop: 60 }}>
                 {' '}
                 Jeg har altid elsket volleyball
               </h2>
@@ -131,7 +123,7 @@ export default function Claudine() {
                 spaghetti på trækul i baggården, mens sønnen XX på 5 år
                 nysgerrigt følger med i snakken.
               </p>
-              <p className='blue' style={{ marginTop: 60 }}>
+              <p className='orange' style={{ marginTop: 60 }}>
                 Mistede benet under folkemord
               </p>
               <p>
@@ -168,7 +160,7 @@ export default function Claudine() {
                 ”Jeg kan ikke huske noget, men har fået det fortalt,” siger
                 Claudine.
               </p>
-              <p className='blue' style={{ marginTop: 60 }}>
+              <p className='orange' style={{ marginTop: 60 }}>
                 {' '}
                 Drilleri gjorde mig ked af det og vred
               </p>
@@ -185,7 +177,7 @@ export default function Claudine() {
                 søster og jeg var meget tætte, så vi hjalp også hinanden – og
                 sammen bankede vi så de børn, der drillede mig,” fortæller hun.
               </p>
-              <p className='blue' style={{ marginTop: 60 }}>
+              <p className='orange' style={{ marginTop: 60 }}>
                 {' '}
                 Sport har givet mig et godt liv
               </p>
@@ -227,35 +219,81 @@ export default function Claudine() {
                 ”Sport er livet,” siger Claudine med et stort smil, inden vi
                 tager afsked.{' '}
               </p>
-              <h4 style={{ marginTop: 60 }}>BOKS 1 </h4>
-              <p className='blue'>Fakta om folkemordet i Rwanda </p>
-              <p>
-                I 1994 fandt et folkedrab sted i Rwanda. løbet af tre måneder
-                blev omkring 800.000 tutsier og moderate hutuer slået ihjel af
-                ekstremistiske hutuer og deres medløbere.
-              </p>
-              <p>
-                {' '}
-                Hadefuld tale og massiv propaganda gennem medierne spillede
-                hutuer ud mod tutsier, og opfordrede ekstremister blandt
-                hutuerne til at myrde deres tutsi-naboer.
-              </p>
-              <p>
-                Hutuer og tutsier har samme sprog, kultur og religion. Tutsier
-                udgør et mindretal af befolkningen.
-              </p>
-              <p>
-                {' '}
-                Ved folkedrabets afslutning var landet i ruiner og to millioner
-                mennesker var drevet på flugt - tusindvis var sårede og
-                traumatiserede. Rwanda, som er på størrelse med Jylland, skulle
-                bygges op fra grunden.
-              </p>
-              <p>
-                <i>Kilder: DIIS og UNRIC</i>
-              </p>
-              <h4 style={{ marginTop: 60 }}> BOKS 2</h4>
-              <p className='blue'> FAKTA om Siddende Volleyball</p>
+
+              <section>
+                <div className='inner'>
+                  <div className='largetext box box-teal'>
+                    <h4 style={{ marginTop: 60 }}>BOKS 1 </h4>
+                    <h2 className='teal'>Fakta om folkemordet i Rwanda </h2>
+                    <p>
+                      I 1994 fandt et folkedrab sted i Rwanda. løbet af tre
+                      måneder blev omkring 800.000 tutsier og moderate hutuer
+                      slået ihjel af ekstremistiske hutuer og deres medløbere.
+                    </p>
+                    <p>
+                      {' '}
+                      Hadefuld tale og massiv propaganda gennem medierne
+                      spillede hutuer ud mod tutsier, og opfordrede ekstremister
+                      blandt hutuerne til at myrde deres tutsi-naboer.
+                    </p>
+                    <p>
+                      Hutuer og tutsier har samme sprog, kultur og religion.
+                      Tutsier udgør et mindretal af befolkningen.
+                    </p>
+                    <p>
+                      {' '}
+                      Ved folkedrabets afslutning var landet i ruiner og to
+                      millioner mennesker var drevet på flugt - tusindvis var
+                      sårede og traumatiserede. Rwanda, som er på størrelse med
+                      Jylland, skulle bygges op fra grunden.
+                    </p>
+                    <p>
+                      <i>Kilder: DIIS og UNRIC</i>
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <div className='inner'>
+                  <div className='largetext box right box-orange'>
+                    <h4 style={{ marginTop: 60 }}> BOKS 2</h4>
+                    <h2 className='orange'>Fakta om Siddende Volleyball</h2>
+                    <p>
+                      {' '}
+                      Siddende volley, også kaldet paravolley, er den største
+                      holdidræt ved de Paralympiske Lege.
+                    </p>
+                    <p>
+                      {' '}
+                      I siddende volley sidder spillerne på gulvet og bevæger
+                      sig rundt ved hjælp af armene. Banen er mindre end en
+                      almindelig volleyballbane og nettets højde er 1.15 meter.
+                      Der spilles som udgangspunkt efter reglerne i almen volley
+                      med nogle få justeringer. Boldene er de samme i begge
+                      typer volleyball.
+                    </p>
+                    <p>
+                      {' '}
+                      I Danmark er der lige nu kun to klubber, som tilbyder
+                      siddende volley: Lavia Aarhus og Lavia København. I Rwanda
+                      er der hele XX klubber.
+                    </p>
+                    <p>
+                      {' '}
+                      Syv landes kvindehold har kvalificeret sig til de
+                      Paralympiske Lege, Paris 2024. Udover Rwanda er det
+                      Canada, Brasilien USA, Kina, Frankrig og Italien.
+                    </p>
+                    <p>
+                      <i> Kilder: Parasport Danmark og IPC, Rwanda.</i>
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              {/* <h4 style={{ marginTop: 60 }}> BOKS 2</h4>
+              <p className='orange'> FAKTA om Siddende Volleyball</p>
               <p>
                 {' '}
                 Siddende volley, også kaldet paravolley, er den største
@@ -283,29 +321,28 @@ export default function Claudine() {
               </p>
               <p>
                 <i> Kilder: Parasport Danmark og IPC, Rwanda.</i>
-              </p>
+              </p> */}
             </div>
             <Divider />
             <h2>Billede Gallery</h2>
             <p>by Tine Harden</p>
             <GridGallery
-              name='claudine'
               images={[
-                '01',
-                '02',
-                '03',
-                '04',
-                '05',
-                '06',
-                '07',
-                '08',
-                '09',
-                '010',
-                '011',
-                '012',
-                '013',
-                '014',
-                '015',
+                'claudine/01',
+                'claudine/02',
+                'claudine/03',
+                'claudine/04',
+                'claudine/05',
+                'claudine/06',
+                'claudine/07',
+                'claudine/08',
+                'claudine/09',
+                'claudine/010',
+                'claudine/011',
+                'claudine/012',
+                'claudine/013',
+                'claudine/014',
+                'claudine/015',
               ]}
             />
           </div>

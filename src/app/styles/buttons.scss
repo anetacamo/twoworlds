@@ -21,7 +21,7 @@
 //   margin-top: 5px;
 // }
 
-// $colors: 'red', 'yellow', 'blue', 'lightgray', 'black', 'white';
+// $colors: 'red', 'yellow', 'pink', 'lightgray', 'black', 'white';
 
 // @each $color in $colors {
 //   .btn-#{$color} {
@@ -39,8 +39,8 @@
 
 button {
   padding: 12px 20px;
-  border: 2px solid #9d9fff;
-  color: #9d9fff;
+  border: 2px solid $pink;
+  color: $pink;
   outline: none;
   background-color: transparent;
   font-size: 12px;
@@ -53,7 +53,7 @@ button {
   }
 
   &:hover {
-    background-color: #9d9fff;
+    background-color: $pink;
     transition-duration: 350ms;
     color: black;
     cursor: pointer;
@@ -63,5 +63,23 @@ button {
     @media (max-width: 550px) {
       height: 1.25rem !important;
     }
+  }
+}
+
+.button-teal {
+  border-color: $teal;
+  color: $teal;
+  &:hover {
+    background-color: $teal;
+    color: white;
+  }
+}
+
+.button-orange {
+  border-color: $orange;
+  color: $orange;
+  &:hover {
+    background-color: $orange;
+    color: white;
   }
 }

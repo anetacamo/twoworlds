@@ -1,0 +1,29 @@
+$teal: rgba(18, 189, 144, 1);
+$pink: rgba(161, 34, 117, 1);
+$orange: rgba(228, 116, 51, 1);
+
+.hover-teal {
+  &:hover {
+    color: $teal;
+  }
+}
+.hover-orange {
+  &:hover {
+    color: $orange;
+  }
+}
+.hover-pink {
+  &:hover {
+    color: $pink;
+  }
+}
+
+.teal {
+  color: $teal;
+}
+.orange {
+  color: $orange;
+}
+.pink {
+  color: $pink;
+}
