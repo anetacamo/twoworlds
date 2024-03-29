@@ -37,28 +37,30 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO
 
-// add captions to pictures
-// pause and start buttons - Afspil igen
-// sound not playing
-// time indicator?
-// not playing on phone
-// add accessibility - tabs
-// footer
-// ad claudines video on hp
+- add captions to pictures
+- pause and start buttons - Afspil igen
+- sound not playing
+- time indicator?
+- not playing on phone
+- add accessibility - tabs
+- add claudines video on hp
+- footer
 
 ### DONE
 
 - skip om claudine
 - switch Claudine and Mark in header
-- names in fullscreen too
-- menu should be present even on the desktop
+- names and possibility to click in fullscreen too
+- menu should be present also on the desktop
 - add menu items
 - dropdown menu, also on the desktop
 - mark is showing claudine
-- full screen to black
+- full screen gray background removed
 - change colors
-- style the boxes same on
+- style the boxes on claudines page too
 - thin line where the video will play
+- added captions to the pictures
+- marks page ready
 
 * add fullscreen
 * image gallery

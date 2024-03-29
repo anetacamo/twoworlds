@@ -328,21 +328,21 @@ export default function Claudine() {
             <p>by Tine Harden</p>
             <GridGallery
               images={[
-                'claudine/01',
-                'claudine/02',
-                'claudine/03',
-                'claudine/04',
-                'claudine/05',
-                'claudine/06',
-                'claudine/07',
-                'claudine/08',
-                'claudine/09',
-                'claudine/010',
-                'claudine/011',
-                'claudine/012',
-                'claudine/013',
-                'claudine/014',
-                'claudine/015',
+                { caption: '', image: 'claudine/01' },
+                { caption: '', image: 'claudine/02' },
+                { caption: '', image: 'claudine/03' },
+                { caption: '', image: 'claudine/04' },
+                { caption: '', image: 'claudine/05' },
+                { caption: '', image: 'claudine/06' },
+                { caption: '', image: 'claudine/07' },
+                { caption: '', image: 'claudine/08' },
+                { caption: '', image: 'claudine/09' },
+                { caption: '', image: 'claudine/10' },
+                { caption: '', image: 'claudine/11' },
+                { caption: '', image: 'claudine/12' },
+                { caption: '', image: 'claudine/13' },
+                { caption: '', image: 'claudine/14' },
+                { caption: '', image: 'claudine/15' },
               ]}
             />
           </div>

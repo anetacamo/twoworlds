@@ -21,7 +21,7 @@ export default function GridGallery({ images }) {
           <div className='img-holder'>
             <div className='container'>
               <img
-                src={`/images/${images[open]}.png`}
+                src={`/images/${images[open].image}.png`}
                 className='img-contain'
               />
             </div>
@@ -46,7 +46,8 @@ export default function GridGallery({ images }) {
         {open != null && (
           <div className='caption-holder'>
             <div className='caption'>
-              {open + 1} / {images.length} <i>by Tine Harden</i>
+              {open + 1} / {images.length}{' '}
+              <i>{images[open].caption} by Tine Harden</i>
             </div>
           </div>
         )}
@@ -55,7 +56,7 @@ export default function GridGallery({ images }) {
       <div className='gallery large-gallery grid-gallery'>
         {images.map((image, index) => (
           <div className='container' key={index} onClick={() => setOpen(index)}>
-            <img src={`/images/${image}.png`} />
+            <img src={`/images/${image.image}.png`} />
           </div>
         ))}
       </div>

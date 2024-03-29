@@ -122,7 +122,12 @@ export default function Home() {
           </div>
         </section>
 
-        <GridGallery images={['claudine/01', 'mark/04']} />
+        <GridGallery
+          images={[
+            { caption: '', image: 'claudine/01' },
+            { caption: '', image: 'mark/04' },
+          ]}
+        />
 
         <section style={{ marginBottom: -24, marginTop: -24 }}>
           <div className='inner'>
@@ -144,8 +149,12 @@ export default function Home() {
             </div>
           </div>
         </section>
-        {/* <MiniGallery claudine='06' mark='07' /> */}
-        <GridGallery images={['claudine/06', 'mark/07']} />
+        <GridGallery
+          images={[
+            { caption: '', image: 'claudine/06' },
+            { caption: '', image: 'mark/07' },
+          ]}
+        />
         <Divider />
         <section>
           <h1 className='center'>
@@ -158,7 +167,7 @@ export default function Home() {
             <div className='largetext'>
               {/* <h5>om claudine</h5> */}
               <h2>Jeg vil være en af verdens bedste</h2>{' '}
-              <p className='pink'>
+              <p className='orange'>
                 Når Claudine og hendes hold vender hjem efter en sejr i
                 udlandet, går det ikke stille for sig.
               </p>
@@ -170,13 +179,21 @@ export default function Home() {
                 sportsstjerner. Og Claudine drømmer stadig om mere.
               </p>{' '}
               <Link href='/claudine'>
-                <button>Læs Claudines historie her</button>
+                <button className='button-orange'>
+                  Læs Claudines historie her
+                </button>
               </Link>
             </div>
           </div>
         </section>
 
-        <GridGallery images={['claudine/01', 'claudine/02', 'claudine/03']} />
+        <GridGallery
+          images={[
+            { caption: '', image: 'claudine/01' },
+            { caption: '', image: 'claudine/02' },
+            { caption: '', image: 'claudine/03' },
+          ]}
+        />
         <Divider />
         <section>
           <div className='inner'>
@@ -196,12 +213,18 @@ export default function Home() {
                 hans blik kun rettet mod de Paralympiske Lege i Paris.
               </p>
               <Link href='/mark'>
-                <button>Læs hele Marks historie</button>
+                <button className='button-teal'>Læs hele Marks historie</button>
               </Link>
             </div>
           </div>
 
-          <GridGallery images={['mark/01', 'mark/02', 'mark/03']} />
+          <GridGallery
+            images={[
+              { caption: '', image: 'mark/01' },
+              { caption: '', image: 'mark/02' },
+              { caption: '', image: 'mark/03' },
+            ]}
+          />
         </section>
 
         <Divider />
@@ -229,7 +252,7 @@ export default function Home() {
 
         <section>
           <div className='inner'>
-            <div className='largetext box right'>
+            <div className='largetext box right box-orange'>
               <h2>Para- hvilke lege? </h2>
               <p>
                 De Paralympiske Lege er verdens største internationale
@@ -254,7 +277,7 @@ export default function Home() {
                 </i>
               </p>
               <p>
-                <span className='orange'>Tine Harden</span> er en
+                <span className='teal'>Tine Harden</span> er en
                 sportsinteresseret og prisvindende fotograf, som blandt andet
                 har lavet fotobogen ’A kick out of Africa’ op til VM i Sydafrika
                 i 2010.
