@@ -333,11 +333,16 @@ export default function Claudine() {
                 { caption: '', image: 'mark/03' },
                 { caption: '', image: 'mark/04' },
                 { caption: '', image: 'mark/05' },
-                { caption: '', image: 'mark/06' },
+
                 { caption: '', image: 'mark/07' },
                 { caption: '', image: 'mark/08' },
                 { caption: '', image: 'mark/09' },
                 { caption: '', image: 'mark/10' },
+                { caption: '', image: 'mark/11' },
+                { caption: '', image: 'mark/12' },
+                { caption: '', image: 'mark/13' },
+                { caption: '', image: 'mark/14' },
+                { caption: '', image: 'mark/15' },
               ]}
             />
           </div>

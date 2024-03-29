@@ -337,12 +337,12 @@ export default function Claudine() {
                 { caption: '', image: 'claudine/07' },
                 { caption: '', image: 'claudine/08' },
                 { caption: '', image: 'claudine/09' },
-                { caption: '', image: 'claudine/10' },
-                { caption: '', image: 'claudine/11' },
-                { caption: '', image: 'claudine/12' },
-                { caption: '', image: 'claudine/13' },
-                { caption: '', image: 'claudine/14' },
-                { caption: '', image: 'claudine/15' },
+                { caption: '', image: 'claudine/010' },
+                { caption: '', image: 'claudine/011' },
+                { caption: '', image: 'claudine/012' },
+                { caption: '', image: 'claudine/013' },
+                { caption: '', image: 'claudine/014' },
+                { caption: '', image: 'claudine/015' },
               ]}
             />
           </div>
