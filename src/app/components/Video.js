@@ -21,9 +21,15 @@ export default function Video({ player, setPlayer, large, open }) {
         autoPlay
         muted
         onClick={() => {
-          console.log('videoclicked');
           setPlayer(0);
         }}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            setPlayer(0);
+          }
+        }}
+        role='button'
+        tabIndex='0'
       />
       <video
         src='/video/mark_sm.mp4'
@@ -31,9 +37,15 @@ export default function Video({ player, setPlayer, large, open }) {
         autoPlay
         muted
         onClick={() => {
-          console.log('videoclicked');
           setPlayer(1);
         }}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            setPlayer(1);
+          }
+        }}
+        role='button'
+        tabIndex='0'
       />
     </div>
   );

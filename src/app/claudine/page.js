@@ -7,6 +7,7 @@ import GridGallery from '../components/GridGallery';
 import Video from '../components/Video';
 import CloseButton from '../components/CloseButton';
 import NameSwitch from '../components/NameSwitch';
+import VideoSingle from '../components/VideoSingle';
 
 export default function Claudine() {
   const initialPlayer = 0;
@@ -43,8 +44,6 @@ export default function Claudine() {
         )}
       </div>
       <main style={{ marginTop: 150 }}>
-        <Divider />
-
         <section style={{ textAlign: 'center' }}>
           <div className='largetext'>{/* <h1>om claudine</h1> */}</div>
         </section>
@@ -61,6 +60,8 @@ export default function Claudine() {
               <p>
                 <i>Af Hanne Selnæs</i>
               </p>
+              <Divider />
+              <VideoSingle player='claudine' />
               <Divider />
               <p className='orange'>
                 Når kvindernes landshold i siddende volleyball vender hjem efter
@@ -324,8 +325,8 @@ export default function Claudine() {
               </p> */}
             </div>
             <Divider />
-            <h2>Billede Gallery</h2>
-            <p>by Tine Harden</p>
+            <h2>Gallery</h2>
+            <i>all images were taken by Tine Harden</i>
             <GridGallery
               images={[
                 { caption: '', image: 'claudine/01' },

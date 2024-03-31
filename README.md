@@ -37,14 +37,11 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO
 
-- add captions to pictures
 - pause and start buttons - Afspil igen
 - sound not playing
 - time indicator?
 - not playing on phone
-- add accessibility - tabs
-- add claudines video on hp
-- footer
+- footer finish
 
 ### DONE
 
@@ -61,14 +58,19 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - thin line where the video will play
 - added captions to the pictures
 - marks page ready
+- add captions to pictures
+- add claudines video on hp
+- add accessibility - tabs
 
 * add fullscreen
 * image gallery
 * add the link to homepage
 
-### needs more info + for later
+### needs more info / for later / final steps
 
 - remove rounded corners
 - video compression
 - portrait/landscape mode
 - can the video it be exported as iframe
+- connect to text editor
+- connect to new website

@@ -15,6 +15,14 @@ export default function Header({ player, handlePlayerChange }) {
       <div
         className={`overlay ${open ? 'open' : ''}`}
         onClick={() => setOpen(false)}
+        onKeyDown={(event) => {
+          if (event.key === 'Enter' || event.key === ' ') {
+            setOpen(false);
+          } else if (event.key === 'Escape' && open) {
+            setOpen(false);
+          }
+        }}
+        role='button'
       >
         {open && (
           <ul className='overlay-menu flex'>
@@ -30,8 +38,12 @@ export default function Header({ player, handlePlayerChange }) {
               </Link>
             </div>
             <div style={{ display: 'flex', alignItems: 'center' }}>
-              <li className='hover-pink'>da</li> |
-              <li className='hover-pink'>en</li>
+              <Link href='/'>
+                <li className='hover-pink'>da</li>
+              </Link>{' '}
+              <Link href='/' onKeyDown={() => setOpen(false)}>
+                |<li className='hover-pink'>en</li>
+              </Link>
             </div>
           </ul>
         )}

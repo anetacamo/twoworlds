@@ -37,7 +37,9 @@
 //   }
 // }
 
-button {
+button,
+.button {
+  display: inline-block;
   padding: 12px 20px;
   border: 2px solid $pink;
   color: $pink;

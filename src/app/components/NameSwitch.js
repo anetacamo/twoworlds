@@ -7,6 +7,13 @@ export default function NameSwitch({ player, setPlayer }) {
         <li
           className={`hover-teal ${player === 0 ? 'highlighted' : ''}`}
           onClick={() => setPlayer(0)}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              setPlayer(0);
+            }
+          }}
+          role='button'
+          tabIndex='0'
         >
           Mark
         </li>
@@ -22,6 +29,13 @@ export default function NameSwitch({ player, setPlayer }) {
         <li
           className={`right hover-orange ${player === 1 ? 'highlighted' : ''}`}
           onClick={() => setPlayer(1)}
+          onKeyDown={(event) => {
+            if (event.key === 'Enter' || event.key === ' ') {
+              setPlayer(1);
+            }
+          }}
+          role='button' // Adding role="button" to indicate it's an interactive element
+          tabIndex='0'
         >
           Claudine
         </li>

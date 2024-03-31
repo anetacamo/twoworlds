@@ -27,20 +27,6 @@ export default function Home() {
       <Header player={player} handlePlayerChange={handlePlayerChange} />
 
       <main className={styles.main}>
-        <div className={`overlay ${open ? 'open' : ''}`}>
-          {open && (
-            <>
-              <NameSwitch setPlayer={handlePlayerChange} player={player} />
-              <CloseButton handleClick={() => setOpen(false)} />
-              <Video
-                player={player}
-                setPlayer={handlePlayerChange}
-                large
-                open={open}
-              />
-            </>
-          )}
-        </div>
         <section>
           <div className='inner'>
             <div className='videotextbox'>
@@ -49,10 +35,22 @@ export default function Home() {
               </div>
               <div
                 onClick={() => setOpen(!open)}
-                style={{ cursor: 'pointer' }}
-                className='desktop'
+                onKeyDown={(event) => {
+                  if (event.key === 'Enter' || event.key === ' ') {
+                    setOpen(!open);
+                  }
+                }}
+                role='button'
+                tabIndex='0'
+                style={{
+                  cursor: 'pointer',
+                  display: 'flex',
+                  alignItems: 'center',
+                }}
               >
-                se fullscreen{' '}
+                <p className='desktop' style={{ margin: 0 }}>
+                  se fullscreen{' '}
+                </p>
                 <FontAwesomeIcon icon={faExpand} style={{ marginLeft: 12 }} />{' '}
               </div>
             </div>
@@ -66,8 +64,8 @@ export default function Home() {
               }}
             >
               <Link href='/mark'>
-                <button
-                  className='button-teal'
+                <div
+                  className='button button-teal'
                   style={{
                     paddingTop: 8,
                     paddingBottom: 8,
@@ -78,11 +76,11 @@ export default function Home() {
                   }}
                 >
                   Læs Marks historie her
-                </button>
+                </div>
               </Link>
               <Link href='/claudine'>
-                <button
-                  className='button-orange'
+                <div
+                  className='button button-orange'
                   style={{
                     paddingTop: 8,
                     paddingBottom: 8,
@@ -93,11 +91,35 @@ export default function Home() {
                   }}
                 >
                   Læs Claudines historie her{' '}
-                </button>
+                </div>
               </Link>
             </div>
           </div>
         </section>
+
+        <div
+          className={`overlay ${open ? 'open' : ''}`}
+          onKeyDown={(event) => {
+            if (event.key === 'Escape' && open) {
+              setOpen(false);
+            }
+          }}
+          role='button'
+        >
+          {open && (
+            <>
+              <NameSwitch setPlayer={handlePlayerChange} player={player} />
+              <CloseButton handleClick={() => setOpen(false)} />
+              <Video
+                player={player}
+                setPlayer={handlePlayerChange}
+                large
+                open={open}
+              />
+              <div onKeyDown={() => setOpen(false)} tabIndex={0}></div>
+            </>
+          )}
+        </div>
 
         <Divider />
         <section style={{ marginBottom: -24 }}>
@@ -179,9 +201,9 @@ export default function Home() {
                 sportsstjerner. Og Claudine drømmer stadig om mere.
               </p>{' '}
               <Link href='/claudine'>
-                <button className='button-orange'>
+                <div className='button button-orange'>
                   Læs Claudines historie her
-                </button>
+                </div>
               </Link>
             </div>
           </div>
@@ -213,7 +235,9 @@ export default function Home() {
                 hans blik kun rettet mod de Paralympiske Lege i Paris.
               </p>
               <Link href='/mark'>
-                <button className='button-teal'>Læs hele Marks historie</button>
+                <div className='button button-teal'>
+                  Læs hele Marks historie
+                </div>
               </Link>
             </div>
           </div>
