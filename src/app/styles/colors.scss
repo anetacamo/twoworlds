@@ -5,16 +5,19 @@ $orange: rgba(228, 116, 51, 1);
 .hover-teal {
   &:hover {
     color: $teal;
+    transition-duration: 350ms;
   }
 }
 .hover-orange {
   &:hover {
     color: $orange;
+    transition-duration: 350ms;
   }
 }
 .hover-pink {
   &:hover {
     color: $pink;
+    transition-duration: 350ms;
   }
 }
 

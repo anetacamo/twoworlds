@@ -40,9 +40,10 @@ export default function Header({ player, handlePlayerChange }) {
             <div style={{ display: 'flex', alignItems: 'center' }}>
               <Link href='/'>
                 <li className='hover-pink'>da</li>
-              </Link>{' '}
+              </Link>
+              <div style={{ fontSize: 20, margin: '0 0.25rem 0.25rem' }}>|</div>
               <Link href='/' onKeyDown={() => setOpen(false)}>
-                |<li className='hover-pink'>en</li>
+                <li className='hover-pink'>en</li>
               </Link>
             </div>
           </ul>

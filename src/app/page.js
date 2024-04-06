@@ -2,8 +2,6 @@
 
 import Link from 'next/link';
 
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faExpand } from '@fortawesome/free-solid-svg-icons';
 import styles from './page.module.css';
 import React, { useState } from 'react';
 import GridGallery from './components/GridGallery';
@@ -29,7 +27,7 @@ export default function Home() {
       <main className={styles.main}>
         <section>
           <div className='inner'>
-            <div className='videotextbox'>
+            {/* <div className='videotextbox'>
               <div>
                 Klik på video og skift mellem Claudine og Marks historie
               </div>
@@ -42,19 +40,25 @@ export default function Home() {
                 }}
                 role='button'
                 tabIndex='0'
+                className='hover-teal'
                 style={{
                   cursor: 'pointer',
                   display: 'flex',
                   alignItems: 'center',
+                  fontSize: 20,
                 }}
               >
-                <p className='desktop' style={{ margin: 0 }}>
-                  se fullscreen{' '}
-                </p>
+                <FontAwesomeIcon icon={faPlay} style={{ marginLeft: 12 }} />{' '}
+                <FontAwesomeIcon icon={faPause} style={{ marginLeft: 12 }} />{' '}
+                <FontAwesomeIcon icon={faRepeat} style={{ marginLeft: 12 }} />{' '}
                 <FontAwesomeIcon icon={faExpand} style={{ marginLeft: 12 }} />{' '}
               </div>
-            </div>
-            <Video player={player} setPlayer={handlePlayerChange} />
+            </div> */}
+            <Video
+              player={player}
+              setPlayer={handlePlayerChange}
+              setOpen={() => setOpen(!open)}
+            />
             <div
               className='center'
               style={{
