@@ -28,13 +28,16 @@ export default function Header({ player, handlePlayerChange }) {
           <ul className='overlay-menu flex'>
             <div className='main-links'>
               <Link href='/'>
-                <li className='hover-orange'>om projekt</li>
+                <li className='hover-orange'>om projektet</li>
               </Link>
               <Link href='/mark'>
                 <li className='hover-orange'>om mark</li>
               </Link>
               <Link href='/claudine'>
                 <li className='hover-orange'>om claudine</li>
+              </Link>
+              <Link href='/#hvem-er-vi'>
+                <li className='hover-orange'>Hvem er vi</li>
               </Link>
             </div>
             <div style={{ display: 'flex', alignItems: 'center' }}>

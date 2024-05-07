@@ -37,14 +37,20 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO
 
-- pause and start buttons - Afspil igen
 - sound not playing
+- sound is lacking
 - time indicator?
 - not playing on phone
 - footer finish
+- interactive video haeadline
+- move the balls
+- under pictures on main page add link to see all the pictures
+- the video in fullscreen should continue playing at the same time as it played in the mainpage
 
 ### DONE
 
+- added mark
+- pictures before fakta boxes
 - skip om claudine
 - switch Claudine and Mark in header
 - names and possibility to click in fullscreen too
@@ -61,6 +67,7 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - add captions to pictures
 - add claudines video on hp
 - add accessibility - tabs
+- pause and start buttons - Afspil igen
 
 * add fullscreen
 * image gallery

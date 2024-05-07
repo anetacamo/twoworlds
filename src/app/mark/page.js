@@ -1,12 +1,12 @@
-'use client';
+"use client";
 
-import React, { useState } from 'react';
-import Header from '../components/Header';
-import Divider from '../components/Divider';
-import GridGallery from '../components/GridGallery';
-import Video from '../components/Video';
-import CloseButton from '../components/CloseButton';
-import NameSwitch from '../components/NameSwitch';
+import React, { useState } from "react";
+import Header from "../components/Header";
+import Divider from "../components/Divider";
+import GridGallery from "../components/GridGallery";
+import Video from "../components/Video";
+import CloseButton from "../components/CloseButton";
+import NameSwitch from "../components/NameSwitch";
 
 export default function Claudine() {
   const initialPlayer = 0;
@@ -28,7 +28,7 @@ export default function Claudine() {
         player={player}
         handlePlayerChange={handlePlayerAndScreenChange}
       />
-      <div className={`overlay ${open ? 'open' : ''}`}>
+      <div className={`overlay ${open ? "open" : ""}`}>
         {open && (
           <>
             <NameSwitch setPlayer={handlePlayerChange} player={player} />
@@ -45,306 +45,262 @@ export default function Claudine() {
       <main style={{ marginTop: 150 }}>
         <Divider />
 
-        <section style={{ textAlign: 'center' }}>
-          <div className='largetext'>{/* <h1>om claudine</h1> */}</div>
+        <section style={{ textAlign: "center" }}>
+          <div className="largetext">{/* <h1>om claudine</h1> */}</div>
         </section>
 
         <section>
-          <div className='inner'>
-            <div className='largetext'>
-              <h2 className='teal'>Jeg vil være en af verdens bedste</h2>
+          <div className="inner">
+            <div className="largetext">
+              <h2 className="teal">Uden rugby var jeg blevet monsterfed</h2>
               <h2>
-                Claudine er blevet en sportsstjerne i sit eget land Rwanda. Og
-                hun drømmer om mere. Hun vil være en af de allerbedste spillere
-                i verden. Sportsgrenen hedder siddende volleyball.
+                Som professionel kampsoldat var Mark Peters i ’stjernegod form’
+                og brugte masser af tid på at træne. Da han mistede begge ben,
+                var det svært for ham at sidde stille hele dagen. Kørestolsrugby
+                fik ham til at træne igen. ”Ellers var jeg blevet monsterfed”,
+                siger Mark, som i dag drømmer om at vinde guld indenfor denne
+                særlige kontaktsport.
               </h2>
+
               <p>
                 <i>Af Hanne Selnæs</i>
               </p>
               <Divider />
-              <p className='teal'>
-                Når kvindernes landshold i siddende volleyball vender hjem efter
-                en sejr i udlandet, går det ikke stille for sig. I åbne busser
-                kører kvinderne hujende og syngende gennem hovedstadens gader,
-                fylder godt på Instagram og bliver interviewet til Rwandas TV og
-                radio.
+              <p className="teal">
+                I november er ørkenen i Afghanistan iskold om natten. Det er
+                efter sådan en nat, at Mark Peters i 2009 er på patrulje i
+                Helmandprovinsen. Han er 26 år og afsted på sin femte udsendelse
+                som professionel soldat. Siden Mark blev soldat som 18-årig, har
+                han fem gange været udsendt af forsvaret til Kosovo, Irak og nu
+                Afghanistan.
               </p>
               <p>
-                For kvinderne på Claudines hold er blevet sportsstjerner i
-                Rwanda. Til sommer skal de til Paris og deltage i de
-                Paralympiske Lege. Det er fjerde gang det afrikanske hold
-                kvalificerer sig. Sidst var i Tokyo2020. Her blev det til en XX
-                plads. Nu drømmer Claudine om at blive en af de bedste spillere
-                i verden.
+                ”I forhold til tidligere, så går det faktisk stille og roligt,”
+                husker Mark i dag. Men der er sket noget nyt: ”Nu ligger fjenden
+                nede i jorden – i form af vejsidebomber. Det var vi ikke helt
+                vant til. Det havde mere været mand mod mand,” siger han.
               </p>
               <p>
-                {' '}
-                Måske lykkes det. Landstræneren fra Ægypten har store
-                ambitioner. Hans plan er, at kvinderne en dag kommer hjem fra de
-                Paralympiske Lege med en bronzemedalje – dog først i 2028.
+                ”Den dag på patrulje, har jeg meget udstyr på ryggen. Grøften,
+                som vi skal over, er lidt bred. Så i stedet for at springe over,
+                går jeg ned i grøften - lige som de to foran mig,” siger Mark og
+                tilføjer: ”Her ligger så en hilsen til mig.” For Mark træder
+                lige ned på en landmine og får sprængt begge ben i stykker.
               </p>
-              <p>
-                {' '}
-                I mellemtiden træner Claudine hårdt og vil samtidig hjælpe unge
-                kvinder med et handicap til et bedre liv. Sådan som hun selv har
-                fået et bedre liv gennem sporten.
-              </p>
-              <p>
-                {' '}
-                ”Siddende volleyball har betydet, at jeg har fået mange gode
-                venner og tætte venskaber og mulighed for at rejse. Det har alt
-                sammen givet mig både selvværd og et åbent sind,” siger hun i
-                dag. Men sådan har det ikke altid været.
-              </p>
-              <h2 className='teal' style={{ marginTop: 60 }}>
-                {' '}
-                Jeg har altid elsket volleyball
+
+              <h2 className="teal" style={{ marginTop: 60 }}>
+                Træner til de Paralympiske Lege
               </h2>
               <p>
-                {' '}
-                Da Claudine var barn, troede de fleste naboer og venner ikke, at
-                hun duede til noget som helst. For hun manglede et ben og havde
-                fået stemplet som ’handicappet’. Men Claudines tante overtalte
-                Claudines forældre til, at hun skulle i skole og lære noget.
+                I dag er det ikke krig, som optager Mark. Men derimod kampen om
+                medaljer og ikke mindst træningen frem til de Paralympiske Lege
+                (PL) i Paris fra 28. august til 8. september 2024.
               </p>
               <p>
-                {' '}
-                På kostskolen for børn med handicap opdagede Claudine, at der
-                var en sportsgren, der hed ’siddende volleyball’, som hun kunne
-                være med i. Man sidder på jorden og spiller hen over et lavt
-                net. Claudine havde altid elsket volleyball, så det var lige
-                noget for hende.
+                Mark Peters er en af profilerne på det danske landshold i
+                kørestolsrugby og en af verdens bedste spillere inden for
+                sportsgrenen. For fire år siden lykkedes det landsholdet at
+                kvalificere sig til PL i Tokyo for første gang nogensinde.
+                Selvom det ikke blev til medaljer, men en syvende plads, så var
+                det en kæmpe succes for holdet at nå til PL. Og landsholdet i
+                kørestolsrugby har nu for anden gang kvalificeret sig til PL.
               </p>
               <p>
-                {' '}
-                ”Da jeg fandt ud af, at jeg kunne spille siddende volleyball,
-                blev jeg meget, meget glad,” fortæller hun mig, da vi sidder i
-                hendes stue efter en turnering i nabobyen. Hendes mand koger
-                spaghetti på trækul i baggården, mens sønnen XX på 5 år
-                nysgerrigt følger med i snakken.
+                For Mark og holdkammeraterne handler det derfor om at være så
+                fit og parate som muligt. Når arbejdsdagen i Forsvarets
+                materielstyrelse slutter for Mark, er der ikke meget tid til
+                familie og venner. For der skal trænes. Hjemme, på stier og
+                veje, i fitnesscentret og på Musholm ved Korsør, hvor
+                landsholdet mødes til camp og turneringer. Et konference- og
+                sportscenter som har særligt velegnede faciliteter til
+                parasport.
               </p>
-              <p className='teal' style={{ marginTop: 60 }}>
-                Mistede benet under folkemord
-              </p>
-              <p>
-                Claudines søn er kun et år ældre, end Claudine selv var, da hun
-                mistede sit ben. Det var under Folkemordet i Rwanda i 1994. I
-                længere tid var der gennem radio og andre kanaler spredt hadtale
-                mod et mindretal af befolkningen, tutsier. Den anden store
-                befolkningsgruppe, hutuer, blev bevæbnet eller fandt selv hakker
-                og knive frem. Og en dag gik det løs. Naboer gik løs på naboer.
-                Tutsier i tusindvis blev dræbt. Et folkemord skyllede ind over
-                det lille land, børn og voksne blev drevet på flugt, mens de
-                forsøgte at skjule sig undervejs.
+              <p className="teal" style={{ marginTop: 60 }}>
+                Følelsesregister, fællesskab og selvtillid{" "}
               </p>
               <p>
-                Claudine på kun fire år flygtede til fods sammen med sin
-                familie. Hendes mor bar Claudines yngste søster på ryggen og
-                Claudine gik ved siden af dem. Pludselig stod en bevæbnet mand
-                foran dem. Han skød mod Claudine og ramte hende i benet.
+                Gennem sportsaktiviteter for sårede soldater blev Mark i sin tid
+                introduceret til kørestolsrugby, som han dog ikke umiddelbart
+                faldt for:
               </p>
               <p>
-                {' '}
-                Også hendes far blev skudt i benet og kunne ikke længere gå. Da
-                Claudines bedstemor kom til, blev også hun skudt og døde.
+                ”Handicapsporten, det var sjovt, men i starten tænkte jeg, at
+                det var lidt en erstatning for noget bedre og derfor ikke så
+                godt. Men man skal jo ikke tænke det som erstatninger. Det er
+                bare en mulighed, der hvor du er nu. Jeg havde ikke mulighed for
+                at spile kørestolsrugby, før jeg kom til skade, men det kan jeg
+                så nu. For at nå dertil skal man gennem nogle faser og et kæmpe
+                følelsesregister.
               </p>
               <p>
-                {' '}
-                På alle fire kravlede Claudines far videre med Claudine på
-                ryggen, indtil de mødte flere familiemedlemmer. En af dem bar
-                Claudine hele vejen til et hospital i nabolandet Burundi. Det
-                var her, lægerne valgte at amputere hendes ben.
+                På Landsholdet har Mark Peters fundet et nyt stærkt fællesskab
+                og mange gode venner: ”Vi finder sammen efter træning og laver
+                alt muligt: spiller spil og hygger os, holder grill-aftener og
+                ser landskampe sammen. Under Corona-nedlukningen havde vi
+                fredagsbar på Zoom.”
               </p>
               <p>
-                {' '}
-                ”Jeg kan ikke huske noget, men har fået det fortalt,” siger
-                Claudine.
-              </p>
-              <p className='teal' style={{ marginTop: 60 }}>
-                {' '}
-                Drilleri gjorde mig ked af det og vred
+                Mark er særlig glad for at være på et hold: ”Som holdspiller ved
+                man, at man ikke kan vinde selv. Vi vinder kun, hvis vi holder
+                sammen og hjælper hinanden.”
               </p>
               <p>
-                {' '}
-                I mange år vidste Claudine ikke, hvorfor hun kun havde et ben,
-                når hendes søster havde to. Når hun spurgte sin mor, svarede hun
-                ikke. Nogle gange drillede andre børn Claudine, for eksempel ved
-                at tage hendes krykker eller lave sjov ad måden, hun gik på.
+                ”Sporten har givet mig energi og selvtillid. Kørestolsrugby er
+                blevet mit fristed. Uden rugby i mit liv havde jeg nok spillet
+                for meget computerspil og var blevet monsterfed. Jeg ville have
+                kedet mig, men jeg ville også have haft masser af tid til at
+                være sammen med kæresten,” siger Mark Peters, som for nylig blev
+                gift med sin kæreste gennem mange år. Hele landsholdet var med
+                til brylluppet.
+              </p>
+              <p className="teal" style={{ marginTop: 60 }}>
+                Vi elsker alle sammen rugby
               </p>
               <p>
-                {' '}
-                ”Det gjorde mig både ked af det og vred,” husker hun. ”Min
-                søster og jeg var meget tætte, så vi hjalp også hinanden – og
-                sammen bankede vi så de børn, der drillede mig,” fortæller hun.
-              </p>
-              <p className='teal' style={{ marginTop: 60 }}>
-                {' '}
-                Sport har givet mig et godt liv
+                I dag har Mark Peters rundet de 40 år, så selvom han ville
+                ønske, at han kunne være professionel spiller på et
+                kørestolsrugbyhold, så tror han ikke, at det er realistisk. ”Men
+                det kunne være helt vildt fedt at få penge for at spille noget,
+                som jeg elsker så højt, som jeg elsker rugby.”
               </p>
               <p>
-                {' '}
-                ”Siddende volleyball har gjort mig stærkere og givet mig mere
-                energi. Når jeg har deltaget i de paralympiske lege i Rio og
-                Tokyo, har jeg mødt andre med alvorlige handicap. Det har fået
-                mig til at indse, at mit handicap ikke er så slemt,” siger
-                Claudine i dag.
+                På flere af de hold, som Danmark konkurrerer mod på verdensplan,
+                får spillerne penge for at spille på landsholdet.
+              </p>
+              <p className="teal" style={{ marginTop: 60 }}>
+                ”Når de så hører, at mange af de danske spillere arbejder på
+                fuld tid ved siden af træningen, siger de: ’Hvordan fanden kan I
+                så spille rugby på det niveau?’ Det er fordi, vi alle sammen
+                elsker rugby. Vi har den glæde og kærlighed til rugby. Det gør,
+                at vi træner som professionelle,” siger Mark.
               </p>
               <p>
-                {' '}
-                ”Det bedste ved sport er, at du kan få et godt liv,” siger hun:
-                ”Jeg har opdaget, at jeg kan lave mange af de samme ting, som
-                andre med to ben kan. Og jeg kan bidrage til min familie.”{' '}
+                ”Og så er det bare megasjovt at spille kørestolsrugby. Jeg morer
+                mig, jeg synes det er en fed sportsgren, som bare er faldet
+                pladask ind hos mig og så mange andre. Der er både tempo,
+                aggression og taktik, det er en holdsport – og en meget
+                medrivende sportsgren.”
               </p>
               <p>
-                Når landsholdet vinder kampe i udlandet, får spillerne nemlig en
-                del penge fra Sportsministeriet. De penge bruger Claudine mest
-                på at betale for sin søns skolegang og hjælpe sin familie.
+                ”Det er ikke noget, man gør halvt. Hvis vi havde mulighed for at
+                træne 24/7, og få en sindssyg god form, ja så er mulighederne jo
+                nærmest uendelige. Min største drøm er at vinde guld ved nogle
+                af de helt store turneringer som VM og PL.”
               </p>
               <p>
-                {' '}
-                ”Jeg har også købt en benprotese til mig selv, en lille skov og
-                to køer, som er hjemme hos min mor og far. Det betyder meget for
-                mig, at jeg kan hjælpe mine forældre,” siger hun.
+                <i>
+                  Hvis du skal overtale en, der er kommet til skade, til at
+                  melde sig ind i en klub for kørestolsrugby, hvad vil du så
+                  sige?
+                </i>
               </p>
               <p>
-                {' '}
-                Claudines råd til andre med et handicap lyder sådan her: ”Tro på
-                dig selv og vær ikke bange for at spørge andre til råds. Der er
-                mange omkring dig, som kan hjælpe, hvis du bare spørger,” siger
-                Claudine, som lige nu træner hårdt op til sommerens Paralympiske
-                Lege i Paris.
+                ”Først og fremmest får du et godt fællesskab og du lærer at
+                tackle dagligdagen hurtigere og bedre, fordi du bliver stærkere,
+                kommer i bedre form og får mere livsglæde. Det får du ved at
+                opleve, at man godt kan lave sjove ting, selvom man er kommet
+                til skade.”
               </p>
               <p>
-                {' '}
-                ”Sport er livet,” siger Claudine med et stort smil, inden vi
-                tager afsked.{' '}
+                ”Det kan sagtens blive godt igen, selvom man er lam eller
+                mangler ben. Du bestemmer selv, hvordan du vil leve. Men du skal
+                gøre en indsats for at få det liv, du gerne vil have. Hvis du
+                bare sætter dig ned og siger ’kom til mig’, så er det sjældent,
+                at du bliver lykkelig. Det bliver ikke ligesom før, det skal man
+                glemme, man skal tage det, som det kommer nu,” lyder det fra
+                Mark Peters.
               </p>
-
-              <section>
-                <div className='inner'>
-                  <div className='largetext box box-teal'>
-                    <h4 style={{ marginTop: 60 }}>BOKS 1 </h4>
-                    <h2 className='teal'>Fakta om folkemordet i Rwanda </h2>
-                    <p>
-                      I 1994 fandt et folkedrab sted i Rwanda. løbet af tre
-                      måneder blev omkring 800.000 tutsier og moderate hutuer
-                      slået ihjel af ekstremistiske hutuer og deres medløbere.
-                    </p>
-                    <p>
-                      {' '}
-                      Hadefuld tale og massiv propaganda gennem medierne
-                      spillede hutuer ud mod tutsier, og opfordrede ekstremister
-                      blandt hutuerne til at myrde deres tutsi-naboer.
-                    </p>
-                    <p>
-                      Hutuer og tutsier har samme sprog, kultur og religion.
-                      Tutsier udgør et mindretal af befolkningen.
-                    </p>
-                    <p>
-                      {' '}
-                      Ved folkedrabets afslutning var landet i ruiner og to
-                      millioner mennesker var drevet på flugt - tusindvis var
-                      sårede og traumatiserede. Rwanda, som er på størrelse med
-                      Jylland, skulle bygges op fra grunden.
-                    </p>
-                    <p>
-                      <i>Kilder: DIIS og UNRIC</i>
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-              <section>
-                <div className='inner'>
-                  <div className='largetext box right box-teal'>
-                    <h4 style={{ marginTop: 60 }}> BOKS 2</h4>
-                    <h2 className='teal'>Fakta om Siddende Volleyball</h2>
-                    <p>
-                      {' '}
-                      Siddende volley, også kaldet paravolley, er den største
-                      holdidræt ved de Paralympiske Lege.
-                    </p>
-                    <p>
-                      {' '}
-                      I siddende volley sidder spillerne på gulvet og bevæger
-                      sig rundt ved hjælp af armene. Banen er mindre end en
-                      almindelig volleyballbane og nettets højde er 1.15 meter.
-                      Der spilles som udgangspunkt efter reglerne i almen volley
-                      med nogle få justeringer. Boldene er de samme i begge
-                      typer volleyball.
-                    </p>
-                    <p>
-                      {' '}
-                      I Danmark er der lige nu kun to klubber, som tilbyder
-                      siddende volley: Lavia Aarhus og Lavia København. I Rwanda
-                      er der hele XX klubber.
-                    </p>
-                    <p>
-                      {' '}
-                      Syv landes kvindehold har kvalificeret sig til de
-                      Paralympiske Lege, Paris 2024. Udover Rwanda er det
-                      Canada, Brasilien USA, Kina, Frankrig og Italien.
-                    </p>
-                    <p>
-                      <i> Kilder: Parasport Danmark og IPC, Rwanda.</i>
-                    </p>
-                  </div>
-                </div>
-              </section>
-
-              {/* <h4 style={{ marginTop: 60 }}> BOKS 2</h4>
-              <p className='teal'> FAKTA om Siddende Volleyball</p>
-              <p>
-                {' '}
-                Siddende volley, også kaldet paravolley, er den største
-                holdidræt ved de Paralympiske Lege.
-              </p>
-              <p>
-                {' '}
-                I siddende volley sidder spillerne på gulvet og bevæger sig
-                rundt ved hjælp af armene. Banen er mindre end en almindelig
-                volleyballbane og nettets højde er 1.15 meter. Der spilles som
-                udgangspunkt efter reglerne i almen volley med nogle få
-                justeringer. Boldene er de samme i begge typer volleyball.
-              </p>
-              <p>
-                {' '}
-                I Danmark er der lige nu kun to klubber, som tilbyder siddende
-                volley: Lavia Aarhus og Lavia København. I Rwanda er der hele XX
-                klubber.
-              </p>
-              <p>
-                {' '}
-                Syv landes kvindehold har kvalificeret sig til de Paralympiske
-                Lege, Paris 2024. Udover Rwanda er det Canada, Brasilien USA,
-                Kina, Frankrig og Italien.
-              </p>
-              <p>
-                <i> Kilder: Parasport Danmark og IPC, Rwanda.</i>
-              </p> */}
             </div>
+
             <Divider />
             <h2>Image Gallery</h2>
             <p>by Tine Harden</p>
             <GridGallery
               images={[
-                { caption: 'first picture', image: 'mark/01' },
-                { caption: 'second picture', image: 'mark/02' },
-                { caption: '', image: 'mark/03' },
-                { caption: '', image: 'mark/04' },
-                { caption: '', image: 'mark/05' },
-
-                { caption: '', image: 'mark/07' },
-                { caption: '', image: 'mark/08' },
-                { caption: '', image: 'mark/09' },
-                { caption: '', image: 'mark/10' },
-                { caption: '', image: 'mark/11' },
-                { caption: '', image: 'mark/12' },
-                { caption: '', image: 'mark/13' },
-                { caption: '', image: 'mark/14' },
-                { caption: '', image: 'mark/15' },
+                { caption: "first picture", image: "mark/01" },
+                { caption: "second picture", image: "mark/02" },
+                { caption: "", image: "mark/03" },
+                { caption: "", image: "mark/04" },
+                { caption: "", image: "mark/05" },
+                { caption: "", image: "mark/07" },
+                { caption: "", image: "mark/08" },
+                { caption: "", image: "mark/09" },
+                { caption: "", image: "mark/10" },
+                { caption: "", image: "mark/11" },
+                { caption: "", image: "mark/12" },
+                { caption: "", image: "mark/13" },
+                { caption: "", image: "mark/14" },
+                { caption: "", image: "mark/15" },
               ]}
             />
+
+            <div>
+              <section>
+                <div className="inner">
+                  <div className="largetext box box-teal">
+                    <h2 className="teal">Fakta om krigen i Afghanistan </h2>
+                    <p>
+                      Det var terrorangrebet mod USA 11.september 2001, som fik
+                      USA til at invadere Afghanistan 7. oktober 2001.
+                    </p>
+                    <p>
+                      USA hævdede, at invasionen var i tråd med folkerettens
+                      princip om retten til selvforsvar. De fleste lande bakkede
+                      op om USA fortolkning, da al-Qaida, hvis ledelse befandt
+                      sig i det Taliban-ledede Afghanistan, tog ansvar for
+                      terrorangrebet mod USA.
+                    </p>
+                    <p>
+                      Danmark deltog sammen med andre NATO-lande i de næste 20
+                      års krig i landet. En krig som anslås at have kostet
+                      omkring 176.000 menneskeliv. Heraf ca. 46.000 civile. 44
+                      danske soldater mistede livet og 214 blev såret.
+                    </p>
+
+                    <p>
+                      <i>
+                        Kilder: Globalis.dk, Watson Institute, Brown University,
+                        USA, og Forsvarsministeriets personalestyrelse
+                      </i>
+                    </p>
+                  </div>
+                </div>
+              </section>
+
+              <section>
+                <div className="inner">
+                  <div className="largetext box right box-teal">
+                    <h2 className="teal">Fakta om kørestolsrugby</h2>
+                    <p>
+                      Kørestolsrugby er en kontaktsport, som kendetegnes ved
+                      højt tempo, strategi og tacklinger. Mænd og kvinder kan
+                      deltage på samme hold. Spillerne bruger specialdesignede
+                      kørestole (rugbystole) og det er tilladt at vælte
+                      modstanderen.
+                    </p>
+                    <p>
+                      Kun spillere med nedsat funktion i både arme og ben kan
+                      kvalificere sig til sporten.
+                    </p>
+                    <p>
+                      Kørestolsrugby spilles på en håndboldbane med fire
+                      spillere på banen ad gangen. Sporten er en blanding af
+                      basketball, hockey og rugby, mens bolden er rund og ligner
+                      en volleyball.
+                    </p>
+                    <p>
+                      I Danmark er der lige nu seks klubber, som tilbyder
+                      kørestolsrugby: I Rwanda er der ingen klubber. Danmark er
+                      et af i alt otte lande, som har kvalificeret sig til de
+                      Paralympiske Lege, Paris 2024.
+                    </p>
+                    <p>
+                      <i>Kilder: Parasport.dk og paralympic.org</i>
+                    </p>
+                  </div>
+                </div>
+              </section>
+            </div>
           </div>
         </section>
         <Divider />

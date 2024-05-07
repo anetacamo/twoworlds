@@ -1,15 +1,15 @@
-'use client';
+"use client";
 
-import Link from 'next/link';
+import Link from "next/link";
 
-import styles from './page.module.css';
-import React, { useState } from 'react';
-import GridGallery from './components/GridGallery';
-import Header from './components/Header';
-import Video from './components/Video';
-import Divider from './components/Divider';
-import CloseButton from './components/CloseButton';
-import NameSwitch from './components/NameSwitch';
+import styles from "./page.module.css";
+import React, { useState } from "react";
+import GridGallery from "./components/GridGallery";
+import Header from "./components/Header";
+import Video from "./components/Video";
+import Divider from "./components/Divider";
+import CloseButton from "./components/CloseButton";
+import NameSwitch from "./components/NameSwitch";
 
 export default function Home() {
   const initialPlayer = 0;
@@ -26,7 +26,7 @@ export default function Home() {
 
       <main className={styles.main}>
         <section>
-          <div className='inner'>
+          <div className="inner">
             {/* <div className='videotextbox'>
               <div>
                 Klik på video og skift mellem Claudine og Marks historie
@@ -60,41 +60,41 @@ export default function Home() {
               setOpen={() => setOpen(!open)}
             />
             <div
-              className='center'
+              className="center"
               style={{
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
               }}
             >
-              <Link href='/mark'>
+              <Link href="/mark">
                 <div
-                  className='button button-teal'
+                  className="button button-teal"
                   style={{
                     paddingTop: 8,
                     paddingBottom: 8,
                     margin: 0,
                     marginRight: 8,
-                    display: 'flex',
-                    alignItems: 'center',
+                    display: "flex",
+                    alignItems: "center",
                   }}
                 >
                   Læs Marks historie her
                 </div>
               </Link>
-              <Link href='/claudine'>
+              <Link href="/claudine">
                 <div
-                  className='button button-orange'
+                  className="button button-orange"
                   style={{
                     paddingTop: 8,
                     paddingBottom: 8,
                     margin: 0,
                     marginLeft: 8,
-                    display: 'flex',
-                    alignItems: 'center',
+                    display: "flex",
+                    alignItems: "center",
                   }}
                 >
-                  Læs Claudines historie her{' '}
+                  Læs Claudines historie her{" "}
                 </div>
               </Link>
             </div>
@@ -102,13 +102,13 @@ export default function Home() {
         </section>
 
         <div
-          className={`overlay ${open ? 'open' : ''}`}
+          className={`overlay ${open ? "open" : ""}`}
           onKeyDown={(event) => {
-            if (event.key === 'Escape' && open) {
+            if (event.key === "Escape" && open) {
               setOpen(false);
             }
           }}
-          role='button'
+          role="button"
         >
           {open && (
             <>
@@ -127,11 +127,11 @@ export default function Home() {
 
         <Divider />
         <section style={{ marginBottom: -24 }}>
-          <div className='inner'>
-            <div className='largetext center'>
+          <div className="inner">
+            <div className="largetext center">
               <h1>
-                Om{' '}
-                <span className='orange'>
+                Om{" "}
+                <span className="orange">
                   To Verdener <br />
                   Samme Mål
                 </span>
@@ -150,14 +150,14 @@ export default function Home() {
 
         <GridGallery
           images={[
-            { caption: '', image: 'claudine/01' },
-            { caption: '', image: 'mark/04' },
+            { caption: "", image: "claudine/01" },
+            { caption: "", image: "mark/04" },
           ]}
         />
 
         <section style={{ marginBottom: -24, marginTop: -24 }}>
-          <div className='inner'>
-            <div className='largetext center'>
+          <div className="inner">
+            <div className="largetext center">
               <p>
                 Om kort tid skal de hver især repræsentere deres land til de
                 Paralympiske Lege (PL) i Paris 2024. Nu er det kampen om
@@ -177,23 +177,23 @@ export default function Home() {
         </section>
         <GridGallery
           images={[
-            { caption: '', image: 'claudine/06' },
-            { caption: '', image: 'mark/07' },
+            { caption: "", image: "claudine/06" },
+            { caption: "", image: "mark/07" },
           ]}
         />
         <Divider />
         <section>
-          <h1 className='center'>
+          <h1 className="center">
             mark og
             <br /> Claudine
           </h1>
         </section>
-        <section style={{ textAlign: 'right' }}>
-          <div className='inner'>
-            <div className='largetext'>
+        <section style={{ textAlign: "right" }}>
+          <div className="inner">
+            <div className="largetext">
               {/* <h5>om claudine</h5> */}
-              <h2>Jeg vil være en af verdens bedste</h2>{' '}
-              <p className='orange'>
+              <h2>Jeg vil være en af verdens bedste</h2>{" "}
+              <p className="orange">
                 Når Claudine og hendes hold vender hjem efter en sejr i
                 udlandet, går det ikke stille for sig.
               </p>
@@ -203,9 +203,9 @@ export default function Home() {
                 interviewet til Rwandas TV og radio. Claudine og
                 kvindelandsholdet i siddende volleyball er blevet
                 sportsstjerner. Og Claudine drømmer stadig om mere.
-              </p>{' '}
-              <Link href='/claudine'>
-                <div className='button button-orange'>
+              </p>{" "}
+              <Link href="/claudine">
+                <div className="button button-orange">
                   Læs Claudines historie her
                 </div>
               </Link>
@@ -215,31 +215,31 @@ export default function Home() {
 
         <GridGallery
           images={[
-            { caption: '', image: 'claudine/01' },
-            { caption: '', image: 'claudine/02' },
-            { caption: '', image: 'claudine/03' },
+            { caption: "", image: "claudine/01" },
+            { caption: "", image: "claudine/02" },
+            { caption: "", image: "claudine/03" },
           ]}
         />
         <Divider />
         <section>
-          <div className='inner'>
-            <div className='largetext'>
+          <div className="inner">
+            <div className="largetext">
               {/* <h5>om mark</h5> */}
-              <h2>Uden rugby var jeg blevet monsterfed</h2>{' '}
-              <p className='teal'>
-                ”Uden rugby i mit liv havde jeg spillet meget computerspil og
-                var blevet monsterfed. Jeg ville have kedet mig, men jeg ville
-                også have haft masser af tid til at være sammen med kæresten,”
+              <h2>Uden rugby var jeg blevet monsterfed</h2>{" "}
+              <p className="teal">
+                "Uden rugby i mit liv havde jeg spillet for meget computerspil
+                og var blevet monsterfed. Jeg ville have kedet mig, men jeg
+                ville også have haft masser af tid til kæresten,"
               </p>
               <p>
-                {' '}
-                siger Mark Peters, som bruger næsten al sin fritid på at træne
-                og spille kørestolsrugby. For sporten har givet den tidligere
-                professionelle soldat mere energi, glæde og selvtillid. I dag er
+                {" "}
+                siger Afghanistan veteranen Mark Peters, som i dag bruger al sin
+                fritid på at træne og spille kørestolsrugby. En holdsport som
+                har givet ham både mere energi, glæde og selvtillid. I dag er
                 hans blik kun rettet mod de Paralympiske Lege i Paris.
               </p>
-              <Link href='/mark'>
-                <div className='button button-teal'>
+              <Link href="/mark">
+                <div className="button button-teal">
                   Læs hele Marks historie
                 </div>
               </Link>
@@ -248,17 +248,17 @@ export default function Home() {
 
           <GridGallery
             images={[
-              { caption: '', image: 'mark/01' },
-              { caption: '', image: 'mark/02' },
-              { caption: '', image: 'mark/03' },
+              { caption: "", image: "mark/01" },
+              { caption: "", image: "mark/02" },
+              { caption: "", image: "mark/03" },
             ]}
           />
         </section>
 
         <Divider />
         <section>
-          <div className='inner'>
-            <div className='largetext box'>
+          <div className="inner">
+            <div className="largetext box">
               <h2>Alle har ret til at dyrke sport</h2>
               <p>
                 FN’s Verdensmål og Handicapkonvention giver alle lige
@@ -272,15 +272,15 @@ export default function Home() {
                 det skal være muligt for alle med et handicap at komme ind og
                 deltage i både sport og kultur i det område, man bor i. Kilder:
                 Handicapkonventionen, FNs Verdensmål og Institut for
-                Menneskerettigheder{' '}
+                Menneskerettigheder{" "}
               </p>
             </div>
           </div>
         </section>
 
         <section>
-          <div className='inner'>
-            <div className='largetext box right box-orange'>
+          <div className="inner">
+            <div className="largetext box right box-orange">
               <h2>Para- hvilke lege? </h2>
               <p>
                 De Paralympiske Lege er verdens største internationale
@@ -295,8 +295,8 @@ export default function Home() {
         <Divider />
 
         <section>
-          <div className='inner'>
-            <div className='largetext'>
+          <div className="inner">
+            <div className="largetext">
               <h2>Hvem er vi?</h2>
               <p>
                 <i>
@@ -305,13 +305,13 @@ export default function Home() {
                 </i>
               </p>
               <p>
-                <span className='teal'>Tine Harden</span> er en
+                <span className="teal">Tine Harden</span> er en
                 sportsinteresseret og prisvindende fotograf, som blandt andet
                 har lavet fotobogen ’A kick out of Africa’ op til VM i Sydafrika
                 i 2010.
               </p>
               <p>
-                <span className='teal'>Hanne Selnæs</span> er uddannet
+                <span className="teal">Hanne Selnæs</span> er uddannet
                 journalist og kommunikerer primært om udsatte menneskers vilkår,
                 muligheder og rettigheder – hjemme som ude.
               </p>
@@ -326,18 +326,18 @@ export default function Home() {
           </div>
         </section>
         <section>
-          <div className='inner'>
-            <div className='largetext'>
+          <div className="inner">
+            <div className="largetext">
               <h2>Vores partners</h2>
               <p>
-                <span className='pink'>Dansk Handicap Forbund, DHF</span>{' '}
+                <span className="pink">Dansk Handicap Forbund, DHF</span>{" "}
                 arbejder for at mennesker med bevægelseshandicap har samme
                 rettigheder som alle andre. DHF har 8.300 medlemmer i Danmark.
                 Internationalt er DHF engageret i udviklingsprojekter i otte
                 lande i Asien, Afrika og Mellemamerika.
               </p>
               <p>
-                Sammen med <span className='pink'>Parasport Danmark</span> er vi
+                Sammen med <span className="pink">Parasport Danmark</span> er vi
                 med til at styrke adgangen til parasport i Nepal, Bolivia,
                 Vietnam og Uganda. Parasport Danmark arbejder for, at alle
                 mennesker med handicap eller særlige behov skal have mulighed
@@ -346,13 +346,13 @@ export default function Home() {
                 Danmark har knap 8000 medlemmer.
               </p>
               <p>
-                Som Danmarks{' '}
-                <span className='pink'>National Paralympiske Komite</span>{' '}
+                Som Danmarks{" "}
+                <span className="pink">National Paralympiske Komite</span>{" "}
                 sigter vi også mod at fostre eliteatleter og rollemodeller i
                 verdensklasse. Internationalt er vi engageret i
                 udviklingsprojekter, der styrker adgangen til parasport. I
                 samarbejde med DHF. National Paralympic Commitee, NPC, Rwanda
-                har I Rwanda samme rolle som Parasport Danmark har i Danmark.{' '}
+                har I Rwanda samme rolle som Parasport Danmark har i Danmark.{" "}
               </p>
               <p>
                 NPC promoverer og koordinerer flere idrætsklubbers tilbud om
@@ -405,8 +405,8 @@ export default function Home() {
         </section> */}
         <Divider />
         <footer>
-          <div className='inner'>
-            <div className='large'>
+          <div className="inner">
+            <div className="large">
               <h3>
                 TO VERDENER <br />
                 SAMME MÅL
@@ -427,18 +427,18 @@ export default function Home() {
               <h5>om mark</h5>
               <h5>om claudine</h5>
             </div> */}
-            <div className='small'>
-              {' '}
+            <div className="small">
+              {" "}
               <h5>kontakt</h5>
               <p>
-                Hanne Selnæs:{' '}
-                <a href='mailto:hanne.selnaes@gmail.com' className='underlined'>
+                Hanne Selnæs:{" "}
+                <a href="mailto:hanne.selnaes@gmail.com" className="underlined">
                   hanne.selnaes@gmail.com
-                </a>{' '}
+                </a>{" "}
               </p>
               <p>
-                Tine Harden:{' '}
-                <a href='mailto:tine@tineharden.dk' className='underlined'>
+                Tine Harden:{" "}
+                <a href="mailto:tine@tineharden.dk" className="underlined">
                   tine@harden.dk
                 </a>
               </p>
