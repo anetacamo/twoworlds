@@ -27,33 +27,6 @@ export default function Home() {
       <main className={styles.main}>
         <section>
           <div className="inner">
-            {/* <div className='videotextbox'>
-              <div>
-                Klik på video og skift mellem Claudine og Marks historie
-              </div>
-              <div
-                onClick={() => setOpen(!open)}
-                onKeyDown={(event) => {
-                  if (event.key === 'Enter' || event.key === ' ') {
-                    setOpen(!open);
-                  }
-                }}
-                role='button'
-                tabIndex='0'
-                className='hover-teal'
-                style={{
-                  cursor: 'pointer',
-                  display: 'flex',
-                  alignItems: 'center',
-                  fontSize: 20,
-                }}
-              >
-                <FontAwesomeIcon icon={faPlay} style={{ marginLeft: 12 }} />{' '}
-                <FontAwesomeIcon icon={faPause} style={{ marginLeft: 12 }} />{' '}
-                <FontAwesomeIcon icon={faRepeat} style={{ marginLeft: 12 }} />{' '}
-                <FontAwesomeIcon icon={faExpand} style={{ marginLeft: 12 }} />{' '}
-              </div>
-            </div> */}
             <Video
               player={player}
               setPlayer={handlePlayerChange}
