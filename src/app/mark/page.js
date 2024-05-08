@@ -155,9 +155,9 @@ export default function Claudine() {
               <p>
                 I dag har Mark Peters rundet de 40 år, så selvom han ville
                 ønske, at han kunne være professionel spiller på et
-                kørestolsrugbyhold, så tror han ikke, at det er realistisk. "Men
+                kørestolsrugbyhold, så tror han ikke, at det er realistisk. ´Men
                 det kunne være helt vildt fedt at få penge for at spille noget,
-                som jeg elsker så højt, som jeg elsker rugby."
+                som jeg elsker så højt, som jeg elsker rugby.´
               </p>
               <p>
                 På flere af de hold, som Danmark konkurrerer mod på verdensplan,
