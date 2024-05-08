@@ -200,12 +200,11 @@ export default function Home() {
               {/* <h5>om mark</h5> */}
               <h2>Uden rugby var jeg blevet monsterfed</h2>{" "}
               <p className="teal">
-                "Uden rugby i mit liv havde jeg spillet for meget computerspil
+                ´Uden rugby i mit liv havde jeg spillet for meget computerspil
                 og var blevet monsterfed. Jeg ville have kedet mig, men jeg
-                ville også have haft masser af tid til kæresten,"
+                ville også have haft masser af tid til kæresten,´
               </p>
               <p>
-                {" "}
                 siger Afghanistan veteranen Mark Peters, som i dag bruger al sin
                 fritid på at træne og spille kørestolsrugby. En holdsport som
                 har givet ham både mere energi, glæde og selvtillid. I dag er

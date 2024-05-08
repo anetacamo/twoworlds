@@ -79,37 +79,31 @@ export default function Claudine() {
                 i verden.
               </p>
               <p>
-                {" "}
                 Måske lykkes det. Landstræneren fra Ægypten har store
                 ambitioner. Hans plan er, at kvinderne en dag kommer hjem fra de
                 Paralympiske Lege med en bronzemedalje – dog først i 2028.
               </p>
               <p>
-                {" "}
                 I mellemtiden træner Claudine hårdt og vil samtidig hjælpe unge
                 kvinder med et handicap til et bedre liv. Sådan som hun selv har
                 fået et bedre liv gennem sporten.
               </p>
               <p>
-                {" "}
                 ”Siddende volleyball har betydet, at jeg har fået mange gode
                 venner og tætte venskaber og mulighed for at rejse. Det har alt
                 sammen givet mig både selvværd og et åbent sind,” siger hun i
                 dag. Men sådan har det ikke altid været.
               </p>
               <h2 className="orange" style={{ marginTop: 60 }}>
-                {" "}
                 Jeg har altid elsket volleyball
               </h2>
               <p>
-                {" "}
                 Da Claudine var barn, troede de fleste naboer og venner ikke, at
                 hun duede til noget som helst. For hun manglede et ben og havde
                 fået stemplet som ’handicappet’. Men Claudines tante overtalte
                 Claudines forældre til, at hun skulle i skole og lære noget.
               </p>
               <p>
-                {" "}
                 På kostskolen for børn med handicap opdagede Claudine, at der
                 var en sportsgren, der hed ’siddende volleyball’, som hun kunne
                 være med i. Man sidder på jorden og spiller hen over et lavt
@@ -117,7 +111,6 @@ export default function Claudine() {
                 noget for hende.
               </p>
               <p>
-                {" "}
                 ”Da jeg fandt ud af, at jeg kunne spille siddende volleyball,
                 blev jeg meget, meget glad,” fortæller hun mig, da vi sidder i
                 hendes stue efter en turnering i nabobyen. Hendes mand koger
@@ -145,45 +138,37 @@ export default function Claudine() {
                 foran dem. Han skød mod Claudine og ramte hende i benet.
               </p>
               <p>
-                {" "}
                 Også hendes far blev skudt i benet og kunne ikke længere gå. Da
                 Claudines bedstemor kom til, blev også hun skudt og døde.
               </p>
               <p>
-                {" "}
                 På alle fire kravlede Claudines far videre med Claudine på
                 ryggen, indtil de mødte flere familiemedlemmer. En af dem bar
                 Claudine hele vejen til et hospital i nabolandet Burundi. Det
                 var her, lægerne valgte at amputere hendes ben.
               </p>
               <p>
-                {" "}
                 ”Jeg kan ikke huske noget, men har fået det fortalt,” siger
                 Claudine.
               </p>
               <p className="orange" style={{ marginTop: 60 }}>
-                {" "}
                 Drilleri gjorde mig ked af det og vred
               </p>
               <p>
-                {" "}
                 I mange år vidste Claudine ikke, hvorfor hun kun havde et ben,
                 når hendes søster havde to. Når hun spurgte sin mor, svarede hun
                 ikke. Nogle gange drillede andre børn Claudine, for eksempel ved
                 at tage hendes krykker eller lave sjov ad måden, hun gik på.
               </p>
               <p>
-                {" "}
                 ”Det gjorde mig både ked af det og vred,” husker hun. ”Min
                 søster og jeg var meget tætte, så vi hjalp også hinanden – og
                 sammen bankede vi så de børn, der drillede mig,” fortæller hun.
               </p>
               <p className="orange" style={{ marginTop: 60 }}>
-                {" "}
                 Sport har givet mig et godt liv
               </p>
               <p>
-                {" "}
                 ”Siddende volleyball har gjort mig stærkere og givet mig mere
                 energi. Når jeg har deltaget i de paralympiske lege i Rio og
                 Tokyo, har jeg mødt andre med alvorlige handicap. Det har fået
@@ -191,7 +176,6 @@ export default function Claudine() {
                 Claudine i dag.
               </p>
               <p>
-                {" "}
                 ”Det bedste ved sport er, at du kan få et godt liv,” siger hun:
                 ”Jeg har opdaget, at jeg kan lave mange af de samme ting, som
                 andre med to ben kan. Og jeg kan bidrage til min familie.”{" "}
@@ -202,13 +186,11 @@ export default function Claudine() {
                 på at betale for sin søns skolegang og hjælpe sin familie.
               </p>
               <p>
-                {" "}
                 ”Jeg har også købt en benprotese til mig selv, en lille skov og
                 to køer, som er hjemme hos min mor og far. Det betyder meget for
                 mig, at jeg kan hjælpe mine forældre,” siger hun.
               </p>
               <p>
-                {" "}
                 Claudines råd til andre med et handicap lyder sådan her: ”Tro på
                 dig selv og vær ikke bange for at spørge andre til råds. Der er
                 mange omkring dig, som kan hjælpe, hvis du bare spørger,” siger
@@ -216,7 +198,6 @@ export default function Claudine() {
                 Lege i Paris.
               </p>
               <p>
-                {" "}
                 ”Sport er livet,” siger Claudine med et stort smil, inden vi
                 tager afsked.{" "}
               </p>
@@ -254,7 +235,7 @@ export default function Claudine() {
                       slået ihjel af ekstremistiske hutuer og deres medløbere.
                     </p>
                     <p>
-                      {" "}
+    
                       Hadefuld tale og massiv propaganda gennem medierne
                       spillede hutuer ud mod tutsier, og opfordrede ekstremister
                       blandt hutuerne til at myrde deres tutsi-naboer.
@@ -264,7 +245,7 @@ export default function Claudine() {
                       Tutsier udgør et mindretal af befolkningen.
                     </p>
                     <p>
-                      {" "}
+    
                       Ved folkedrabets afslutning var landet i ruiner og to
                       millioner mennesker var drevet på flugt - tusindvis var
                       sårede og traumatiserede. Rwanda, som er på størrelse med
@@ -282,12 +263,12 @@ export default function Claudine() {
                   <div className="largetext box right box-orange">
                     <h2 className="orange">Fakta om Siddende Volleyball</h2>
                     <p>
-                      {" "}
+    
                       Siddende volley, også kaldet paravolley, er den største
                       holdidræt ved de Paralympiske Lege.
                     </p>
                     <p>
-                      {" "}
+    
                       I siddende volley sidder spillerne på gulvet og bevæger
                       sig rundt ved hjælp af armene. Banen er mindre end en
                       almindelig volleyballbane og nettets højde er 1.15 meter.
@@ -296,13 +277,13 @@ export default function Claudine() {
                       typer volleyball.
                     </p>
                     <p>
-                      {" "}
+    
                       I Danmark er der lige nu kun to klubber, som tilbyder
                       siddende volley: Lavia Aarhus og Lavia København. I Rwanda
                       er der hele XX klubber.
                     </p>
                     <p>
-                      {" "}
+    
                       Syv landes kvindehold har kvalificeret sig til de
                       Paralympiske Lege, Paris 2024. Udover Rwanda er det
                       Canada, Brasilien USA, Kina, Frankrig og Italien.

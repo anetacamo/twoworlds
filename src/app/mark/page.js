@@ -45,19 +45,15 @@ export default function Claudine() {
       <main style={{ marginTop: 150 }}>
         <Divider />
 
-        <section style={{ textAlign: "center" }}>
-          <div className="largetext">{/* <h1>om claudine</h1> */}</div>
-        </section>
-
         <section>
           <div className="inner">
             <div className="largetext">
               <h2 className="teal">Uden rugby var jeg blevet monsterfed</h2>
               <h2>
-                Som professionel kampsoldat var Mark Peters i ’stjernegod form’
+                Som professionel kampsoldat var Mark Peters i ´stjernegod form´
                 og brugte masser af tid på at træne. Da han mistede begge ben,
                 var det svært for ham at sidde stille hele dagen. Kørestolsrugby
-                fik ham til at træne igen. ”Ellers var jeg blevet monsterfed”,
+                fik ham til at træne igen. `Ellers var jeg blevet monsterfed`,
                 siger Mark, som i dag drømmer om at vinde guld indenfor denne
                 særlige kontaktsport.
               </h2>
@@ -75,16 +71,16 @@ export default function Claudine() {
                 Afghanistan.
               </p>
               <p>
-                ”I forhold til tidligere, så går det faktisk stille og roligt,”
-                husker Mark i dag. Men der er sket noget nyt: ”Nu ligger fjenden
+                `I forhold til tidligere, så går det faktisk stille og roligt,`
+                husker Mark i dag. Men der er sket noget nyt: `Nu ligger fjenden
                 nede i jorden – i form af vejsidebomber. Det var vi ikke helt
-                vant til. Det havde mere været mand mod mand,” siger han.
+                vant til. Det havde mere været mand mod mand,` siger han.
               </p>
               <p>
-                ”Den dag på patrulje, har jeg meget udstyr på ryggen. Grøften,
+                `Den dag på patrulje, har jeg meget udstyr på ryggen. Grøften,
                 som vi skal over, er lidt bred. Så i stedet for at springe over,
-                går jeg ned i grøften - lige som de to foran mig,” siger Mark og
-                tilføjer: ”Her ligger så en hilsen til mig.” For Mark træder
+                går jeg ned i grøften - lige som de to foran mig,` siger Mark og
+                tilføjer: `Her ligger så en hilsen til mig.` For Mark træder
                 lige ned på en landmine og får sprængt begge ben i stykker.
               </p>
 
@@ -124,32 +120,32 @@ export default function Claudine() {
                 faldt for:
               </p>
               <p>
-                ”Handicapsporten, det var sjovt, men i starten tænkte jeg, at
-                det var lidt en erstatning for noget bedre og derfor ikke så
-                godt. Men man skal jo ikke tænke det som erstatninger. Det er
-                bare en mulighed, der hvor du er nu. Jeg havde ikke mulighed for
-                at spile kørestolsrugby, før jeg kom til skade, men det kan jeg
-                så nu. For at nå dertil skal man gennem nogle faser og et kæmpe
+                Handicapsporten, det var sjovt, men i starten tænkte jeg, at det
+                var lidt en erstatning for noget bedre og derfor ikke så godt.
+                Men man skal jo ikke tænke det som erstatninger. Det er bare en
+                mulighed, der hvor du er nu. Jeg havde ikke mulighed for at
+                spile kørestolsrugby, før jeg kom til skade, men det kan jeg så
+                nu. For at nå dertil skal man gennem nogle faser og et kæmpe
                 følelsesregister.
               </p>
               <p>
                 På Landsholdet har Mark Peters fundet et nyt stærkt fællesskab
-                og mange gode venner: ”Vi finder sammen efter træning og laver
+                og mange gode venner: `Vi finder sammen efter træning og laver
                 alt muligt: spiller spil og hygger os, holder grill-aftener og
                 ser landskampe sammen. Under Corona-nedlukningen havde vi
-                fredagsbar på Zoom.”
+                fredagsbar på Zoom.`
               </p>
               <p>
-                Mark er særlig glad for at være på et hold: ”Som holdspiller ved
+                Mark er særlig glad for at være på et hold: `Som holdspiller ved
                 man, at man ikke kan vinde selv. Vi vinder kun, hvis vi holder
-                sammen og hjælper hinanden.”
+                sammen og hjælper hinanden.`
               </p>
               <p>
-                ”Sporten har givet mig energi og selvtillid. Kørestolsrugby er
+                `Sporten har givet mig energi og selvtillid. Kørestolsrugby er
                 blevet mit fristed. Uden rugby i mit liv havde jeg nok spillet
                 for meget computerspil og var blevet monsterfed. Jeg ville have
                 kedet mig, men jeg ville også have haft masser af tid til at
-                være sammen med kæresten,” siger Mark Peters, som for nylig blev
+                være sammen med kæresten,` siger Mark Peters, som for nylig blev
                 gift med sin kæreste gennem mange år. Hele landsholdet var med
                 til brylluppet.
               </p>
@@ -159,33 +155,33 @@ export default function Claudine() {
               <p>
                 I dag har Mark Peters rundet de 40 år, så selvom han ville
                 ønske, at han kunne være professionel spiller på et
-                kørestolsrugbyhold, så tror han ikke, at det er realistisk. ”Men
+                kørestolsrugbyhold, så tror han ikke, at det er realistisk. "Men
                 det kunne være helt vildt fedt at få penge for at spille noget,
-                som jeg elsker så højt, som jeg elsker rugby.”
+                som jeg elsker så højt, som jeg elsker rugby."
               </p>
               <p>
                 På flere af de hold, som Danmark konkurrerer mod på verdensplan,
                 får spillerne penge for at spille på landsholdet.
               </p>
               <p className="teal" style={{ marginTop: 60 }}>
-                ”Når de så hører, at mange af de danske spillere arbejder på
-                fuld tid ved siden af træningen, siger de: ’Hvordan fanden kan I
-                så spille rugby på det niveau?’ Det er fordi, vi alle sammen
-                elsker rugby. Vi har den glæde og kærlighed til rugby. Det gør,
-                at vi træner som professionelle,” siger Mark.
+                Når de så hører, at mange af de danske spillere arbejder på fuld
+                tid ved siden af træningen, siger de: ´Hvordan fanden kan I så
+                spille rugby på det niveau?´ Det er fordi, vi alle sammen elsker
+                rugby. Vi har den glæde og kærlighed til rugby. Det gør, at vi
+                træner som professionelle siger Mark.
               </p>
               <p>
-                ”Og så er det bare megasjovt at spille kørestolsrugby. Jeg morer
+                Og så er det bare megasjovt at spille kørestolsrugby. Jeg morer
                 mig, jeg synes det er en fed sportsgren, som bare er faldet
                 pladask ind hos mig og så mange andre. Der er både tempo,
                 aggression og taktik, det er en holdsport – og en meget
-                medrivende sportsgren.”
+                medrivende sportsgren
               </p>
               <p>
-                ”Det er ikke noget, man gør halvt. Hvis vi havde mulighed for at
+                Det er ikke noget, man gør halvt. Hvis vi havde mulighed for at
                 træne 24/7, og få en sindssyg god form, ja så er mulighederne jo
                 nærmest uendelige. Min største drøm er at vinde guld ved nogle
-                af de helt store turneringer som VM og PL.”
+                af de helt store turneringer som VM og PL.
               </p>
               <p>
                 <i>
@@ -195,20 +191,20 @@ export default function Claudine() {
                 </i>
               </p>
               <p>
-                ”Først og fremmest får du et godt fællesskab og du lærer at
+                Først og fremmest får du et godt fællesskab og du lærer at
                 tackle dagligdagen hurtigere og bedre, fordi du bliver stærkere,
                 kommer i bedre form og får mere livsglæde. Det får du ved at
                 opleve, at man godt kan lave sjove ting, selvom man er kommet
-                til skade.”
+                til skade.
               </p>
               <p>
-                ”Det kan sagtens blive godt igen, selvom man er lam eller
-                mangler ben. Du bestemmer selv, hvordan du vil leve. Men du skal
-                gøre en indsats for at få det liv, du gerne vil have. Hvis du
-                bare sætter dig ned og siger ’kom til mig’, så er det sjældent,
-                at du bliver lykkelig. Det bliver ikke ligesom før, det skal man
-                glemme, man skal tage det, som det kommer nu,” lyder det fra
-                Mark Peters.
+                Det kan sagtens blive godt igen, selvom man er lam eller mangler
+                ben. Du bestemmer selv, hvordan du vil leve. Men du skal gøre en
+                indsats for at få det liv, du gerne vil have. Hvis du bare
+                sætter dig ned og siger ´kom til mig´, så er det sjældent, at du
+                bliver lykkelig. Det bliver ikke ligesom før, det skal man
+                glemme, man skal tage det, som det kommer nu, lyder det fra Mark
+                Peters.
               </p>
             </div>
 
