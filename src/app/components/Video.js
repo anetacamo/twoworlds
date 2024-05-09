@@ -118,7 +118,7 @@ export default function Video({ player, setPlayer, large, open, setOpen }) {
             }}
             role="button"
             tabIndex="0"
-            className="hover-teal"
+            className="hover-teal desktop"
             style={{
               cursor: "pointer",
               fontSize: 20,

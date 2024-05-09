@@ -8,6 +8,7 @@ import Video from "../components/Video";
 import CloseButton from "../components/CloseButton";
 import NameSwitch from "../components/NameSwitch";
 import VideoSingle from "../components/VideoSingle";
+import Footer from "../components/Footer";
 
 export default function Claudine() {
   const initialPlayer = 0;
@@ -63,7 +64,7 @@ export default function Claudine() {
               <Divider />
               <VideoSingle player="claudine" />
               <Divider />
-              <p className="orange">
+              <p>
                 Når kvindernes landshold i siddende volleyball vender hjem efter
                 en sejr i udlandet, går det ikke stille for sig. I åbne busser
                 kører kvinderne hujende og syngende gennem hovedstadens gader,
@@ -94,9 +95,9 @@ export default function Claudine() {
                 sammen givet mig både selvværd og et åbent sind,” siger hun i
                 dag. Men sådan har det ikke altid været.
               </p>
-              <h2 className="orange" style={{ marginTop: 60 }}>
+              <h3 className="orange" style={{ marginTop: 60 }}>
                 Jeg har altid elsket volleyball
-              </h2>
+              </h3>
               <p>
                 Da Claudine var barn, troede de fleste naboer og venner ikke, at
                 hun duede til noget som helst. For hun manglede et ben og havde
@@ -117,9 +118,9 @@ export default function Claudine() {
                 spaghetti på trækul i baggården, mens sønnen XX på 5 år
                 nysgerrigt følger med i snakken.
               </p>
-              <p className="orange" style={{ marginTop: 60 }}>
+              <h3 className="orange" style={{ marginTop: 60 }}>
                 Mistede benet under folkemord
-              </p>
+              </h3>
               <p>
                 Claudines søn er kun et år ældre, end Claudine selv var, da hun
                 mistede sit ben. Det var under Folkemordet i Rwanda i 1994. I
@@ -151,9 +152,9 @@ export default function Claudine() {
                 ”Jeg kan ikke huske noget, men har fået det fortalt,” siger
                 Claudine.
               </p>
-              <p className="orange" style={{ marginTop: 60 }}>
+              <h3 className="orange" style={{ marginTop: 60 }}>
                 Drilleri gjorde mig ked af det og vred
-              </p>
+              </h3>
               <p>
                 I mange år vidste Claudine ikke, hvorfor hun kun havde et ben,
                 når hendes søster havde to. Når hun spurgte sin mor, svarede hun
@@ -165,9 +166,9 @@ export default function Claudine() {
                 søster og jeg var meget tætte, så vi hjalp også hinanden – og
                 sammen bankede vi så de børn, der drillede mig,” fortæller hun.
               </p>
-              <p className="orange" style={{ marginTop: 60 }}>
+              <h3 className="orange" style={{ marginTop: 60 }}>
                 Sport har givet mig et godt liv
-              </p>
+              </h3>
               <p>
                 ”Siddende volleyball har gjort mig stærkere og givet mig mere
                 energi. Når jeg har deltaget i de paralympiske lege i Rio og
@@ -202,9 +203,13 @@ export default function Claudine() {
                 tager afsked.{" "}
               </p>
             </div>
-            <Divider />
-            <h2>Gallery</h2>
-            <i>all images were taken by Tine Harden</i>
+            <div id="fotogalleri">
+              <Divider />
+            </div>
+            <h2>Fotogalleri</h2>
+            <p>
+              <i>all images were taken by Tine Harden</i>
+            </p>
             <GridGallery
               images={[
                 { caption: "", image: "claudine/01" },
@@ -235,7 +240,6 @@ export default function Claudine() {
                       slået ihjel af ekstremistiske hutuer og deres medløbere.
                     </p>
                     <p>
-    
                       Hadefuld tale og massiv propaganda gennem medierne
                       spillede hutuer ud mod tutsier, og opfordrede ekstremister
                       blandt hutuerne til at myrde deres tutsi-naboer.
@@ -245,7 +249,6 @@ export default function Claudine() {
                       Tutsier udgør et mindretal af befolkningen.
                     </p>
                     <p>
-    
                       Ved folkedrabets afslutning var landet i ruiner og to
                       millioner mennesker var drevet på flugt - tusindvis var
                       sårede og traumatiserede. Rwanda, som er på størrelse med
@@ -263,12 +266,10 @@ export default function Claudine() {
                   <div className="largetext box right box-orange">
                     <h2 className="orange">Fakta om Siddende Volleyball</h2>
                     <p>
-    
                       Siddende volley, også kaldet paravolley, er den største
                       holdidræt ved de Paralympiske Lege.
                     </p>
                     <p>
-    
                       I siddende volley sidder spillerne på gulvet og bevæger
                       sig rundt ved hjælp af armene. Banen er mindre end en
                       almindelig volleyballbane og nettets højde er 1.15 meter.
@@ -277,13 +278,11 @@ export default function Claudine() {
                       typer volleyball.
                     </p>
                     <p>
-    
                       I Danmark er der lige nu kun to klubber, som tilbyder
                       siddende volley: Lavia Aarhus og Lavia København. I Rwanda
                       er der hele XX klubber.
                     </p>
                     <p>
-    
                       Syv landes kvindehold har kvalificeret sig til de
                       Paralympiske Lege, Paris 2024. Udover Rwanda er det
                       Canada, Brasilien USA, Kina, Frankrig og Italien.
@@ -298,6 +297,7 @@ export default function Claudine() {
           </div>
         </section>
         <Divider />
+        <Footer />
       </main>
     </div>
   );

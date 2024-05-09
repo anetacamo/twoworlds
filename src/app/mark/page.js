@@ -7,6 +7,7 @@ import GridGallery from "../components/GridGallery";
 import Video from "../components/Video";
 import CloseButton from "../components/CloseButton";
 import NameSwitch from "../components/NameSwitch";
+import Footer from "../components/Footer";
 
 export default function Claudine() {
   const initialPlayer = 0;
@@ -62,7 +63,7 @@ export default function Claudine() {
                 <i>Af Hanne Selnæs</i>
               </p>
               <Divider />
-              <p className="teal">
+              <p>
                 I november er ørkenen i Afghanistan iskold om natten. Det er
                 efter sådan en nat, at Mark Peters i 2009 er på patrulje i
                 Helmandprovinsen. Han er 26 år og afsted på sin femte udsendelse
@@ -71,22 +72,22 @@ export default function Claudine() {
                 Afghanistan.
               </p>
               <p>
-                `I forhold til tidligere, så går det faktisk stille og roligt,`
-                husker Mark i dag. Men der er sket noget nyt: `Nu ligger fjenden
-                nede i jorden – i form af vejsidebomber. Det var vi ikke helt
-                vant til. Det havde mere været mand mod mand,` siger han.
+                - I forhold til tidligere, så går det faktisk stille og roligt,
+                husker Mark i dag. Men der er sket noget nyt: - Nu ligger
+                fjenden nede i jorden – i form af vejsidebomber. Det var vi ikke
+                helt vant til. Det havde mere været mand mod mand, siger han.
               </p>
               <p>
-                `Den dag på patrulje, har jeg meget udstyr på ryggen. Grøften,
+                - Den dag på patrulje, har jeg meget udstyr på ryggen. Grøften,
                 som vi skal over, er lidt bred. Så i stedet for at springe over,
-                går jeg ned i grøften - lige som de to foran mig,` siger Mark og
+                går jeg ned i grøften - lige som de to foran mig, siger Mark og
                 tilføjer: `Her ligger så en hilsen til mig.` For Mark træder
                 lige ned på en landmine og får sprængt begge ben i stykker.
               </p>
 
-              <h2 className="teal" style={{ marginTop: 60 }}>
+              <h3 className="teal" style={{ marginTop: 60 }}>
                 Træner til de Paralympiske Lege
-              </h2>
+              </h3>
               <p>
                 I dag er det ikke krig, som optager Mark. Men derimod kampen om
                 medaljer og ikke mindst træningen frem til de Paralympiske Lege
@@ -111,9 +112,9 @@ export default function Claudine() {
                 sportscenter som har særligt velegnede faciliteter til
                 parasport.
               </p>
-              <p className="teal" style={{ marginTop: 60 }}>
-                Følelsesregister, fællesskab og selvtillid{" "}
-              </p>
+              <h3 className="teal" style={{ marginTop: 60 }}>
+                Følelsesregister, fællesskab og selvtillid
+              </h3>
               <p>
                 Gennem sportsaktiviteter for sårede soldater blev Mark i sin tid
                 introduceret til kørestolsrugby, som han dog ikke umiddelbart
@@ -130,10 +131,10 @@ export default function Claudine() {
               </p>
               <p>
                 På Landsholdet har Mark Peters fundet et nyt stærkt fællesskab
-                og mange gode venner: `Vi finder sammen efter træning og laver
+                og mange gode venner: - Vi finder sammen efter træning og laver
                 alt muligt: spiller spil og hygger os, holder grill-aftener og
                 ser landskampe sammen. Under Corona-nedlukningen havde vi
-                fredagsbar på Zoom.`
+                fredagsbar på Zoom.
               </p>
               <p>
                 Mark er særlig glad for at være på et hold: `Som holdspiller ved
@@ -149,9 +150,9 @@ export default function Claudine() {
                 gift med sin kæreste gennem mange år. Hele landsholdet var med
                 til brylluppet.
               </p>
-              <p className="teal" style={{ marginTop: 60 }}>
+              <h3 className="teal" style={{ marginTop: 60 }}>
                 Vi elsker alle sammen rugby
-              </p>
+              </h3>
               <p>
                 I dag har Mark Peters rundet de 40 år, så selvom han ville
                 ønske, at han kunne være professionel spiller på et
@@ -163,7 +164,7 @@ export default function Claudine() {
                 På flere af de hold, som Danmark konkurrerer mod på verdensplan,
                 får spillerne penge for at spille på landsholdet.
               </p>
-              <p className="teal" style={{ marginTop: 60 }}>
+              <p>
                 Når de så hører, at mange af de danske spillere arbejder på fuld
                 tid ved siden af træningen, siger de: ´Hvordan fanden kan I så
                 spille rugby på det niveau?´ Det er fordi, vi alle sammen elsker
@@ -207,14 +208,19 @@ export default function Claudine() {
                 Peters.
               </p>
             </div>
-
-            <Divider />
-            <h2>Image Gallery</h2>
+            <div id="fotogalleri">
+              <Divider />
+            </div>
+            <h2 >Fotogalleri</h2>
             <p>by Tine Harden</p>
             <GridGallery
               images={[
-                { caption: "first picture", image: "mark/01" },
-                { caption: "second picture", image: "mark/02" },
+                { caption: "", image: "mark/16" },
+                { caption: "", image: "mark/17" },
+                { caption: "", image: "mark/18" },
+                { caption: "", image: "mark/19" },
+                { caption: "", image: "mark/01" },
+                { caption: "", image: "mark/02" },
                 { caption: "", image: "mark/03" },
                 { caption: "", image: "mark/04" },
                 { caption: "", image: "mark/05" },
@@ -252,7 +258,6 @@ export default function Claudine() {
                       omkring 176.000 menneskeliv. Heraf ca. 46.000 civile. 44
                       danske soldater mistede livet og 214 blev såret.
                     </p>
-
                     <p>
                       <i>
                         Kilder: Globalis.dk, Watson Institute, Brown University,
@@ -300,6 +305,7 @@ export default function Claudine() {
           </div>
         </section>
         <Divider />
+        <Footer />
       </main>
     </div>
   );

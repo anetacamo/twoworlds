@@ -1,13 +1,13 @@
 "use client";
 
 import Link from "next/link";
-
 import styles from "./page.module.css";
 import React, { useState } from "react";
 import GridGallery from "./components/GridGallery";
 import Header from "./components/Header";
 import Video from "./components/Video";
 import Divider from "./components/Divider";
+import Footer from "./components/Footer";
 import CloseButton from "./components/CloseButton";
 import NameSwitch from "./components/NameSwitch";
 
@@ -23,51 +23,30 @@ export default function Home() {
   return (
     <div>
       <Header player={player} handlePlayerChange={handlePlayerChange} />
-
       <main className={styles.main}>
         <section>
           <div className="inner">
+            <h1 className="center">Interaktiv video</h1>
+            <br />
             <Video
               player={player}
               setPlayer={handlePlayerChange}
               setOpen={() => setOpen(!open)}
             />
-            <div
-              className="center"
-              style={{
-                display: "flex",
-                alignItems: "center",
-                justifyContent: "center",
-              }}
-            >
+            <Divider />
+            <div className="center flex-center" id="om-projektet">
               <Link href="/mark">
                 <div
-                  className="button button-teal"
-                  style={{
-                    paddingTop: 8,
-                    paddingBottom: 8,
-                    margin: 0,
-                    marginRight: 8,
-                    display: "flex",
-                    alignItems: "center",
-                  }}
+                  className={`${styles.button} ${styles.buttonRight} button button-teal`}
                 >
-                  Læs Marks historie her
+                  Se mere om Mark
                 </div>
               </Link>
               <Link href="/claudine">
                 <div
-                  className="button button-orange"
-                  style={{
-                    paddingTop: 8,
-                    paddingBottom: 8,
-                    margin: 0,
-                    marginLeft: 8,
-                    display: "flex",
-                    alignItems: "center",
-                  }}
+                  className={`${styles.button} ${styles.buttonLeft} button button-orange`}
                 >
-                  Læs Claudines historie her{" "}
+                  Se mere om Claudine
                 </div>
               </Link>
             </div>
@@ -98,7 +77,6 @@ export default function Home() {
           )}
         </div>
 
-        <Divider />
         <section style={{ marginBottom: -24 }}>
           <div className="inner">
             <div className="largetext center">
@@ -124,7 +102,7 @@ export default function Home() {
         <GridGallery
           images={[
             { caption: "", image: "claudine/01" },
-            { caption: "", image: "mark/04" },
+            { caption: "", image: "mark/16" },
           ]}
         />
 
@@ -151,7 +129,7 @@ export default function Home() {
         <GridGallery
           images={[
             { caption: "", image: "claudine/06" },
-            { caption: "", image: "mark/07" },
+            { caption: "", image: "mark/17" },
           ]}
         />
         <Divider />
@@ -164,9 +142,8 @@ export default function Home() {
         <section style={{ textAlign: "right" }}>
           <div className="inner">
             <div className="largetext">
-              {/* <h5>om claudine</h5> */}
-              <h2>Jeg vil være en af verdens bedste</h2>{" "}
-              <p className="orange">
+              <h2 className="orange">Jeg vil være en af verdens bedste</h2>{" "}
+              <p>
                 Når Claudine og hendes hold vender hjem efter en sejr i
                 udlandet, går det ikke stille for sig.
               </p>
@@ -178,7 +155,7 @@ export default function Home() {
                 sportsstjerner. Og Claudine drømmer stadig om mere.
               </p>{" "}
               <Link href="/claudine">
-                <div className="button button-orange">
+                <div className="button button-orange center">
                   Læs Claudines historie her
                 </div>
               </Link>
@@ -193,19 +170,24 @@ export default function Home() {
             { caption: "", image: "claudine/03" },
           ]}
         />
+        <div className="center">
+          <Link href="/claudine#fotogalleri">
+            <div className="button button-orange">Se fotogalleri</div>
+          </Link>
+        </div>
         <Divider />
         <section>
           <div className="inner">
             <div className="largetext">
               {/* <h5>om mark</h5> */}
-              <h2>Uden rugby var jeg blevet monsterfed</h2>{" "}
-              <p className="teal">
-                ´Uden rugby i mit liv havde jeg spillet for meget computerspil
-                og var blevet monsterfed. Jeg ville have kedet mig, men jeg
-                ville også have haft masser af tid til kæresten,´
-              </p>
+              <h2 className="teal">
+                Uden rugby var jeg blevet monsterfed
+              </h2>{" "}
               <p>
-                siger Afghanistan veteranen Mark Peters, som i dag bruger al sin
+                - Uden rugby i mit liv havde jeg spillet for meget computerspil
+                og var blevet monsterfed. Jeg ville have kedet mig, men jeg
+                ville også have haft masser af tid til kæresten, siger
+                Afghanistan veteranen Mark Peters, som i dag bruger al sin
                 fritid på at træne og spille kørestolsrugby. En holdsport som
                 har givet ham både mere energi, glæde og selvtillid. I dag er
                 hans blik kun rettet mod de Paralympiske Lege i Paris.
@@ -220,11 +202,16 @@ export default function Home() {
 
           <GridGallery
             images={[
-              { caption: "", image: "mark/01" },
-              { caption: "", image: "mark/02" },
+              { caption: "", image: "mark/18" },
+              { caption: "", image: "mark/19" },
               { caption: "", image: "mark/03" },
             ]}
           />
+          <div className="center">
+            <Link href="/mark#fotogalleri">
+              <div className="button button-teal">Se fotogalleri</div>
+            </Link>
+          </div>
         </section>
 
         <Divider />
@@ -244,7 +231,7 @@ export default function Home() {
                 det skal være muligt for alle med et handicap at komme ind og
                 deltage i både sport og kultur i det område, man bor i. Kilder:
                 Handicapkonventionen, FNs Verdensmål og Institut for
-                Menneskerettigheder{" "}
+                Menneskerettigheder
               </p>
             </div>
           </div>
@@ -254,7 +241,7 @@ export default function Home() {
           <div className="inner">
             <div className="largetext box right box-orange">
               <h2>Para- hvilke lege? </h2>
-              <p>
+              <p id="hvem-er-vi">
                 De Paralympiske Lege er verdens største internationale
                 begivenhed for atleter med handicap og finder sted umiddelbart
                 efter de Olympiske Lege i samme værtsby og samme faciliteter. I
@@ -335,88 +322,10 @@ export default function Home() {
               </p>
             </div>
           </div>
-          {/* <p>
-            Parasport Danmark arbejder for at alle mennesker med handicap eller
-            særlige behov skal have mulighed for at dyrke idræt. Herhjemme
-            tilbyder Parasport Danmark pt. aktiviteter inden for flere end 30
-            idrætsgrene. Der er muligheder for alle alders- og handicapgrupper
-            og på alle niveauer. Som Danmarks National Paralympiske Komite
-            sigter vi også mod at fostre eliteatleter og rollemodeller i
-            verdensklasse. Det var derfor en stor sejr, da det i 2020 lykkedes
-            det danske kørestolsrugby-hold at kvalificere sig til de
-            Paralympiske Lege for første gang nogensinde, Ca. 500 medlemsklubber
-            med knap 8000 medlemmer hører under Parasport Danmark, som er et
-            specialforbund under Danmarks Idrætsforbund, DIF. I samarbejde med
-            DHF er vi engageret i internationale udviklingsprojekter, der
-            styrker adgangen til parasport i Nepal, Bolivia, Vietnam og Uganda.
-          </p>
-          <p>
-            <span className='pink'>
-              National Paralympic Commitee, NPC, Rwanda
-            </span>{' '}
-            er Parasport Danmarks pendant i Rwanda. NPC samler, promoverer og
-            koordinerer idrætsklubbernes tilbud om parasport til mennesker med
-            forskellige typer handicap indenfor 13 sportsgrene. Tre af dem har i
-            de sidste 15 år opnået at blive repræsenteret ved de Paralympiske
-            Lege. Den paralympiske komite’s vision er, at Rwanda bliver det
-            førende paralympiske land i Afrika. NPC Rwanda arbejder derfor med
-            at udvikle et bæredygtigt paralympisk sportssystem i Rwanda, og for
-            at paraatleter får mulighed for at nå deres ambitioner på den lokale
-            og internationale sportsarena. Når det gælder holdsport, er
-            kvindernes siddende volleyball-hold komiteens stolthed.
-            Kvindelandsholdet skal til sommer deltage til de Paralympiske Lege
-            for fjerde gang.
-          </p> */}
         </section>
-        {/* <section>
-          <h2>Hvem står bag </h2>
-          <div className='largetext'>
-            <p>Fotograf Tine Harden og journalist Hanne Selnæs</p>
-            <p>i samarbejde med Dansk Handicap Forbund (DHF).</p>
-          </div>
-        </section> */}
-        <Divider />
-        <footer>
-          <div className="inner">
-            <div className="large">
-              <h3>
-                TO VERDENER <br />
-                SAMME MÅL
-              </h3>
 
-              <p>
-                <i>To Verdener – Samme Mål</i> er blevet til i samarbejde med
-                Dansk Handicap Forbund.
-              </p>
-              <p>
-                Tak til CISU og Timbuktu Fonden for økonomisk støtte og for
-                opbakning fra Danske Handicaporganisationer, Parasport Danmark,
-                DGI, Vejle Kommune og NPC Rwanda.
-              </p>
-            </div>
-            {/* <div className='small'>
-              {' '}
-              <h5>om mark</h5>
-              <h5>om claudine</h5>
-            </div> */}
-            <div className="small">
-              {" "}
-              <h5>kontakt</h5>
-              <p>
-                Hanne Selnæs:{" "}
-                <a href="mailto:hanne.selnaes@gmail.com" className="underlined">
-                  hanne.selnaes@gmail.com
-                </a>{" "}
-              </p>
-              <p>
-                Tine Harden:{" "}
-                <a href="mailto:tine@tineharden.dk" className="underlined">
-                  tine@harden.dk
-                </a>
-              </p>
-            </div>
-          </div>
-        </footer>
+        <Divider />
+        <Footer />
       </main>
     </div>
   );

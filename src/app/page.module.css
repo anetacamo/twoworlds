@@ -1,3 +1,18 @@
 .main {
   padding-top: 100px;
 }
+
+.button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+}
+
+.buttonLeft {
+  margin-left: 8px;
+}
+.buttonRight {
+  margin-right: 8px;
+}

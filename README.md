@@ -37,17 +37,30 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO
 
+- the video in fullscreen should continue playing at the same time as it played in the mainpage
+- add logos
+- single quotes fix
+- footer
+- fix the text
+
+### DONE
+
+- change headings in separated pictures: styled them and unified them
+- added and exchanged marks picture
+- decreased rounded corners pictures
+- edited the links in the menu and added anchors to all the links
+- added new texts from the mail
+- under pictures on main page add link to see all the pictures: "se alle billeder" + created anchor tags
+- removed da | en
+- 'interaktiv video' - haeadline added
+- move the balls - video: between the buttons and the video
+- added footer everywhere
+
+- footer finish
+- not playing on phone
 - sound not playing
 - sound is lacking
 - time indicator?
-- not playing on phone
-- footer finish
-- interactive video haeadline
-- move the balls
-- under pictures on main page add link to see all the pictures
-- the video in fullscreen should continue playing at the same time as it played in the mainpage
-
-### DONE
 
 - added mark
 - pictures before fakta boxes
