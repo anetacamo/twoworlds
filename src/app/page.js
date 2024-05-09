@@ -88,12 +88,12 @@ export default function Home() {
                 </span>
               </h1>
               <p>
-                De er begge skadet i krig.
-                <br />
-                Den ene som voksen i Afghanistan, den anden som barn under
-                folkemord i Rwanda. En professionel soldat og et uskyldigt barn.
-                Begge har mistet ben, og begge er kommet videre gennem
-                parasporten.
+                De er begge skadet i krig. Den ene som voksen i Afghanistan, den
+                anden som barn under folkemord i Rwanda. <br /> En professionel
+                soldat og et uskyldigt barn. Begge har mistet ben, og begge er
+                kommet videre gennem parasporten. Om kort tid skal de hver især
+                repræsentere deres land til de Paralympiske Lege (PL) i Paris
+                2024. Nu er det kampen om medaljer, det gælder.
               </p>
             </div>
           </div>
@@ -110,19 +110,11 @@ export default function Home() {
           <div className="inner">
             <div className="largetext center">
               <p>
-                Om kort tid skal de hver især repræsentere deres land til de
-                Paralympiske Lege (PL) i Paris 2024. Nu er det kampen om
-                medaljer, det gælder. Siden 2020 har vi fulgt de to stjerner og
-                deres hold i Rwanda og i Danmark.
+                Siden 2020 har vi fulgt de to stjerner og deres hold i Rwanda og
+                i Danmark. Gennem dem har vi oplevet, hvordan muligheden for at
+                dyrke holdsport kan få mennesker til at drømme stort.{" "}
               </p>
-              <p>
-                Gennem dem har vi oplevet, hvordan muligheden for at dyrke
-                holdsport kan få mennesker til at drømme stort. Ikke kun i et
-                udviklingsland, hvor mennesker med handicap ofte er at finde
-                blandt samfundets mest udsatte og fattige, men også i et
-                velfærdssamfund som Danmark. Det sætter vores projekt ’To
-                Verdener – Samme Mål’ spot på.
-              </p>
+              <p>Det sætter vores projekt ’To Verdener – Samme Mål’ spot på.</p>
             </div>
           </div>
         </section>
@@ -287,38 +279,32 @@ export default function Home() {
         <section>
           <div className="inner">
             <div className="largetext">
-              <h2>Vores partners</h2>
+              <h2>Projektet bliver til i samarbejde med:</h2>
               <p>
-                <span className="pink">Dansk Handicap Forbund, DHF</span>{" "}
-                arbejder for at mennesker med bevægelseshandicap har samme
-                rettigheder som alle andre. DHF har 8.300 medlemmer i Danmark.
-                Internationalt er DHF engageret i udviklingsprojekter i otte
-                lande i Asien, Afrika og Mellemamerika.
+                <span className="pink">Dansk Handicap Forbund, DHF,</span>{" "}
+                arbejder for, at mennesker med bevægelseshandicap har samme
+                rettigheder som alle andre. DHF har 7.200 medlemmer i Danmark.
               </p>
               <p>
-                Sammen med <span className="pink">Parasport Danmark</span> er vi
-                med til at styrke adgangen til parasport i Nepal, Bolivia,
-                Vietnam og Uganda. Parasport Danmark arbejder for, at alle
-                mennesker med handicap eller særlige behov skal have mulighed
-                for at dyrke idræt. Herhjemme tilbyder Parasport Danmark pt.
-                aktiviteter inden for flere end 30 idrætsgrene. Parasport
-                Danmark har knap 8000 medlemmer.
+                Internationalt er DHF engageret i udviklingsprojekter i
+                femlande. Sammen med Parasport Danmark er DHF med til at styrke
+                adgangen til parasport i Bolivia, Vietnam og Uganda.
               </p>
               <p>
-                Som Danmarks{" "}
-                <span className="pink">National Paralympiske Komite</span>{" "}
-                sigter vi også mod at fostre eliteatleter og rollemodeller i
-                verdensklasse. Internationalt er vi engageret i
-                udviklingsprojekter, der styrker adgangen til parasport. I
-                samarbejde med DHF. National Paralympic Commitee, NPC, Rwanda
-                har I Rwanda samme rolle som Parasport Danmark har i Danmark.{" "}
+                <span className="pink">Parasport Danmark</span> arbejder for, at
+                alle mennesker med handicap eller særlige behov skal have
+                mulighed for at dyrke idræt. Parasport Danmark har mere end 500
+                medlemsforeninger over hele landet.
               </p>
               <p>
-                NPC promoverer og koordinerer flere idrætsklubbers tilbud om
-                parasport til mennesker med forskellige typer handicap indenfor
-                13 sportsgrene. NPC arbejder på at Rwanda bliver det førende
-                paralympiske land i Afrika. Indenfor holdsport er komitteens
-                stolthed kvindelandsholdet i siddende volleyball.
+                Som Danmarks Nationale Paralympiske Komité sigter Parasport
+                Danmark også mod at fostre eliteatleter og rollemodeller i
+                verdensklasse.
+              </p>
+              <p>
+                Internationalt er Parasport Danmark sammen med DHF engageret i
+                projekter, der styrker adgangen til parasport for personer med
+                handicap i udviklingslande.
               </p>
             </div>
           </div>

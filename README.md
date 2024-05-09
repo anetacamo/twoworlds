@@ -38,13 +38,13 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 ## TODO
 
 - the video in fullscreen should continue playing at the same time as it played in the mainpage
-- add logos
-- single quotes fix
 - footer
-- fix the text
 
 ### DONE
 
+- add logos
+- single quotes fix
+- replaced the text on homepage and claudines page
 - change headings in separated pictures: styled them and unified them
 - added and exchanged marks picture
 - decreased rounded corners pictures

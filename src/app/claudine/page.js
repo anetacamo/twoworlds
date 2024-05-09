@@ -54,9 +54,10 @@ export default function Claudine() {
             <div className="largetext">
               <h2 className="orange">Jeg vil være en af verdens bedste</h2>
               <h2>
-                Claudine er blevet en sportsstjerne i sit eget land Rwanda. Og
-                hun drømmer om mere. Hun vil være en af de allerbedste spillere
-                i verden. Sportsgrenen hedder siddende volleyball.
+                Claudine Murebwayire er blevet en sportsstjerne i sit eget land
+                Rwanda. Og hun drømmer om mere. Hun vil være en af de
+                allerbedste spillere i verden. Sportsgrenen hedder siddende
+                volleyball.
               </h2>
               <p>
                 <i>Af Hanne Selnæs</i>
@@ -75,9 +76,9 @@ export default function Claudine() {
                 For kvinderne på Claudines hold er blevet sportsstjerner i
                 Rwanda. Til sommer skal de til Paris og deltage i de
                 Paralympiske Lege. Det er fjerde gang det afrikanske hold
-                kvalificerer sig. Sidst var i Tokyo2020. Her blev det til en XX
-                plads. Nu drømmer Claudine om at blive en af de bedste spillere
-                i verden.
+                kvalificerer sig. Sidst til Tokyo2020, hvor det blev det til en
+                7. plads. Nu drømmer Claudine om at blive en af de bedste
+                spillere i verden.
               </p>
               <p>
                 Måske lykkes det. Landstræneren fra Ægypten har store
@@ -115,7 +116,7 @@ export default function Claudine() {
                 ”Da jeg fandt ud af, at jeg kunne spille siddende volleyball,
                 blev jeg meget, meget glad,” fortæller hun mig, da vi sidder i
                 hendes stue efter en turnering i nabobyen. Hendes mand koger
-                spaghetti på trækul i baggården, mens sønnen XX på 5 år
+                spaghetti på trækul i baggården, mens sønnen Berwa på 5 år
                 nysgerrigt følger med i snakken.
               </p>
               <h3 className="orange" style={{ marginTop: 60 }}>
@@ -124,13 +125,13 @@ export default function Claudine() {
               <p>
                 Claudines søn er kun et år ældre, end Claudine selv var, da hun
                 mistede sit ben. Det var under Folkemordet i Rwanda i 1994. I
-                længere tid var der gennem radio og andre kanaler spredt hadtale
-                mod et mindretal af befolkningen, tutsier. Den anden store
-                befolkningsgruppe, hutuer, blev bevæbnet eller fandt selv hakker
-                og knive frem. Og en dag gik det løs. Naboer gik løs på naboer.
-                Tutsier i tusindvis blev dræbt. Et folkemord skyllede ind over
-                det lille land, børn og voksne blev drevet på flugt, mens de
-                forsøgte at skjule sig undervejs.
+                længere tid var der gennem radio og andre kanaler spredt
+                hadefuld tale mod et mindretal af befolkningen, tutsier. Den
+                anden store befolkningsgruppe, hutuer, blev bevæbnet eller fandt
+                selv hakker og knive frem. Og en dag gik det løs. Naboer gik løs
+                på naboer. Tutsier i tusindvis blev dræbt. Et folkemord skyllede
+                ind over det lille land. Børn og voksne blev drevet på flugt,
+                mens de forsøgte at skjule sig undervejs.
               </p>
               <p>
                 Claudine på kun fire år flygtede til fods sammen med sin
@@ -264,23 +265,23 @@ export default function Claudine() {
               <section>
                 <div className="inner">
                   <div className="largetext box right box-orange">
-                    <h2 className="orange">Fakta om Siddende Volleyball</h2>
+                    <h2 className="orange">FAKTA om Siddende Volleyball</h2>
                     <p>
-                      Siddende volley, også kaldet paravolley, er den største
-                      holdidræt ved de Paralympiske Lege.
-                    </p>
-                    <p>
-                      I siddende volley sidder spillerne på gulvet og bevæger
-                      sig rundt ved hjælp af armene. Banen er mindre end en
+                      Siddende volleyball, også kaldet paravolley, er den
+                      største holdidræt ved de Paralympiske Lege. Hele 66 lande
+                      har kæmpet om de i alt 16 pladser ved PL Paris2024. I
+                      siddende volley sidder spillerne på gulvet og bevæger sig
+                      rundt ved hjælp af armene. Banen er mindre end en
                       almindelig volleyballbane og nettets højde er 1.15 meter.
-                      Der spilles som udgangspunkt efter reglerne i almen volley
-                      med nogle få justeringer. Boldene er de samme i begge
-                      typer volleyball.
+                      Der spilles som udgangspunkt efter reglerne i almen
+                      volleyball med nogle få justeringer. Boldene er de samme i
+                      begge typer volleyball.
                     </p>
                     <p>
                       I Danmark er der lige nu kun to klubber, som tilbyder
-                      siddende volley: Lavia Aarhus og Lavia København. I Rwanda
-                      er der hele XX klubber.
+                      siddende volleyball: Lavia Aarhus og Lavia København. I
+                      Rwanda er der i alt 28 hold. Ni kvindehold og 19
+                      herrehold.
                     </p>
                     <p>
                       Syv landes kvindehold har kvalificeret sig til de

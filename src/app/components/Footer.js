@@ -11,11 +11,11 @@ export default function Footer() {
             SAMME MÅL
           </h3>
 
-          <p>
+          <p style={{ maxWidth: 440 }}>
             To Verdener – Samme Mål er blevet til i samarbejde med Dansk
             Handicap Forbund.
           </p>
-          <p>
+          <p style={{ maxWidth: 540 }}>
             Tak til CISU og Timbuktu Fonden for økonomisk støtte og for
             opbakning fra Danske Handicaporganisationer, Parasport Danmark, DGI,
             Vejle Kommune og NPC Rwanda.
@@ -34,8 +34,7 @@ export default function Footer() {
             </a>{" "}
           </p>
           <p>
-          <span className="orange">
-            Tine Harden</span>
+            <span className="orange">Tine Harden</span>
             <br />
             Fotograf
             <br />
@@ -43,7 +42,17 @@ export default function Footer() {
               tine@harden.dk
             </a>
           </p>
-          <p>logo: DHF, Timbuktu, SISU</p>
+          <h5 style={{ marginTop: 32 }}>
+            Projektet bliver til i samarbejde med
+          </h5>
+          <div className="flex" style={{ display: "flex" }}>
+            <img
+              className="logoicon"
+              style={{ marginRight: 24, filter: "brightness(0) invert(1)" }}
+              src={`/images/logos/CISU.png`}
+            />
+            <img className="logoicon" src={`/images/logos/DHF.png`} />
+          </div>
         </div>
       </div>
     </footer>
