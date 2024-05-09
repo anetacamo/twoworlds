@@ -44,8 +44,6 @@ export default function Claudine() {
         )}
       </div>
       <main style={{ marginTop: 150 }}>
-        <Divider />
-
         <section>
           <div className="inner">
             <div className="largetext">
@@ -58,7 +56,6 @@ export default function Claudine() {
                 siger Mark, som i dag drømmer om at vinde guld indenfor denne
                 særlige kontaktsport.
               </h2>
-
               <p>
                 <i>Af Hanne Selnæs</i>
               </p>

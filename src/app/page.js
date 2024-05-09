@@ -97,15 +97,15 @@ export default function Home() {
                 2024. Nu er det kampen om medaljer, det gælder.
               </p>
             </div>
+
+            <GridGallery
+              images={[
+                { caption: "", image: "mark/16" },
+                { caption: "", image: "claudine/01" },
+              ]}
+            />
           </div>
         </section>
-
-        <GridGallery
-          images={[
-            { caption: "", image: "mark/16" },
-            { caption: "", image: "claudine/01" },
-          ]}
-        />
 
         <section style={{ marginBottom: -24, marginTop: -24 }}>
           <div className="inner">
@@ -117,15 +117,16 @@ export default function Home() {
               </p>
               <p>Det sætter vores projekt ’To Verdener – Samme Mål’ spot på.</p>
             </div>
+
+            <GridGallery
+              images={[
+                { caption: "", image: "mark/17" },
+                { caption: "", image: "claudine/06" },
+              ]}
+            />
+            <Divider />
           </div>
         </section>
-        <GridGallery
-          images={[
-            { caption: "", image: "mark/17" },
-            { caption: "", image: "claudine/06" },
-          ]}
-        />
-        <Divider />
         <section>
           <h1 className="center">
             mark og
@@ -153,16 +154,16 @@ export default function Home() {
                 </div>
               </Link>
             </div>
+
+            <GridGallery
+              images={[
+                { caption: "", image: "claudine/01" },
+                { caption: "", image: "claudine/02" },
+                { caption: "", image: "claudine/03" },
+              ]}
+            />
           </div>
         </section>
-
-        <GridGallery
-          images={[
-            { caption: "", image: "claudine/01" },
-            { caption: "", image: "claudine/02" },
-            { caption: "", image: "claudine/03" },
-          ]}
-        />
         <div className="center">
           <Link href="/claudine#fotogalleri">
             <div className="button button-orange">Se fotogalleri</div>
@@ -191,59 +192,54 @@ export default function Home() {
                 </div>
               </Link>
             </div>
-          </div>
 
-          <GridGallery
-            images={[
-              { caption: "", image: "mark/18" },
-              { caption: "", image: "mark/19" },
-              { caption: "", image: "mark/03" },
-            ]}
-          />
+            <GridGallery
+              images={[
+                { caption: "", image: "mark/18" },
+                { caption: "", image: "mark/19" },
+                { caption: "", image: "mark/03" },
+              ]}
+            />
+          
           <div className="center">
             <Link href="/mark#fotogalleri">
               <div className="button button-teal">Se fotogalleri</div>
             </Link>
           </div>
+          </div>
+          <Divider />
         </section>
 
-        <Divider />
-        <section>
-          <div className="inner">
-            <div className="largetext box">
-              <h2>Alle har ret til at dyrke sport</h2>
-              <p>
-                FN’s Verdensmål og Handicapkonvention giver alle lige
-                rettigheder også når det gælder muligheden for at dyrke sport.
-                Virkeligheden lever dog ikke altid op til verdenssamfundets
-                smukke ord om ikke at lade nogen i stikken - ’Leave Noone
-                Behind’. Heller ikke, når det gælder adgangen til at dyrke
-                sport. I handicapkonventionen står der, at personer med handicap
-                har ret til at være med til sport og kultur. Og have mulighed
-                for at have sin egen sport og kultur. Det betyder i praksis, at
-                det skal være muligt for alle med et handicap at komme ind og
-                deltage i både sport og kultur i det område, man bor i. Kilder:
-                Handicapkonventionen, FNs Verdensmål og Institut for
-                Menneskerettigheder
-              </p>
-            </div>
-          </div>
-        </section>
+     
 
-        <section>
-          <div className="inner">
-            <div className="largetext box right box-orange">
-              <h2>Para- hvilke lege? </h2>
-              <p id="hvem-er-vi">
-                De Paralympiske Lege er verdens største internationale
-                begivenhed for atleter med handicap og finder sted umiddelbart
-                efter de Olympiske Lege i samme værtsby og samme faciliteter. I
-                2024 afholdes PL i Paris fra 28. august – 8. september. 23
-                forskellige sportsgrene med 4400 deltagere deltager.
-              </p>
-            </div>
-          </div>
-        </section>
+        <div className="largetext box">
+          <h2>Alle har ret til at dyrke sport</h2>
+          <p>
+            FN’s Verdensmål og Handicapkonvention giver alle lige rettigheder
+            også når det gælder muligheden for at dyrke sport. Virkeligheden
+            lever dog ikke altid op til verdenssamfundets smukke ord om ikke at
+            lade nogen i stikken - ’Leave Noone Behind’. Heller ikke, når det
+            gælder adgangen til at dyrke sport. I handicapkonventionen står der,
+            at personer med handicap har ret til at være med til sport og
+            kultur. Og have mulighed for at have sin egen sport og kultur. Det
+            betyder i praksis, at det skal være muligt for alle med et handicap
+            at komme ind og deltage i både sport og kultur i det område, man bor
+            i. Kilder: Handicapkonventionen, FNs Verdensmål og Institut for
+            Menneskerettigheder
+          </p>
+        </div>
+
+        <div className="largetext box right box-orange">
+          <h2>Para- hvilke lege? </h2>
+          <p id="hvem-er-vi">
+            De Paralympiske Lege er verdens største internationale begivenhed
+            for atleter med handicap og finder sted umiddelbart efter de
+            Olympiske Lege i samme værtsby og samme faciliteter. I 2024 afholdes
+            PL i Paris fra 28. august – 8. september. 23 forskellige sportsgrene
+            med 4400 deltagere deltager.
+          </p>
+        </div>
+
         <Divider />
 
         <section>

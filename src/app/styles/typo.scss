@@ -99,6 +99,9 @@ body {
   margin-right: auto;
   p {
     font-size: 20px;
+    @media (max-width: 600px) {
+      font-size: 16px;
+    }
   }
 }
 
@@ -112,7 +115,7 @@ body {
 .box {
   text-align: left;
   padding-left: 1.5rem;
-  @media (max-width: 550px) {
+  @media (max-width: 600px) {
     padding-left: 0.75rem;
   }
   //border-radius: 4px;
@@ -127,7 +130,7 @@ body {
     padding-right: 1.5rem;
     border-left: none;
     text-align: right;
-    @media (max-width: 550px) {
+    @media (max-width: 600px) {
       padding-right: 0.75rem;
     }
   }
@@ -138,7 +141,7 @@ body {
     border-color: $teal;
   }
   p {
-    font-size: 18px;
+    //font-size: 18px;
     line-height: 1.6;
     letter-spacing: 0.8px;
     //font-weight: 300;
@@ -157,20 +160,20 @@ a {
 p {
   line-height: 1.4;
   font-size: 16px;
+  @media (max-width: 600px) {
+    font-size: 14px;
+  }
 }
 
-h1 {
+h1,
+.blue {
   font-size: 40px;
   text-transform: uppercase;
   font-weight: 700;
   letter-spacing: 4px;
   line-height: 1.05;
-  .blue {
-    font-size: 40px;
-    text-transform: uppercase;
-    font-weight: 700;
-    letter-spacing: 4px;
-    line-height: 1.05;
+  @media (max-width: 600px) {
+    font-size: 32px;
   }
 }
 
@@ -207,8 +210,14 @@ h1 {
 
 h2 {
   font-size: 32px;
+  @media (max-width: 600px) {
+    font-size: 28px;
+  }
 }
 
 h3 {
   font-size: 24px;
+  @media (max-width: 600px) {
+    font-size: 22px;
+  }
 }

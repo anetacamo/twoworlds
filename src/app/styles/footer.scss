@@ -26,10 +26,6 @@ footer {
     }
     .small {
       width: 25%;
-
-      @media (max-width: 550px) {
-        padding-left: 0.75rem;
-      }
       @media (max-width: 750px) {
         width: 100%;
       }
