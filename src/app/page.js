@@ -28,6 +28,7 @@ export default function Home() {
           <div className="inner">
             <h1 className="center">Interaktiv video</h1>
             <br />
+            <br />
             <Video
               player={player}
               setPlayer={handlePlayerChange}
@@ -101,8 +102,8 @@ export default function Home() {
 
         <GridGallery
           images={[
-            { caption: "", image: "claudine/01" },
             { caption: "", image: "mark/16" },
+            { caption: "", image: "claudine/01" },
           ]}
         />
 
@@ -120,8 +121,8 @@ export default function Home() {
         </section>
         <GridGallery
           images={[
-            { caption: "", image: "claudine/06" },
             { caption: "", image: "mark/17" },
+            { caption: "", image: "claudine/06" },
           ]}
         />
         <Divider />
@@ -134,18 +135,18 @@ export default function Home() {
         <section style={{ textAlign: "right" }}>
           <div className="inner">
             <div className="largetext">
-              <h2 className="orange">Jeg vil være en af verdens bedste</h2>{" "}
-              <p>
+              <h2 className="orange">Jeg vil være en af verdens bedste</h2>
+              <p style={{ maxWidth: 540, marginRight: 0, marginLeft: "auto" }}>
                 Når Claudine og hendes hold vender hjem efter en sejr i
                 udlandet, går det ikke stille for sig.
               </p>
-              <p>
+              <p style={{ marginBottom: 32 }}>
                 I åbne busser kører kvindelandsholdet hujende og syngende gennem
                 hovedstadens gader, fylder godt på Instagram og bliver
                 interviewet til Rwandas TV og radio. Claudine og
                 kvindelandsholdet i siddende volleyball er blevet
                 sportsstjerner. Og Claudine drømmer stadig om mere.
-              </p>{" "}
+              </p>
               <Link href="/claudine">
                 <div className="button button-orange center">
                   Læs Claudines historie her
@@ -175,7 +176,7 @@ export default function Home() {
               <h2 className="teal">
                 Uden rugby var jeg blevet monsterfed
               </h2>{" "}
-              <p>
+              <p style={{ marginBottom: 32 }}>
                 - Uden rugby i mit liv havde jeg spillet for meget computerspil
                 og var blevet monsterfed. Jeg ville have kedet mig, men jeg
                 ville også have haft masser af tid til kæresten, siger

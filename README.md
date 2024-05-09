@@ -37,13 +37,15 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO
 
+- move the name swap in mobile to middle
+- mobile too big
 - the video in fullscreen should continue playing at the same time as it played in the mainpage
-- footer
+- single quotes fix
 
 ### DONE
 
-- add logos
-- single quotes fix
+- footer
+- added logos to the footer
 - replaced the text on homepage and claudines page
 - change headings in separated pictures: styled them and unified them
 - added and exchanged marks picture

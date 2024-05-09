@@ -211,7 +211,7 @@ export default function Claudine() {
             <div id="fotogalleri">
               <Divider />
             </div>
-            <h2 >Fotogalleri</h2>
+            <h2>Fotogalleri</h2>
             <p>by Tine Harden</p>
             <GridGallery
               images={[
@@ -219,6 +219,8 @@ export default function Claudine() {
                 { caption: "", image: "mark/17" },
                 { caption: "", image: "mark/18" },
                 { caption: "", image: "mark/19" },
+                { caption: "", image: "mark/20" },
+                { caption: "", image: "mark/21" },
                 { caption: "", image: "mark/01" },
                 { caption: "", image: "mark/02" },
                 { caption: "", image: "mark/03" },
