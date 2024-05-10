@@ -1,4 +1,12 @@
 /* classes for the menu animation */
+
+.hamburger {
+  width: 180px;
+  @media (max-width: 800px) {
+    max-width: min-content;
+  }
+}
+
 .hamburger-menu {
   padding-top: 6px;
   cursor: pointer;

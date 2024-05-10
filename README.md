@@ -40,10 +40,10 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 - move the name swap in mobile to middle
 - mobile too big
 - the video in fullscreen should continue playing at the same time as it played in the mainpage
-- single quotes fix
 
 ### DONE
 
+- single quotes fix
 - footer
 - added logos to the footer
 - replaced the text on homepage and claudines page

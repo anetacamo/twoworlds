@@ -210,33 +210,37 @@ export default function Home() {
           <Divider />
         </section>
 
-        <div className="largetext box">
-          <h2>Alle har ret til at dyrke sport</h2>
-          <p>
-            FN’s Verdensmål og Handicapkonvention giver alle lige rettigheder
-            også når det gælder muligheden for at dyrke sport. Virkeligheden
-            lever dog ikke altid op til verdenssamfundets smukke ord om ikke at
-            lade nogen i stikken - ’Leave Noone Behind’. Heller ikke, når det
-            gælder adgangen til at dyrke sport. I handicapkonventionen står der,
-            at personer med handicap har ret til at være med til sport og
-            kultur. Og have mulighed for at have sin egen sport og kultur. Det
-            betyder i praksis, at det skal være muligt for alle med et handicap
-            at komme ind og deltage i både sport og kultur i det område, man bor
-            i. Kilder: Handicapkonventionen, FNs Verdensmål og Institut for
-            Menneskerettigheder
-          </p>
-        </div>
+        <section>
+          <div className="largetext box">
+            <h2>Alle har ret til at dyrke sport</h2>
+            <p>
+              FN’s Verdensmål og Handicapkonvention giver alle lige rettigheder
+              også når det gælder muligheden for at dyrke sport. Virkeligheden
+              lever dog ikke altid op til verdenssamfundets smukke ord om ikke
+              at lade nogen i stikken - ’Leave Noone Behind’. Heller ikke, når
+              det gælder adgangen til at dyrke sport. I handicapkonventionen
+              står der, at personer med handicap har ret til at være med til
+              sport og kultur. Og have mulighed for at have sin egen sport og
+              kultur. Det betyder i praksis, at det skal være muligt for alle
+              med et handicap at komme ind og deltage i både sport og kultur i
+              det område, man bor i. Kilder: Handicapkonventionen, FNs
+              Verdensmål og Institut for Menneskerettigheder
+            </p>
+          </div>
+        </section>
 
-        <div className="largetext box right box-orange">
-          <h2>Para- hvilke lege? </h2>
-          <p id="hvem-er-vi">
-            De Paralympiske Lege er verdens største internationale begivenhed
-            for atleter med handicap og finder sted umiddelbart efter de
-            Olympiske Lege i samme værtsby og samme faciliteter. I 2024 afholdes
-            PL i Paris fra 28. august – 8. september. 23 forskellige sportsgrene
-            med 4400 deltagere deltager.
-          </p>
-        </div>
+        <section>
+          <div className="largetext box right box-orange">
+            <h2>Para- hvilke lege? </h2>
+            <p id="hvem-er-vi">
+              De Paralympiske Lege er verdens største internationale begivenhed
+              for atleter med handicap og finder sted umiddelbart efter de
+              Olympiske Lege i samme værtsby og samme faciliteter. I 2024
+              afholdes PL i Paris fra 28. august – 8. september. 23 forskellige
+              sportsgrene med 4400 deltagere deltager.
+            </p>
+          </div>
+        </section>
 
         <Divider />
 
