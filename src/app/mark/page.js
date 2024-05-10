@@ -237,67 +237,62 @@ export default function Claudine() {
 
             <div>
               <section>
-                <div className="inner">
-                  <div className="largetext box box-teal">
-                    <h2 className="teal">Fakta om krigen i Afghanistan </h2>
-                    <p>
-                      Det var terrorangrebet mod USA 11.september 2001, som fik
-                      USA til at invadere Afghanistan 7. oktober 2001.
-                    </p>
-                    <p>
-                      USA hævdede, at invasionen var i tråd med folkerettens
-                      princip om retten til selvforsvar. De fleste lande bakkede
-                      op om USA fortolkning, da al-Qaida, hvis ledelse befandt
-                      sig i det Taliban-ledede Afghanistan, tog ansvar for
-                      terrorangrebet mod USA.
-                    </p>
-                    <p>
-                      Danmark deltog sammen med andre NATO-lande i de næste 20
-                      års krig i landet. En krig som anslås at have kostet
-                      omkring 176.000 menneskeliv. Heraf ca. 46.000 civile. 44
-                      danske soldater mistede livet og 214 blev såret.
-                    </p>
-                    <p>
-                      <i>
-                        Kilder: Globalis.dk, Watson Institute, Brown University,
-                        USA, og Forsvarsministeriets personalestyrelse
-                      </i>
-                    </p>
-                  </div>
+                <div className="largetext box box-teal">
+                  <h2 className="teal">Fakta om krigen i Afghanistan </h2>
+                  <p>
+                    Det var terrorangrebet mod USA 11.september 2001, som fik
+                    USA til at invadere Afghanistan 7. oktober 2001.
+                  </p>
+                  <p>
+                    USA hævdede, at invasionen var i tråd med folkerettens
+                    princip om retten til selvforsvar. De fleste lande bakkede
+                    op om USA fortolkning, da al-Qaida, hvis ledelse befandt sig
+                    i det Taliban-ledede Afghanistan, tog ansvar for
+                    terrorangrebet mod USA.
+                  </p>
+                  <p>
+                    Danmark deltog sammen med andre NATO-lande i de næste 20 års
+                    krig i landet. En krig som anslås at have kostet omkring
+                    176.000 menneskeliv. Heraf ca. 46.000 civile. 44 danske
+                    soldater mistede livet og 214 blev såret.
+                  </p>
+                  <p>
+                    <i>
+                      Kilder: Globalis.dk, Watson Institute, Brown University,
+                      USA, og Forsvarsministeriets personalestyrelse
+                    </i>
+                  </p>
                 </div>
               </section>
 
               <section>
-                <div className="inner">
-                  <div className="largetext box right box-teal">
-                    <h2 className="teal">Fakta om kørestolsrugby</h2>
-                    <p>
-                      Kørestolsrugby er en kontaktsport, som kendetegnes ved
-                      højt tempo, strategi og tacklinger. Mænd og kvinder kan
-                      deltage på samme hold. Spillerne bruger specialdesignede
-                      kørestole (rugbystole) og det er tilladt at vælte
-                      modstanderen.
-                    </p>
-                    <p>
-                      Kun spillere med nedsat funktion i både arme og ben kan
-                      kvalificere sig til sporten.
-                    </p>
-                    <p>
-                      Kørestolsrugby spilles på en håndboldbane med fire
-                      spillere på banen ad gangen. Sporten er en blanding af
-                      basketball, hockey og rugby, mens bolden er rund og ligner
-                      en volleyball.
-                    </p>
-                    <p>
-                      I Danmark er der lige nu seks klubber, som tilbyder
-                      kørestolsrugby: I Rwanda er der ingen klubber. Danmark er
-                      et af i alt otte lande, som har kvalificeret sig til de
-                      Paralympiske Lege, Paris 2024.
-                    </p>
-                    <p>
-                      <i>Kilder: Parasport.dk og paralympic.org</i>
-                    </p>
-                  </div>
+                <div className="largetext box right box-orange">
+                  <h2 className="orange">Fakta om kørestolsrugby</h2>
+                  <p>
+                    Kørestolsrugby er en kontaktsport, som kendetegnes ved højt
+                    tempo, strategi og tacklinger. Mænd og kvinder kan deltage
+                    på samme hold. Spillerne bruger specialdesignede kørestole
+                    (rugbystole) og det er tilladt at vælte modstanderen.
+                  </p>
+                  <p>
+                    Kun spillere med nedsat funktion i både arme og ben kan
+                    kvalificere sig til sporten.
+                  </p>
+                  <p>
+                    Kørestolsrugby spilles på en håndboldbane med fire spillere
+                    på banen ad gangen. Sporten er en blanding af basketball,
+                    hockey og rugby, mens bolden er rund og ligner en
+                    volleyball.
+                  </p>
+                  <p>
+                    I Danmark er der lige nu seks klubber, som tilbyder
+                    kørestolsrugby: I Rwanda er der ingen klubber. Danmark er et
+                    af i alt otte lande, som har kvalificeret sig til de
+                    Paralympiske Lege, Paris 2024.
+                  </p>
+                  <p>
+                    <i>Kilder: Parasport.dk og paralympic.org</i>
+                  </p>
                 </div>
               </section>
             </div>

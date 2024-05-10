@@ -117,6 +117,7 @@ body {
   padding-left: 1.5rem;
   @media (max-width: 600px) {
     padding-left: 0.75rem;
+    border-left: 8px solid;
   }
   //border-radius: 4px;
   border-left: 12px solid;
@@ -125,6 +126,7 @@ body {
   margin-left: auto;
   text-align: left;
   margin-right: auto;
+
   &.right {
     border-right: 12px solid;
     padding-right: 1.5rem;
@@ -132,6 +134,7 @@ body {
     text-align: right;
     @media (max-width: 600px) {
       padding-right: 0.75rem;
+      border-right: 8px solid;
     }
   }
   &.box-orange {

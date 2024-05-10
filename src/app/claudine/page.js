@@ -232,66 +232,60 @@ export default function Claudine() {
             />
             <div>
               <section>
-                <div className="inner">
-                  <div className="largetext box box-teal">
-                    <h2 className="teal">Fakta om folkemordet i Rwanda </h2>
-                    <p>
-                      I 1994 fandt et folkedrab sted i Rwanda. løbet af tre
-                      måneder blev omkring 800.000 tutsier og moderate hutuer
-                      slået ihjel af ekstremistiske hutuer og deres medløbere.
-                    </p>
-                    <p>
-                      Hadefuld tale og massiv propaganda gennem medierne
-                      spillede hutuer ud mod tutsier, og opfordrede ekstremister
-                      blandt hutuerne til at myrde deres tutsi-naboer.
-                    </p>
-                    <p>
-                      Hutuer og tutsier har samme sprog, kultur og religion.
-                      Tutsier udgør et mindretal af befolkningen.
-                    </p>
-                    <p>
-                      Ved folkedrabets afslutning var landet i ruiner og to
-                      millioner mennesker var drevet på flugt - tusindvis var
-                      sårede og traumatiserede. Rwanda, som er på størrelse med
-                      Jylland, skulle bygges op fra grunden.
-                    </p>
-                    <p>
-                      <i>Kilder: DIIS og UNRIC</i>
-                    </p>
-                  </div>
+                <div className="largetext box box-teal">
+                  <h2 className="teal">Fakta om folkemordet i Rwanda </h2>
+                  <p>
+                    I 1994 fandt et folkedrab sted i Rwanda. løbet af tre
+                    måneder blev omkring 800.000 tutsier og moderate hutuer
+                    slået ihjel af ekstremistiske hutuer og deres medløbere.
+                  </p>
+                  <p>
+                    Hadefuld tale og massiv propaganda gennem medierne spillede
+                    hutuer ud mod tutsier, og opfordrede ekstremister blandt
+                    hutuerne til at myrde deres tutsi-naboer.
+                  </p>
+                  <p>
+                    Hutuer og tutsier har samme sprog, kultur og religion.
+                    Tutsier udgør et mindretal af befolkningen.
+                  </p>
+                  <p>
+                    Ved folkedrabets afslutning var landet i ruiner og to
+                    millioner mennesker var drevet på flugt - tusindvis var
+                    sårede og traumatiserede. Rwanda, som er på størrelse med
+                    Jylland, skulle bygges op fra grunden.
+                  </p>
+                  <p>
+                    <i>Kilder: DIIS og UNRIC</i>
+                  </p>
                 </div>
               </section>
 
               <section>
-                <div className="inner">
-                  <div className="largetext box right box-orange">
-                    <h2 className="orange">FAKTA om Siddende Volleyball</h2>
-                    <p>
-                      Siddende volleyball, også kaldet paravolley, er den
-                      største holdidræt ved de Paralympiske Lege. Hele 66 lande
-                      har kæmpet om de i alt 16 pladser ved PL Paris2024. I
-                      siddende volley sidder spillerne på gulvet og bevæger sig
-                      rundt ved hjælp af armene. Banen er mindre end en
-                      almindelig volleyballbane og nettets højde er 1.15 meter.
-                      Der spilles som udgangspunkt efter reglerne i almen
-                      volleyball med nogle få justeringer. Boldene er de samme i
-                      begge typer volleyball.
-                    </p>
-                    <p>
-                      I Danmark er der lige nu kun to klubber, som tilbyder
-                      siddende volleyball: Lavia Aarhus og Lavia København. I
-                      Rwanda er der i alt 28 hold. Ni kvindehold og 19
-                      herrehold.
-                    </p>
-                    <p>
-                      Syv landes kvindehold har kvalificeret sig til de
-                      Paralympiske Lege, Paris 2024. Udover Rwanda er det
-                      Canada, Brasilien USA, Kina, Frankrig og Italien.
-                    </p>
-                    <p>
-                      <i> Kilder: Parasport Danmark og IPC, Rwanda.</i>
-                    </p>
-                  </div>
+                <div className="largetext box right box-orange">
+                  <h2 className="orange">FAKTA om Siddende Volleyball</h2>
+                  <p>
+                    Siddende volleyball, også kaldet paravolley, er den største
+                    holdidræt ved de Paralympiske Lege. Hele 66 lande har kæmpet
+                    om de i alt 16 pladser ved PL Paris2024. I siddende volley
+                    sidder spillerne på gulvet og bevæger sig rundt ved hjælp af
+                    armene. Banen er mindre end en almindelig volleyballbane og
+                    nettets højde er 1.15 meter. Der spilles som udgangspunkt
+                    efter reglerne i almen volleyball med nogle få
+                    justeringer. Boldene er de samme i begge typer volleyball.
+                  </p>
+                  <p>
+                    I Danmark er der lige nu kun to klubber, som tilbyder
+                    siddende volleyball: Lavia Aarhus og Lavia København. I
+                    Rwanda er der i alt 28 hold. Ni kvindehold og 19 herrehold.
+                  </p>
+                  <p>
+                    Syv landes kvindehold har kvalificeret sig til de
+                    Paralympiske Lege, Paris 2024. Udover Rwanda er det Canada,
+                    Brasilien USA, Kina, Frankrig og Italien.
+                  </p>
+                  <p>
+                    <i> Kilder: Parasport Danmark og IPC, Rwanda.</i>
+                  </p>
                 </div>
               </section>
             </div>
