@@ -200,17 +200,15 @@ export default function Home() {
                 { caption: "", image: "mark/03" },
               ]}
             />
-          
-          <div className="center">
-            <Link href="/mark#fotogalleri">
-              <div className="button button-teal">Se fotogalleri</div>
-            </Link>
-          </div>
+
+            <div className="center">
+              <Link href="/mark#fotogalleri">
+                <div className="button button-teal">Se fotogalleri</div>
+              </Link>
+            </div>
           </div>
           <Divider />
         </section>
-
-     
 
         <div className="largetext box">
           <h2>Alle har ret til at dyrke sport</h2>

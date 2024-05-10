@@ -49,12 +49,12 @@ export default function Claudine() {
             <div className="largetext">
               <h2 className="teal">Uden rugby var jeg blevet monsterfed</h2>
               <h2>
-                Som professionel kampsoldat var Mark Peters i ´stjernegod form´
-                og brugte masser af tid på at træne. Da han mistede begge ben,
-                var det svært for ham at sidde stille hele dagen. Kørestolsrugby
-                fik ham til at træne igen. `Ellers var jeg blevet monsterfed`,
-                siger Mark, som i dag drømmer om at vinde guld indenfor denne
-                særlige kontaktsport.
+                Som professionel kampsoldat var Mark Peters i &quot;stjernegod
+                form&quot; og brugte masser af tid på at træne. Da han mistede
+                begge ben, var det svært for ham at sidde stille hele dagen.
+                Kørestolsrugby fik ham til at træne igen. - Ellers var jeg
+                blevet monsterfed, siger Mark, som i dag drømmer om at vinde
+                guld indenfor denne særlige kontaktsport.
               </h2>
               <p>
                 <i>Af Hanne Selnæs</i>
@@ -78,7 +78,7 @@ export default function Claudine() {
                 - Den dag på patrulje, har jeg meget udstyr på ryggen. Grøften,
                 som vi skal over, er lidt bred. Så i stedet for at springe over,
                 går jeg ned i grøften - lige som de to foran mig, siger Mark og
-                tilføjer: `Her ligger så en hilsen til mig.` For Mark træder
+                tilføjer: - Her ligger så en hilsen til mig. For Mark træder
                 lige ned på en landmine og får sprængt begge ben i stykker.
               </p>
 
@@ -134,16 +134,16 @@ export default function Claudine() {
                 fredagsbar på Zoom.
               </p>
               <p>
-                Mark er særlig glad for at være på et hold: `Som holdspiller ved
-                man, at man ikke kan vinde selv. Vi vinder kun, hvis vi holder
-                sammen og hjælper hinanden.`
+                Mark er særlig glad for at være på et hold: - Som holdspiller
+                ved man, at man ikke kan vinde selv. Vi vinder kun, hvis vi
+                holder sammen og hjælper hinanden.
               </p>
               <p>
-                `Sporten har givet mig energi og selvtillid. Kørestolsrugby er
+                - Sporten har givet mig energi og selvtillid. Kørestolsrugby er
                 blevet mit fristed. Uden rugby i mit liv havde jeg nok spillet
                 for meget computerspil og var blevet monsterfed. Jeg ville have
                 kedet mig, men jeg ville også have haft masser af tid til at
-                være sammen med kæresten,` siger Mark Peters, som for nylig blev
+                være sammen med kæresten, siger Mark Peters, som for nylig blev
                 gift med sin kæreste gennem mange år. Hele landsholdet var med
                 til brylluppet.
               </p>
@@ -153,9 +153,9 @@ export default function Claudine() {
               <p>
                 I dag har Mark Peters rundet de 40 år, så selvom han ville
                 ønske, at han kunne være professionel spiller på et
-                kørestolsrugbyhold, så tror han ikke, at det er realistisk. ´Men
-                det kunne være helt vildt fedt at få penge for at spille noget,
-                som jeg elsker så højt, som jeg elsker rugby.´
+                kørestolsrugbyhold, så tror han ikke, at det er realistisk. -
+                Men det kunne være helt vildt fedt at få penge for at spille
+                noget, som jeg elsker så højt, som jeg elsker rugby.
               </p>
               <p>
                 På flere af de hold, som Danmark konkurrerer mod på verdensplan,
@@ -163,8 +163,8 @@ export default function Claudine() {
               </p>
               <p>
                 Når de så hører, at mange af de danske spillere arbejder på fuld
-                tid ved siden af træningen, siger de: ´Hvordan fanden kan I så
-                spille rugby på det niveau?´ Det er fordi, vi alle sammen elsker
+                tid ved siden af træningen, siger de: - Hvordan fanden kan I så
+                spille rugby på det niveau? Det er fordi, vi alle sammen elsker
                 rugby. Vi har den glæde og kærlighed til rugby. Det gør, at vi
                 træner som professionelle siger Mark.
               </p>
@@ -199,10 +199,10 @@ export default function Claudine() {
                 Det kan sagtens blive godt igen, selvom man er lam eller mangler
                 ben. Du bestemmer selv, hvordan du vil leve. Men du skal gøre en
                 indsats for at få det liv, du gerne vil have. Hvis du bare
-                sætter dig ned og siger ´kom til mig´, så er det sjældent, at du
-                bliver lykkelig. Det bliver ikke ligesom før, det skal man
-                glemme, man skal tage det, som det kommer nu, lyder det fra Mark
-                Peters.
+                sætter dig ned og siger &quot;kom til mig&quot;, så er det
+                sjældent, at du bliver lykkelig. Det bliver ikke ligesom før,
+                det skal man glemme, man skal tage det, som det kommer nu, lyder
+                det fra Mark Peters.
               </p>
             </div>
             <div id="fotogalleri">
@@ -217,7 +217,7 @@ export default function Claudine() {
                 { caption: "", image: "mark/18" },
                 { caption: "", image: "mark/19" },
                 { caption: "", image: "mark/20" },
-                { caption: "", image: "mark/21" },
+
                 { caption: "", image: "mark/01" },
                 { caption: "", image: "mark/02" },
                 { caption: "", image: "mark/03" },
