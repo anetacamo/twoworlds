@@ -11,6 +11,7 @@ import Footer from "./components/Footer";
 import CloseButton from "./components/CloseButton";
 import NameSwitch from "./components/NameSwitch";
 import hp from "../texts/homepage.json";
+import Boks from "./components/Boks";
 
 export default function Home() {
   const initialPlayer = 0;
@@ -199,19 +200,16 @@ export default function Home() {
           <Divider />
         </section>
 
-        <section>
-          <div className="largetext box">
-            <h2>{hp.boksFirstHeadline}</h2>
-            <p>{hp.boksFirstParagraphs[0]}</p>
-          </div>
-        </section>
-
-        <section>
-          <div className="largetext box right box-orange">
-            <h2>{hp.boksSecondHeadline}</h2>
-            <p id="hvem-er-vi">{hp.boksSecondParagraphs[0]}</p>
-          </div>
-        </section>
+        <Boks
+          headline={hp.boksFirstHeadline}
+          paragraphs={hp.boksFirstParagraphs}
+        />
+        <Boks
+          color="orange"
+          right={true}
+          headline={hp.boksSecondHeadline}
+          paragraphs={hp.boksSecondParagraphs}
+        />
 
         <Divider />
 

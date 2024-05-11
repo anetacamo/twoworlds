@@ -34,7 +34,7 @@ export default function NameSwitch({ player, setPlayer }) {
               setPlayer(1);
             }
           }}
-          role='button' // Adding role="button" to indicate it's an interactive element
+          role='button' 
           tabIndex='0'
         >
           Claudine
