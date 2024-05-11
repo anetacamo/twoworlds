@@ -211,7 +211,7 @@ export default function Home() {
           paragraphs={hp.boksSecondParagraphs}
         />
 
-        <Divider />
+        <Divider anchor={"hvem-er-vi"} />
 
         <section>
           <div className="inner">

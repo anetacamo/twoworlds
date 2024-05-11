@@ -21,12 +21,16 @@ export default function Footer() {
               style={{ marginRight: 24, filter: "brightness(0) invert(1)" }}
               src={`/images/logos/CISU.png`}
             />
-            <img className="logoicon" src={`/images/logos/DHF.png`} />
+            <img
+              className="logoicon"
+              src={`/images/logos/DHF.png`}
+              style={{ marginRight: 24 }}
+            />
             <img className="logoicon" src={`/images/logos/Timbuktu.png`} />
           </div>
         </div>
         <div className="small">
-          <h5>kontakt</h5>
+          <h5>{footer.kontaktHeadline}</h5>
           <p>
             <span className="teal">Hanne Selnæs</span>
             <br />

@@ -1,12 +1,12 @@
-import React from 'react';
+import React from "react";
 
-export default function Divider() {
+export default function Divider({ anchor }) {
   return (
-    <section>
-      <div className='inner center'>
-        <img className='logoicon' src='images/icons/ball2.png' />
-        <img className='logoicon' src='images/icons/ball2.png' />
-        <img className='logoicon' src='images/icons/ball2.png' />
+    <section id={anchor}>
+      <div className="inner center">
+        <img className="logoicon" src="images/icons/ball2.png" />
+        <img className="logoicon" src="images/icons/ball2.png" />
+        <img className="logoicon" src="images/icons/ball2.png" />
       </div>
     </section>
   );
