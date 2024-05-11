@@ -19,9 +19,7 @@ export default function Footer() {
             opbakning fra Danske Handicaporganisationer, Parasport Danmark, DGI,
             Vejle Kommune og NPC Rwanda.
           </p>
-          <h5 style={{ marginTop: 32 }}>
-            Projektet bliver til i samarbejde med
-          </h5>
+          <h5>Projektet bliver til i samarbejde med</h5>
           <div className="flex" style={{ display: "flex" }}>
             <img
               className="logoicon"

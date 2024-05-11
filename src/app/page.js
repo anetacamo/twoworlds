@@ -79,7 +79,7 @@ export default function Home() {
           )}
         </div>
 
-        <section style={{ marginBottom: -24 }}>
+        <section>
           <div className="inner">
             <div className="largetext center">
               <h1 className="orange" style={{ maxWidth: 540, margin: "auto" }}>
@@ -99,11 +99,7 @@ export default function Home() {
                 { caption: "", image: "claudine/01" },
               ]}
             />
-          </div>
-        </section>
 
-        <section>
-          <div className="inner">
             <div className="largetext center">
               {hp.omProjektParagraphsSecondSection.map((paragraph, index) => (
                 <p
@@ -233,6 +229,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section>
           <div className="inner">
             <div className="largetext">
