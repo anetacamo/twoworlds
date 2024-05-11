@@ -45,10 +45,6 @@ export default function Claudine() {
         )}
       </div>
       <main style={{ marginTop: 150 }}>
-        <section style={{ textAlign: "center" }}>
-          <div className="largetext">{/* <h1>om claudine</h1> */}</div>
-        </section>
-
         <section>
           <div className="inner">
             <div className="largetext">

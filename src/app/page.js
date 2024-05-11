@@ -82,7 +82,9 @@ export default function Home() {
         <section style={{ marginBottom: -24 }}>
           <div className="inner">
             <div className="largetext center">
-              <h1 className="orange">{hp.omProjektHeadline}</h1>
+              <h1 className="orange" style={{ maxWidth: 540, margin: "auto" }}>
+                {hp.omProjektHeadline}
+              </h1>
               {hp.omProjektParagraphsFirstSection.map((paragraph, index) => (
                 <p
                   key={index}

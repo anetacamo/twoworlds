@@ -2,9 +2,15 @@
 
 .hamburger {
   width: 180px;
+
   @media (max-width: 800px) {
     max-width: min-content;
   }
+}
+
+.photo-overlay .hamburger {
+  margin-right: 0;
+  margin-left: auto;
 }
 
 .hamburger-menu {

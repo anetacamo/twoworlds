@@ -37,12 +37,12 @@ Check out our [Next.js deployment documentation](https://nextjs.org/docs/deploym
 
 ## TODO
 
-- move the name swap in mobile to middle
-- mobile too big
 - the video in fullscreen should continue playing at the same time as it played in the mainpage
 
 ### DONE
 
+- mobile too big
+- move the name swap in mobile to middle
 - single quotes fix
 - footer
 - added logos to the footer
