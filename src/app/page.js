@@ -96,7 +96,7 @@ export default function Home() {
 
             <GridGallery
               images={[
-                { caption: "", image: "mark/16" },
+                { caption: "", image: "mark/05" },
                 { caption: "", image: "claudine/01" },
               ]}
             />

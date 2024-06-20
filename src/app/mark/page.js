@@ -1,15 +1,16 @@
 "use client";
 
-import React, { useState } from "react";
-import Header from "../components/Header";
-import Divider from "../components/Divider";
-import GridGallery from "../components/GridGallery";
-import Video from "../components/Video";
-import CloseButton from "../components/CloseButton";
-import NameSwitch from "../components/NameSwitch";
-import Footer from "../components/Footer";
+import { useState } from "react";
 import mark from "../../texts/mark.json";
 import Boks from "../components/Boks";
+import CloseButton from "../components/CloseButton";
+import Divider from "../components/Divider";
+import Footer from "../components/Footer";
+import GridGallery from "../components/GridGallery";
+import Header from "../components/Header";
+import NameSwitch from "../components/NameSwitch";
+import Video from "../components/Video";
+import VideoSingle from "../components/VideoSingle";
 
 export default function Claudine() {
   const initialPlayer = 0;
@@ -51,10 +52,16 @@ export default function Claudine() {
             <div className="largetext">
               <h2 className="teal">{mark.headline}</h2>
               <h2>{mark.caption}</h2>
+
+              <Divider />
+              <VideoSingle
+                player="mark"
+                video="https://www.youtube.com/embed/XJVAWVboju4?si=CqafQCNxGxRjM0wZ&amp;controls=0"
+              />
+              <Divider />
               <p>
                 <i>{mark.writtenBy}</i>
               </p>
-              <Divider />
               {mark.paragraphs.map((p, index) => (
                 <p key={index} dangerouslySetInnerHTML={{ __html: p }}></p>
               ))}

@@ -134,13 +134,17 @@ export default function Video({ player, setPlayer, large, open, setOpen }) {
         }`}
       >
         <video
+          // src="https://drive.google.com/uc?export=download&id=1ynvJeShriKu71E1N9WvQh99a2geL5XAg"
           src="/video/claudine_sm.mp4"
           className="absolute"
           poster="/images/claudine/01.png"
           muted
           ref={(ref) => (videoRefs.current[0] = ref)}
         />
+
+        {/* https://drive.google.com/uc?export=download&id=1ynvJeShriKu71E1N9WvQh99a2geL5XAg */}
         <video
+          // src="https://drive.google.com/uc?export=download&id=1ynvJeShriKu71E1N9WvQh99a2geL5XAg"
           src="/video/mark_sm.mp4"
           poster="/images/mark/01.png"
           className={`absolute ${player === 0 ? "none" : ""}`}
