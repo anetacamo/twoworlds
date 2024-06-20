@@ -1,7 +1,7 @@
 export default function VideoSingle({ player, video }) {
   return (
     <div
-      className={`videogallery ${
+      className={`videogallery videoiframe ${
         player === "mark" ? "border-teal" : "border-orange"
       }`}
     >
