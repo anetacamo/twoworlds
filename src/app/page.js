@@ -17,6 +17,7 @@ export default function Home() {
   const initialPlayer = 0;
   const [player, setPlayer] = useState(initialPlayer);
   const [open, setOpen] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
 
   const handlePlayerChange = (newPlayer) => {
     setPlayer(newPlayer);
@@ -24,17 +25,23 @@ export default function Home() {
 
   return (
     <div>
-      <Header player={player} handlePlayerChange={handlePlayerChange} />
+      <Header
+        player={player}
+        handlePlayerChange={handlePlayerChange}
+        time={currentTime}
+      />
       <main className={styles.main}>
         <section>
           <div className="inner">
-            <h1 className="center" style={{ marginBottom: 48 }}>
+            <h1 className="center" style={{ marginBottom: 48 }} id="video">
               {hp.videoHeadline}
             </h1>
             <Video
               player={player}
               setPlayer={handlePlayerChange}
               setOpen={() => setOpen(!open)}
+              time={currentTime}
+              setVideoTime={setCurrentTime}
             />
             <Divider />
             <div className="center flex-center" id="om-projektet">
@@ -74,6 +81,8 @@ export default function Home() {
                 setPlayer={handlePlayerChange}
                 large
                 open={open}
+                time={currentTime}
+                setVideoTime={setCurrentTime}
               />
               <div onKeyDown={() => setOpen(false)} tabIndex={0}></div>
             </>

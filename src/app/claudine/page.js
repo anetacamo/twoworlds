@@ -16,6 +16,7 @@ export default function Claudine() {
   const initialPlayer = 0;
   const [player, setPlayer] = useState(initialPlayer);
   const [open, setOpen] = useState(false);
+  const [currentTime, setCurrentTime] = useState(0);
 
   const handlePlayerAndScreenChange = (newPlayer) => {
     setPlayer(newPlayer);
@@ -31,17 +32,24 @@ export default function Claudine() {
       <Header
         player={player}
         handlePlayerChange={handlePlayerAndScreenChange}
+        time={currentTime}
       />
       <div className={`overlay ${open ? "open" : ""}`}>
         {open && (
           <>
-            <NameSwitch setPlayer={handlePlayerChange} player={player} />
+            <NameSwitch
+              setPlayer={handlePlayerChange}
+              player={player}
+              time={currentTime}
+            />
             <CloseButton handleClick={() => setOpen(false)} />
             <Video
               player={player}
               setPlayer={handlePlayerChange}
               large
               open={open}
+              time={currentTime}
+              setVideoTime={setCurrentTime}
             />
           </>
         )}

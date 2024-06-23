@@ -1,7 +1,8 @@
-'use client';
-import React, { useState, useRef } from 'react';
-import CloseButton from './CloseButton';
-import Arrows from './Arrows';
+"use client";
+import React, { useState, useRef } from "react";
+import CloseButton from "./CloseButton";
+import Arrows from "./Arrows";
+import Image from "next/image";
 
 export default function GridGallery({ images }) {
   const [open, setOpen] = useState(null);
@@ -14,19 +15,19 @@ export default function GridGallery({ images }) {
 
   return (
     <>
-      <div className='gallery large-gallery grid-gallery'>
+      <div className="gallery large-gallery grid-gallery">
         {images.map((image, index) => (
           <div
-            className='container'
+            className="container"
             key={index}
             onClick={() => handleImageClick(index)}
             onKeyDown={(event) => {
-              if (event.key === 'Enter' || event.key === ' ') {
+              if (event.key === "Enter" || event.key === " ") {
                 handleImageClick(index);
               }
             }}
-            role='button'
-            tabIndex='0'
+            role="button"
+            tabIndex="0"
           >
             <img src={`/images/${image.image}.png`} />
           </div>
@@ -35,13 +36,13 @@ export default function GridGallery({ images }) {
 
       <div
         ref={overlayRef}
-        className={`overlay ${open != null ? 'open' : ''} photo-overlay`}
+        className={`overlay ${open != null ? "open" : ""} photo-overlay`}
         onKeyDown={(event) => {
-          if (event.key === 'Escape' && open) {
+          if (event.key === "Escape" && open) {
             setOpen(null);
-          } else if (event.key === 'ArrowLeft' && open != null) {
+          } else if (event.key === "ArrowLeft" && open != null) {
             setOpen(open === 0 ? images.length - 1 : open - 1);
-          } else if (event.key === 'ArrowRight' && open != null) {
+          } else if (event.key === "ArrowRight" && open != null) {
             setOpen(open + 1 === images.length ? 0 : open + 1);
           }
         }}
@@ -50,11 +51,11 @@ export default function GridGallery({ images }) {
         {open != null && (
           <>
             <CloseButton handleClick={() => setOpen(null)} noStyle />
-            <div className='img-holder'>
-              <div className='container'>
+            <div className="img-holder">
+              <div className="container">
                 <img
                   src={`/images/${images[open].image}.png`}
-                  className='img-contain'
+                  className="img-contain"
                 />
               </div>
             </div>
@@ -67,12 +68,12 @@ export default function GridGallery({ images }) {
               }
             />
             <div
-              className='caption-holder'
+              className="caption-holder"
               tabIndex={0}
               onKeyDown={() => setOpen(null)}
             >
-              <div className='caption'>
-                {open + 1} / {images.length}{' '}
+              <div className="caption">
+                {open + 1} / {images.length}{" "}
                 <i>{images[open].caption} by Tine Harden</i>
               </div>
             </div>

@@ -5,7 +5,7 @@ import Hamburger from "./Hamburger";
 import Logo from "./Logo";
 import NameSwitch from "./NameSwitch";
 
-export default function Header({ player, handlePlayerChange }) {
+export default function Header({ player, handlePlayerChange, time }) {
   const [open, setOpen] = useState(false);
   const [prevScrollPos, setPrevScrollPos] = useState(0);
   const [visible, setVisible] = useState(true);
@@ -26,7 +26,7 @@ export default function Header({ player, handlePlayerChange }) {
   return (
     <header style={{ top: visible ? "0" : "-100px", transition: "top 0.5s" }}>
       <Logo />
-      <NameSwitch setPlayer={handlePlayerChange} player={player} />
+      <NameSwitch setPlayer={handlePlayerChange} player={player} time={time} />
       <Hamburger open={open} handleClick={() => setOpen(!open)} />
       <div
         className={`overlay ${open ? "open" : ""}`}

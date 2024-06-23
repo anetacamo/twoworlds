@@ -1,14 +1,21 @@
-import { useRef, useState, useEffect } from "react";
+import { useRef, useEffect } from "react";
 import VideoControls from "./VideoControls";
 
-export default function Video({ player, setPlayer, large, open, setOpen }) {
+export default function Video({
+  player,
+  setPlayer,
+  large,
+  open,
+  setOpen,
+  time,
+  setVideoTime,
+}) {
   const videoRefs = useRef([]);
-  const [currentTime, setCurrentTime] = useState(0);
 
   useEffect(() => {
     const video = videoRefs.current[0];
     const updateTime = () => {
-      setCurrentTime(video.currentTime);
+      setVideoTime(video.currentTime);
     };
     video.addEventListener("timeupdate", updateTime);
     return () => {
@@ -18,6 +25,7 @@ export default function Video({ player, setPlayer, large, open, setOpen }) {
 
   const startAllVideos = () => {
     videoRefs.current.forEach((videoRef) => {
+      videoRef.currentTime = Math.floor(time);
       videoRef.play();
     });
   };
@@ -37,7 +45,7 @@ export default function Video({ player, setPlayer, large, open, setOpen }) {
   return (
     <div className="videowithcontrols">
       <VideoControls
-        time={currentTime}
+        time={Math.floor(time)}
         screen="desktop"
         startAllVideos={startAllVideos}
         pauseAllVideos={pauseAllVideos}
@@ -53,8 +61,8 @@ export default function Video({ player, setPlayer, large, open, setOpen }) {
       >
         <video
           src="/video/claudine_sm.mp4"
-          className="absolute"
           poster="/images/claudine/01.png"
+          className="absolute"
           muted
           ref={(ref) => (videoRefs.current[0] = ref)}
         />
@@ -107,7 +115,7 @@ export default function Video({ player, setPlayer, large, open, setOpen }) {
       </div>
 
       <VideoControls
-        time={currentTime}
+        time={Math.floor(time)}
         screen="mobile"
         startAllVideos={startAllVideos}
         pauseAllVideos={pauseAllVideos}
