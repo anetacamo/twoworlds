@@ -65,6 +65,7 @@ export default function Video({
           className="absolute"
           muted
           ref={(ref) => (videoRefs.current[0] = ref)}
+          disableRemotePlayback
         />
 
         <video
@@ -73,6 +74,7 @@ export default function Video({
           className={`absolute ${player === 0 ? "none" : ""}`}
           muted
           ref={(ref) => (videoRefs.current[1] = ref)}
+          disableRemotePlayback
         />
 
         <video
@@ -93,6 +95,7 @@ export default function Video({
           role="button"
           tabIndex="0"
           ref={(ref) => (videoRefs.current[2] = ref)}
+          disableRemotePlayback
         />
         <video
           src="/video/mark_sm.mp4"
@@ -111,6 +114,7 @@ export default function Video({
           role="button"
           tabIndex="0"
           ref={(ref) => (videoRefs.current[3] = ref)}
+          disableRemotePlayback
         />
       </div>
 
