@@ -36,6 +36,12 @@ export default function Home() {
             <h1 className="center" style={{ marginBottom: 48 }} id="video">
               {hp.videoHeadline}
             </h1>
+            <div
+              className="center mobile"
+              style={{ marginTop: -24, marginBottom: 24 }}
+            >
+              Afspilles bedst på PC
+            </div>
             <Video
               player={player}
               setPlayer={handlePlayerChange}
@@ -76,6 +82,7 @@ export default function Home() {
             <>
               <NameSwitch setPlayer={handlePlayerChange} player={player} />
               <CloseButton handleClick={() => setOpen(false)} />
+
               <Video
                 player={player}
                 setPlayer={handlePlayerChange}
